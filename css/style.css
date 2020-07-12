@@ -1,0 +1,208 @@
+/* FONTS */
+@font-face {
+  font-family: "Product Sans";
+  src: url("/fonts/ProductSansRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Product Sans Bold";
+  src: url("/fonts/ProductSansBold.ttf") format("truetype");
+}
+/* end FONTS */
+
+body {
+  font-family: "Product Sans";
+  color: #020202;
+}
+.page-btn {
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  padding: 12px 32px;
+  background-color: #ef8880;
+  border-radius: 4px;
+}
+
+/* HEADER */
+.header {
+  padding: 0 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.02);
+}
+.header-wrapper {
+  max-width: 1224px;
+  height: 88px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__navbar > a {
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 24px;
+  color: #020202;
+}
+.header__navbar > a:not(:last-child) {
+  margin-right: 48px;
+}
+
+/* end HEADER */
+/* HERO */
+.hero {
+  padding: 0 10px 144px;
+  position: relative;
+}
+.hero-wrapper {
+  max-width: 1224px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hero > svg {
+  position: absolute;
+  right: 24%;
+  bottom: 10%;
+}
+.hero__left {
+  max-width: 600px;
+}
+.hero__left > h1 {
+  font-size: 44px;
+  line-height: 56px;
+  margin: 160px 0 0;
+}
+.hero__left > p {
+  font-family: Muli;
+}
+.hero__left--descriptor {
+  line-height: 28px;
+  color: #40434a;
+  margin: 24px 0 60px;
+}
+.hero__left--descriptor > span {
+  background: #d9f2fe;
+  border-radius: 1px;
+  color: #020202;
+}
+.hero__left--btn-block > p {
+  width: 170px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #677294;
+  text-align: center;
+  margin-top: 20px;
+}
+.hero__form {
+  box-sizing: border-box;
+  max-width: 416px;
+  padding: 32px 48px;
+  background: #ffffff;
+  box-shadow: 0px 16px 64px rgba(11, 17, 47, 0.08);
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 80px;
+  position: relative;
+  z-index: 10;
+}
+.hero__form > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0 0 24px;
+}
+.hero__form--item {
+  text-align: left;
+  margin-bottom: 24px;
+  position: relative;
+}
+.hero__form--item > label {
+  display: block;
+  font-family: Muli;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #677294;
+  margin-bottom: 8px;
+}
+.hero__form--item > select {
+  background: #fbfbfd;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  height: 48px;
+  padding: 10px 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  font-family: Muli;
+  line-height: 28px;
+}
+.hero__form--item::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  background: url("../img/arrow.png") center center no-repeat;
+  background-size: cover;
+  right: 21px;
+  top: 50px;
+  pointer-events: none;
+  transition: 1s;
+}
+.hero__form--item.rotated::after {
+  transform: rotateX(180deg);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+label {
+  cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+  border: 1px solid #000;
+  border-radius: 4px;
+  content: "\00a0";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 11px 0 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+input[type="checkbox"]:checked + label:before {
+  background: url("../img/checkbox.png") center center no-repeat;
+  background-size: cover;
+  content: "";
+  border: none;
+}
+.hero__form--checkbox > span {
+  font-family: Muli;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #677294;
+}
+.hero__form--total {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 35px 0;
+}
+.hero__form > button {
+  background: #16c17f;
+  border-radius: 24px;
+  border: none;
+  padding: 12px 66px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* end HERO */

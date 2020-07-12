@@ -1,14 +1,5 @@
 /* FONTS */
-@font-face {
-  font-family: "ProductSansRegular";
-  font-weight: 400;
-  src: url("fonts/ProductSansRegular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Product Sans Bold";
-  font-weight: 700;
-  src: url("fonts/ProductSansBold.ttf") format("truetype");
-}
+
 /* end FONTS */
 
 body {
@@ -17,7 +8,8 @@ body {
 }
 .page-btn {
   text-decoration: none;
-  font-weight: 700;
+  font-family: "ProductSansBold";
+  /* font-weight: 700; */
   color: #fff;
   padding: 12px 32px;
   background-color: #ef8880;
@@ -153,7 +145,7 @@ body {
   right: 21px;
   top: 50px;
   pointer-events: none;
-  transition: 1s;
+  transition: 0.5s;
 }
 .hero__form--item.rotated::after {
   transform: rotateX(180deg);

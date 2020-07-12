@@ -1,6 +1,6 @@
 /* FONTS */
 @font-face {
-  font-family: "Product Sans";
+  font-family: "ProductSansRegular";
   src: url("/fonts/ProductSansRegular.ttf") format("truetype");
 }
 @font-face {
@@ -10,7 +10,7 @@
 /* end FONTS */
 
 body {
-  font-family: "Product Sans";
+  font-family: "ProductSansRegular";
   color: #020202;
 }
 .page-btn {

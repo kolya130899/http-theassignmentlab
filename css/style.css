@@ -2,12 +2,12 @@
 @font-face {
   font-family: "ProductSansRegular";
   font-weight: 400;
-  src: url("../fonts/ProductSansRegular.ttf") format("truetype");
+  src: url("fonts/ProductSansRegular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Product Sans Bold";
   font-weight: 700;
-  src: url("../fonts/ProductSansBold.ttf") format("truetype");
+  src: url("fonts/ProductSansBold.ttf") format("truetype");
 }
 /* end FONTS */
 

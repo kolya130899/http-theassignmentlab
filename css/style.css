@@ -41,8 +41,8 @@ body {
 .header__navbar > a:not(:last-child) {
   margin-right: 48px;
 }
-
 /* end HEADER */
+
 /* HERO */
 .hero {
   padding: 0 10px 144px;
@@ -200,8 +200,8 @@ input[type="checkbox"]:checked + label:before {
   color: #ffffff;
   cursor: pointer;
 }
-
 /* end HERO */
+
 /* WHAT WE DO */
 .whatwedo {
   background: #fbfbfd;
@@ -265,6 +265,7 @@ input[type="checkbox"]:checked + label:before {
   margin: 0;
 }
 /* end WHAT WE DO */
+
 /* DISCOUNT */
 .discount {
   background: #ef8880;
@@ -311,6 +312,7 @@ input[type="checkbox"]:checked + label:before {
   height: 100%;
 }
 /* end DISCOUNT */
+
 /* SAMPLES */
 .samples {
   position: relative;
@@ -373,7 +375,7 @@ input[type="checkbox"]:checked + label:before {
   font-family: Muli;
   line-height: 28px;
   color: #40434a;
-  margin: 16px 0 24px;
+  margin: 16px 0 48px;
 }
 .samples__container--item > a {
   text-decoration: none;
@@ -381,9 +383,12 @@ input[type="checkbox"]:checked + label:before {
   line-height: 24px;
   text-align: right;
   color: #ef8880;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
 }
-
 /* end SAMPLES */
+
 /* STEPS */
 .steps {
   background: #fbfbfd;

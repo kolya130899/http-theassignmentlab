@@ -1,11 +1,13 @@
 /* FONTS */
 @font-face {
   font-family: "ProductSansRegular";
-  src: url("/fonts/ProductSansRegular.ttf") format("truetype");
+  font-weight: 400;
+  src: url("../fonts/ProductSansRegular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Product Sans Bold";
-  src: url("/fonts/ProductSansBold.ttf") format("truetype");
+  font-weight: 700;
+  src: url("../fonts/ProductSansBold.ttf") format("truetype");
 }
 /* end FONTS */
 

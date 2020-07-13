@@ -816,17 +816,12 @@ button#slick-slide-control02 {
     flex-direction: column;
     align-items: center;
   }
-  button#slick-slide-control00,
-  button#slick-slide-control01,
-  button#slick-slide-control02 {
-    background: #ff00ff;
-    width: 12px;
-    height: 12px;
-    font-size: 12px !important;
-    /* background: #efefef; */
-    /* width: 5px !important;
-    height: 10px !important; */
-    /* font-size: 10px;
-    line-height: 10px; */
+  @supports (-webkit-hyphens: none) {
+    button#slick-slide-control00,
+    button#slick-slide-control01,
+    button#slick-slide-control02 {
+      font-size: 12px;
+      line-height: 12px;
+    }
   }
 }

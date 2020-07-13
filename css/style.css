@@ -806,17 +806,24 @@ input[type="checkbox"]:checked + label:before {
   .footer__left--icons {
     text-align: center;
   }
+  .hero > img,
+  .top,
+  .bottom,
+  .support-pattern-top,
+  .support-pattern-bottom,
   .footer__center > h2,
   .footer__right > h2 {
     display: none;
   }
-  .footer__center{
+  .footer__center {
     text-align: center;
     margin-top: 50px;
   }
-  .footer__center > p:not(:last-child)[
-
-  ]
+}
+@media screen and (max-width: 776px) {
+  .guarantee__container--item:not(:last-child) {
+    margin: 0 0 24px 0;
+  }
 }
 @media screen and (max-width: 700px) {
   .header__navbar {

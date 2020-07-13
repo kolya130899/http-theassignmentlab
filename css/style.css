@@ -610,8 +610,8 @@ button#slick-slide-control02 {
 .slick-dots > li > button {
   text-indent: -9999px;
   background-color: #efefef;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   border: none;
   border-radius: 50%;
   outline: none !important;

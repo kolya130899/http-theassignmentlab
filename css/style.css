@@ -820,6 +820,11 @@ input[type="checkbox"]:checked + label:before {
     margin-top: 50px;
   }
 }
+@media screen and (max-width: 830px) {
+  .steps__container--item:not(:last-child) {
+    margin-right: 0;
+  }
+}
 @media screen and (max-width: 776px) {
   .guarantee__container--item:not(:last-child) {
     margin: 0 0 24px 0;

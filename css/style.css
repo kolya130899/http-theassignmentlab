@@ -596,6 +596,8 @@ button#slick-slide-control02 {
   background: #efefef;
   width: 12px !important;
   height: 12px !important;
+  font-size: 12px !important;
+  line-height: 12px !important;
   border: none;
   border-radius: 50%;
 }
@@ -802,6 +804,12 @@ button#slick-slide-control02 {
   }
 }
 @media screen and (max-width: 700px) {
+  .header__navbar {
+    display: none;
+  }
+  .header-wrapper > a {
+    margin-left: 20px;
+  }
   .br-700 {
     display: none;
   }
@@ -831,11 +839,8 @@ button#slick-slide-control02 {
     button#slick-slide-control00,
     button#slick-slide-control01,
     button#slick-slide-control02 {
-      color: aqua;
       font-size: 32px;
       line-height: 32px;
-      width: 12px;
-      height: 12px;
     }
   }
 }

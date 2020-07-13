@@ -599,8 +599,8 @@ input[type="checkbox"]:checked + label:before {
 .slick-dots > li > button {
   text-indent: -9999px;
   background-color: #efefef;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   border: none;
   border-radius: 50%;
   outline: none !important;
@@ -791,6 +791,15 @@ input[type="checkbox"]:checked + label:before {
     flex-direction: column;
     align-items: center;
   }
+  .footer__left--navbar {
+    flex-direction: row;
+  }
+  .footer__left--navbar > a:not(:last-child) {
+    margin-right: 20px;
+  }
+  .footer__left--logo {
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 700px) {
   .header__navbar {
@@ -810,6 +819,7 @@ input[type="checkbox"]:checked + label:before {
   .discount-wrapper {
     flex-direction: column;
     text-align: center;
+    padding: 70px 10px;
   }
   .discount__left > p {
     margin-bottom: 24px;
@@ -818,6 +828,5 @@ input[type="checkbox"]:checked + label:before {
   .support-bottom {
     flex-direction: column;
     align-items: center;
-  }
   }
 }

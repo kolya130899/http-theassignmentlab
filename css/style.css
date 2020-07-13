@@ -536,6 +536,8 @@ input[type="checkbox"]:checked + label:before {
 
 /* SLICK CADOUSEL */
 .testimonials {
+  max-width: 1224px;
+  margin: 0 auto;
   text-align: center;
   padding: 80px 10px;
 }
@@ -553,11 +555,12 @@ input[type="checkbox"]:checked + label:before {
   margin: 8px 0 72px;
 }
 .testimonials__slider {
-  max-width: 1250px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 .testimonials__slider--slide {
+  box-sizing: border-box;
   max-width: 396px;
   height: 236px;
   border: 1px solid #fbfbfd;
@@ -785,22 +788,11 @@ button#slick-slide-control00 {
   .ceo__item:nth-child(2n + 1) {
     margin-right: 0;
   }
-  /* .testimonials__slider {
-    max-width: 80%;
-  } */
 }
-@media screen and (max-width: 1000px) {
-  .testimonials__slider {
-    max-width: 396px !important;
-  }
+@media screen and (max-width: 700px) {
   .testimonials__slider--slide {
-    margin: 0;
-    width: 100% !important;
+    height: auto;
+    margin-right: 0;
+    max-width: 100%;
   }
 }
-/* @media screen and(max-width: 750px) {
-  .testimonials__slider {
-    max-width: 90%;
-  }
-  
-} */

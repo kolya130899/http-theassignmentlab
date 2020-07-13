@@ -785,12 +785,12 @@ button#slick-slide-control00 {
   .ceo__item:nth-child(2n + 1) {
     margin-right: 0;
   }
-  .testimonials__slider {
-    max-width: 816px;
-  }
+  /* .testimonials__slider {
+    max-width: 80%;
+  } */
 }
-@media screen and(max-width: 750px) {
+@media screen and(max-width: 1000px) {
   .testimonials__slider {
-    max-width: 408px;
+    max-width: 90%;
   }
 }

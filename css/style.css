@@ -802,6 +802,9 @@ button#slick-slide-control02 {
   }
 }
 @media screen and (max-width: 700px) {
+  .br-700 {
+    display: none;
+  }
   .testimonials__slider--slide {
     height: auto;
     margin-right: 0;
@@ -811,18 +814,26 @@ button#slick-slide-control02 {
     flex-direction: column;
     text-align: center;
   }
+  .discount__left > p {
+    margin-bottom: 24px;
+  }
   .support-top,
   .support-bottom {
     flex-direction: column;
     align-items: center;
+  }
+  button#slick-slide-control00,
+  button#slick-slide-control01,
+  button#slick-slide-control02 {
+    color: aqua;
   }
   @supports (-webkit-hyphens: none) {
     button#slick-slide-control00,
     button#slick-slide-control01,
     button#slick-slide-control02 {
       color: aqua;
-      font-size: 12px;
-      line-height: 12px;
+      font-size: 32px;
+      line-height: 32px;
       width: 12px;
       height: 12px;
     }

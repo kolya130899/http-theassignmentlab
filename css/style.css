@@ -590,17 +590,6 @@ input[type="checkbox"]:checked + label:before {
   margin: 48px auto 0;
   padding: 0;
 }
-button#slick-slide-control00,
-button#slick-slide-control01,
-button#slick-slide-control02 {
-  background: #efefef;
-  width: 12px !important;
-  height: 12px !important;
-  font-size: 12px !important;
-  line-height: 12px !important;
-  border: none;
-  border-radius: 50%;
-}
 .slick-dots > li {
   display: inline-block;
 }
@@ -610,8 +599,8 @@ button#slick-slide-control02 {
 .slick-dots > li > button {
   text-indent: -9999px;
   background-color: #efefef;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   border: none;
   border-radius: 50%;
   outline: none !important;
@@ -830,17 +819,5 @@ button#slick-slide-control02 {
     flex-direction: column;
     align-items: center;
   }
-  button#slick-slide-control00,
-  button#slick-slide-control01,
-  button#slick-slide-control02 {
-    color: antiquewhite;
-  }
-  @supports (-webkit-hyphens: none) {
-    button#slick-slide-control00,
-    button#slick-slide-control01,
-    button#slick-slide-control02 {
-      font-size: 32px;
-      line-height: 32px;
-    }
   }
 }

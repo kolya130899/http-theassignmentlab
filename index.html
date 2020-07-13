@@ -831,6 +831,7 @@
         $(".testimonials__slider").slick({
           dots: true,
           infinite: true,
+          centerMode: true,
           speed: 300,
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -842,23 +843,11 @@
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                centerMode: true,
+                centerPadding: "-24px",
               },
-              // breakpoint: 750,
-              // settings: {
-              //   slidesToShow: 1,
-              //   slidesToScroll: 1,
-              //   centerMode: true,
-              // },
             },
           ],
         });
-        // if ($(document).width() < 1200) {
-        //   $(".testimonials__slider").slick("slickSetOption", {
-        //     slidesToShow: 2,
-        //     slidesToScroll: 2,
-        //   });
-        // }
       });
 
       // FONTS LOADER

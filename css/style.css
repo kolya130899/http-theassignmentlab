@@ -589,8 +589,8 @@ input[type="checkbox"]:checked + label:before {
 }
 button#slick-slide-control00 {
   background: #efefef;
-  width: 12px;
-  height: 12px;
+  width: 12px !important;
+  height: 12px !important;
   border: none;
   border-radius: 50%;
 }
@@ -789,8 +789,18 @@ button#slick-slide-control00 {
     max-width: 80%;
   } */
 }
-@media screen and(max-width: 1000px) {
+@media screen and (max-width: 1000px) {
+  .testimonials__slider {
+    max-width: 396px !important;
+  }
+  .testimonials__slider--slide {
+    margin: 0;
+    width: 100% !important;
+  }
+}
+/* @media screen and(max-width: 750px) {
   .testimonials__slider {
     max-width: 90%;
   }
-}
+  
+} */

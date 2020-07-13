@@ -716,6 +716,7 @@ input[type="checkbox"]:checked + label:before {
   color: #fbfbfd;
   font-weight: bold;
   line-height: 24px;
+  cursor: pointer;
 }
 .footer__left--navbar > a:not(:last-child) {
   margin: 0 0 24px;
@@ -795,11 +796,25 @@ input[type="checkbox"]:checked + label:before {
     flex-direction: row;
   }
   .footer__left--navbar > a:not(:last-child) {
-    margin-right: 20px;
+    margin: 0 20px 0 0;
   }
   .footer__left--logo {
-    margin: 0 auto;
+    margin: 0 auto 51px;
   }
+  .footer__left--icons {
+    text-align: center;
+  }
+  .footer__center > h2,
+  .footer__right > h2 {
+    display: none;
+  }
+  .footer__center{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .footer__center > p:not(:last-child)[
+
+  ]
 }
 @media screen and (max-width: 700px) {
   .header__navbar {

@@ -825,7 +825,7 @@ button#slick-slide-control02 {
   button#slick-slide-control00,
   button#slick-slide-control01,
   button#slick-slide-control02 {
-    color: aqua;
+    color: antiquewhite;
   }
   @supports (-webkit-hyphens: none) {
     button#slick-slide-control00,

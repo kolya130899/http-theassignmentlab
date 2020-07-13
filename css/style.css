@@ -819,7 +819,8 @@ button#slick-slide-control02 {
   button#slick-slide-control00,
   button#slick-slide-control01,
   button#slick-slide-control02 {
-    background: #00ff00;
+    background: #0000ff;
+    height: 12px;
     /* background: #efefef; */
     /* width: 5px !important;
     height: 10px !important; */

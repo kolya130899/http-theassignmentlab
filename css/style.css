@@ -599,11 +599,13 @@ input[type="checkbox"]:checked + label:before {
 .slick-dots > li > button {
   text-indent: -9999px;
   background-color: #efefef;
-  width: 16px;
+  width: 12px;
   height: 16px;
   border: none;
   border-radius: 50%;
   outline: none !important;
+  padding: 0;
+  box-sizing: unset;
 }
 .slick-active > button {
   background-color: #ef8880 !important;

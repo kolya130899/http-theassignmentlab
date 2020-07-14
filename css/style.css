@@ -937,3 +937,21 @@ input[type="checkbox"]:checked + label:before {
     align-items: center;
   }
 }
+@media screen and (max-width: 450px) {
+  .chat-option,
+  .help {
+    right: 0;
+    bottom: 0;
+  }
+  .help {
+    padding: 10px;
+  }
+  .chat-option {
+    padding: 0 27px 37px 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  .help__chat {
+    padding: 10px 5px;
+  }
+}

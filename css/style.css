@@ -1019,4 +1019,7 @@ input[type="checkbox"]:checked + label:before {
   .help__chat {
     padding: 10px 5px;
   }
+  .help__chat--close {
+    right: 10px;
+  }
 }

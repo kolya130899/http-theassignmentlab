@@ -983,6 +983,9 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 @media screen and (max-width: 450px) {
+  .br-450 {
+    display: none;
+  }
   .chat-option,
   .help {
     right: 0;
@@ -993,6 +996,11 @@ input[type="checkbox"]:checked + label:before {
   }
   .chat-option {
     padding: 0 27px 37px 0;
+  }
+
+  .hero__left > h1 {
+    font-size: 40px;
+    line-height: 50px;
   }
 }
 @media screen and (max-width: 350px) {

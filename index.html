@@ -40,7 +40,16 @@
           />
         </svg>
         <nav class="header__navbar">
-          <a href="#">Writing Services</a>
+          <div class="header__navbar--dropdown">
+            <a href="#" id="services">Writing Services</a>
+            <nav class="services-nav">
+              <a href="#">Essay Writing Help</a>
+              <a href="#">Online Course</a>
+              <a href="#">Exams</a>
+              <a href="#">Assignment</a>
+            </nav>
+          </div>
+
           <a href="#">Prices</a>
           <a href="#">Blog</a>
           <a href="#">FAQ</a>
@@ -912,8 +921,8 @@
         $(".help__chat").hide();
       });
 
-      //CHAT OPTION TOGGLE
       $(document).ready(function () {
+        //CHAT OPTION TOGGLE
         $(".chat-option").hide();
 
         $(".help__btn").click(function () {
@@ -926,6 +935,22 @@
           $(".help__chat").show();
           $(".chat-option").hide();
         });
+
+        // SERVICE MENU
+        $(".services-nav").hide();
+
+        $(".header__navbar--dropdown").hover(
+          function () {
+            $("#services").css("color", "#ef8880");
+            $(".services-nav").show();
+          },
+          function () {
+            $("#services").css("color", "#020202");
+            $(".services-nav").hide();
+          }
+        );
+
+        // $(".services-nav").mouseleave();
       });
     </script>
   </body>

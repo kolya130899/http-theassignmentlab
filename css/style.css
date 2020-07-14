@@ -36,6 +36,9 @@
 .header-wrapper > a {
   max-width: 203px;
 }
+.header-wrapper > a > svg {
+  width: 100%;
+}
 .header__navbar {
   position: relative;
 }
@@ -1011,9 +1014,6 @@ input[type="checkbox"]:checked + label:before {
     font-size: 40px;
     line-height: 50px;
   }
-  /* .help__chat--close {
-    right: 10px;
-  } */
 }
 @media screen and (max-width: 350px) {
   .help__chat {

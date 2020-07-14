@@ -110,6 +110,41 @@
       </div>
     </section>
 
+    <!-- HELP -->
+    <section class="help">
+      <div class="help__chat">
+        <img src="img/help-hero.png" alt="" />
+        <div class="help__chat--text">
+          <h5>Lisa (assistant)</h5>
+          <p>How can I help you?</p>
+        </div>
+        <div class="help__chat--close">
+          <span>&times;</span>
+        </div>
+      </div>
+      <div class="help__btn">
+        <img src="img/help.png" alt="" />
+      </div>
+    </section>
+
+    <!-- CHAT OPTION -->
+    <section class="chat-option">
+      <div class="chat-option__item">
+        <a href="#fb">
+          <img src="img/fb.png" alt="" />
+        </a>
+      </div>
+      <div class="chat-option__item">
+        <a href="#chat">
+          <img src="img/chat.png" alt="" />
+        </a>
+      </div>
+      <div class="chat-option__close">
+        <img src="img/close.png" alt="" />
+      </div>
+    </section>
+
+    <!-- WHAT WE DO -->
     <section class="whatwedo">
       <div class="whatwedo-wrapper">
         <h2 class="block-title mb">What We Do</h2>
@@ -870,6 +905,27 @@
       var selects = document.getElementsByClassName(".hero__form--item");
       var form = document.addEventListener("click", (e) => {
         e.target.parentElement.classList.toggle("rotated");
+      });
+
+      //CLOSE HELP TAB
+      $(".help__chat--close").click(function () {
+        $(".help__chat").hide();
+      });
+
+      //CHAT OPTION TOGGLE
+      $(document).ready(function () {
+        $(".chat-option").hide();
+
+        $(".help__btn").click(function () {
+          $(".help").hide();
+          $(".chat-option").show();
+        });
+
+        $(".chat-option__close").click(function () {
+          $(".help").show();
+          $(".help__chat").show();
+          $(".chat-option").hide();
+        });
       });
     </script>
   </body>

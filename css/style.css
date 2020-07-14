@@ -202,6 +202,84 @@ input[type="checkbox"]:checked + label:before {
   cursor: pointer;
 }
 /* end HERO */
+/* HELP */
+.help {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  right: 32px;
+  bottom: 40px;
+  z-index: 99;
+}
+.help__chat {
+  border: 2px solid #ea4c1a;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  width: 284px;
+  position: relative;
+  margin-right: 8px;
+}
+.help__chat > img {
+  margin-right: 12px;
+  width: 48px;
+  height: 48px;
+}
+.help__chat--text > h5 {
+  font-family: Muli;
+  font-weight: bold;
+  line-height: 28px;
+}
+.help__chat--text > p {
+  font-family: Muli;
+  font-size: 14px;
+  line-height: 20px;
+  color: #40434a;
+}
+.help__chat--text > h5,
+.help__chat--text > p {
+  margin: 0;
+}
+.help__chat--close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.help__chat--close > span {
+  color: #ea4c1a;
+  font-size: 22px;
+  line-height: 12px;
+  cursor: pointer;
+}
+.help__btn {
+  max-width: 96px;
+  cursor: pointer;
+}
+.help__btn > img {
+  width: 100%;
+}
+/* end HELP */
+
+/* CHAT OPTION */
+.chat-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 52px;
+  bottom: 67px;
+  z-index: 99;
+}
+.chat-option > * {
+  cursor: pointer;
+}
+.chat-option__item {
+  margin-bottom: 24px;
+}
+/* end CHAT OPTION */
 
 /* WHAT WE DO */
 .whatwedo {

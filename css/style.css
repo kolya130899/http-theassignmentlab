@@ -538,6 +538,50 @@ input[type="checkbox"]:checked + label:before {
 }
 /* end SAVINGS */
 
+/* HOW IT WORKS */
+.howitworks {
+  padding: 100px 10px 0;
+}
+.howitworks-wrapper > h2 {
+  margin: 0;
+}
+.howitworks-wrapper > h4 {
+  font-family: Muli;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #677294;
+  margin: 16px 0;
+}
+.howitworks__container {
+  max-width: 1224px;
+  margin: 48px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.howitworks__container > svg {
+  position: absolute;
+}
+.howitworks__container--item {
+  width: 224px;
+  padding: 16px 8px;
+  text-align: center;
+  margin: 0 8px;
+}
+.howitworks__container--item > img {
+  width: 56px;
+  height: 56px;
+}
+.howitworks__container--item > p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+/* end HOW IT WORKS */
+
 /* WHAT WE DO */
 .whatwedo {
   background: #fbfbfd;
@@ -1108,7 +1152,8 @@ input[type="checkbox"]:checked + label:before {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1270px) {
-  .steps__container > svg {
+  .steps__container > svg,
+  .howitworks__container > svg {
     display: none;
   }
   .discount__girl {

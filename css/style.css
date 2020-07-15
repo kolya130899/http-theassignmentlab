@@ -52,7 +52,7 @@
   line-height: 24px;
   color: #020202;
 }
-.header__navbar > a:hover:not(:first-child) {
+.header__navbar > a:hover:not(.services-active) {
   color: #ef8880;
 }
 .header__navbar--dropdown > a,
@@ -112,6 +112,10 @@
 .services-hero > img {
   bottom: 38%;
 }
+.prices-hero > img {
+  right: 30%;
+  bottom: 24%;
+}
 .hero__left {
   max-width: 600px;
 }
@@ -123,18 +127,32 @@
 .services-title > h1 {
   margin-top: 80px;
 }
+.descriptor__guarantees,
 .hero__left > p {
   font-family: Muli;
 }
+.descriptor__guarantees,
 .hero__left--descriptor {
   line-height: 28px;
   color: #40434a;
+}
+.hero__left--descriptor {
   margin: 24px 0 60px;
 }
 .hero__left--descriptor > span {
   background: #d9f2fe;
   border-radius: 1px;
   color: #020202;
+}
+.descriptor__guarantees {
+  background: none !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.descriptor__guarantees > img {
+  max-width: 32px;
+  margin-right: 16px;
 }
 .hero__left--btn-block > p {
   width: 170px;
@@ -148,7 +166,7 @@
 .hero__form {
   box-sizing: border-box;
   max-width: 416px;
-  max-height: 580px;
+  min-height: 580px;
   padding: 32px 48px;
   background: #ffffff;
   box-shadow: 0px 16px 64px rgba(11, 17, 47, 0.08);
@@ -158,6 +176,40 @@
   position: relative;
   z-index: 10;
 }
+
+/* PRICES PAGE FORM */
+.prices__form {
+  max-width: 496px;
+  min-height: 688px;
+  text-align: left;
+  margin-left: 10px;
+}
+.prices__form > h3 {
+  margin: 0 0 16px !important;
+}
+.prices__form > button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 16px 0 32px;
+}
+.prices__form--item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.prices__form--item > img {
+  margin-right: 16px;
+}
+.prices__form--item span {
+  font-family: Muli;
+  line-height: 28px;
+  color: #40434a;
+}
+.bold {
+  font-weight: 700;
+}
+/* end PRICES PAGE FORM */
 .hero__form > h3 {
   font-weight: 700;
   font-size: 20px;
@@ -335,6 +387,69 @@ input[type="checkbox"]:checked + label:before {
   margin-bottom: 24px;
 }
 /* end CHAT OPTION */
+
+/* PRICING TABLE */
+.pricing__category {
+  max-width: 324px;
+  margin: 0 auto;
+  background: #fbfbfd;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px;
+}
+.pricing__category--item {
+  width: 154px;
+
+  border-radius: 22px;
+  text-align: center;
+  padding: 8px 24px;
+  cursor: pointer;
+}
+#active-category {
+  background: #ef8880;
+  box-shadow: 0px 4px 8px rgba(185, 45, 45, 0.12);
+  border-radius: 22px;
+}
+#active-category > span {
+  color: #ffffff;
+}
+.pricing__category--item > span {
+  font-weight: bold;
+  line-height: 24px;
+  color: #677294;
+}
+.pricing__currency {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pricing__currency--item {
+  font-family: Muli;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #677294;
+  border: 2px solid #efefef;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.pricing__currency--item:not(:last-child) {
+  margin-right: 16px;
+}
+#active-currency {
+  border-color: #ef8880;
+  color: #ef8880;
+}
+/* end PRICING TABLE */
 
 /* WHAT WE DO */
 .whatwedo {

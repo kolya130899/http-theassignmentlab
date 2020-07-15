@@ -6,6 +6,11 @@
     <meta name="format-detection" content="telephone=no" />
     <title>theassignmentlab</title>
     <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
     <link
@@ -39,7 +44,7 @@
         </a>
 
         <nav class="header__navbar">
-          <a href="./" class="services-active">Writing Services</a>
+          <a href="../services/" id="services">Writing Services</a>
           <!-- <nav class="services-nav">
               <a href="#">Essay Writing Help</a>
               <a href="#">Online Course</a>
@@ -47,7 +52,7 @@
               <a href="#">Assignment</a>
             </nav> -->
 
-          <a href="../prices/">Prices</a>
+          <a href="./" class="services-active">Prices</a>
           <a href="#">Blog</a>
           <a href="#">FAQ</a>
           <a href="#">Live Chat</a>
@@ -58,83 +63,89 @@
     </header>
 
     <!-- HERO -->
-    <section class="hero services-hero">
+    <section class="hero prices-hero">
       <img src="../img/pattern.png" alt="" />
 
       <div class="hero-wrapper">
         <div class="hero__left services-title">
           <h1 class="">
-            Take care of your<br class="br-450" />
-            assignments today!
+            Know exactly<br class="br-450" />
+            what you are paying for
           </h1>
           <p class="hero__left--descriptor">
-            <span>Theassignmentlab</span> is your gateway to a full scope
-            academic assistance: from writing an essay draft or outline to
-            proofreading and formatting your paper, checking it for plagiarism.
+            Have a look at our prices below. You can easily switch between
+            different currencies and types of services to find exact prices for
+            the service you need.
             <br /><br />
-            Getting your order completed and delivered on time is our top
-            priority. When placing an order with Assignment-Partner.com, you can
-            be sure that we will produce a custom draft paper with full respect
-            and attention to all your requirements. You can rely on our prompt
-            academic assistance even with the most urgent tasks.
+            We are keen to provide you a great value for the service you
+            purchase. Therefore we promise you:
             <br /><br />
-            Every client is unique and every assignment is original and
-            authentic. We are keen to help you boost your academic skills to a
-            new level.
-            <br /><br />
-            We have experts covering over 240 different subjects to ensure that
-            we have a relevant person to help you, no matter what the field of
-            your research is.
-            <br /><br />
-            Before you place your order with us, we check and confirm whether we
-            have a relevant vacant expert able to fulfill your assignment in
-            time.
-            <br /><br />
-            We use our own state-of-the-art matching system to give your
-            assignment to the most suitable expert.
-            <br /><br />
-            Full confidentiality is guaranteed – the personal information
-            provided by you with the order is kept safe and secure with us.
+            <span class="descriptor__guarantees">
+              <img src="../img/Subtract.png" alt="" />
+              No hidden charges - you pay exactly what you see in the quote
+            </span>
+            <br />
+            <span class="descriptor__guarantees">
+              <img src="../img/Subtract.png" alt="" />
+              Average of 300 words per page - about 10% more than what our
+              competitors offer
+            </span>
+            <br />
+            <span class="descriptor__guarantees">
+              <img src="../img/Subtract.png" alt="" />
+              100% money back guarantee
+            </span>
           </p>
-          <div class="hero__left--btn-block">
+          <!-- <div class="hero__left--btn-block">
             <a href="#" class="page-btn">Write My Paper</a><br />
             <p>You won’t be charget yet</p>
-          </div>
+          </div> -->
         </div>
         <!-- HERO FORM -->
-        <form action="" method="" class="hero__form">
-          <h3>Check Prices</h3>
+        <form action="" method="" class="hero__form prices__form">
+          <h3>How you will benefit using academic paper writing service</h3>
+          <p class="prices__form--item">
+            <img src="../img/number1.png" alt="" />
+            <span>Save your time</span>
+          </p>
+          <p class="prices__form--item">
+            <img src="../img/number2.png" alt="" />
+            <span>Save your subject</span>
+          </p>
+          <p class="prices__form--item">
+            <img src="../img/number3.png" alt="" />
+            <span>Get help with the research</span>
+          </p>
 
-          <div class="hero__form--item" id="1">
-            <label for="service">Type of Service</label>
-            <select name="" id="service">
-              <option value="">Eassy</option>
-            </select>
-          </div>
+          <h3>How you will benefit using academic paper writing service</h3>
+          <p class="prices__form--item">
+            <img src="../img/number1.png" alt="" />
+            <span
+              >Professional
+              <span class="bold">writers with Master and PhD</span>
+              degrees</span
+            >
+          </p>
+          <p class="prices__form--item">
+            <img src="../img/number2.png" alt="" />
+            <span
+              ><span class="bold">15% OFF any paper</span> for new customers;
+              flexible discounts for returning customer</span
+            >
+          </p>
+          <p class="prices__form--item">
+            <img src="../img/number3.png" alt="" />
+            <span
+              ><span class="bold">FREE</span> amendments, formatting, title and
+              reference page</span
+            >
+          </p>
+          <p class="prices__form--item">
+            <img src="../img/number4.png" alt="" />
+            <span><span class="bold">3-hr service</span> is available</span>
+          </p>
 
-          <div class="hero__form--item" id="2">
-            <label for="pages">Pages</label>
-            <select name="" id="pages">
-              <option value="">1 page / 300 words</option>
-            </select>
-          </div>
-
-          <div class="hero__form--item" id="3">
-            <label for="urgency">Urgency</label>
-            <select name="" id="urgency">
-              <option value="">10 days</option>
-            </select>
-          </div>
-
-          <div class="hero__form--checkbox">
-            <input type="checkbox" id="custom" />
-            <label for="custom"></label>
-            <span>I’m a new costumer (15% off)</span>
-          </div>
-
-          <p class="hero__form--total">Total: $12.39</p>
-
-          <button type="submit">Continue</button>
+          <button type="submit">Order Now!</button>
         </form>
       </div>
     </section>
@@ -173,89 +184,130 @@
       </div>
     </section>
 
-    <!-- WHAT WE DO -->
-    <section class="whatwedo">
-      <div class="whatwedo-wrapper">
-        <h2 class="block-title mb">What We Do</h2>
-        <div class="whatwedo__cells">
-          <!-- ITEM 1 -->
-          <div class="whatwedo__cells--item">
-            <div class="item__img red-bg">
-              <img src="../img/icon.png" alt="" />
-            </div>
-            <h3>Essays</h3>
-            <p>Get urgent help with a smooth draft for&nbsp;your&nbsp;essay</p>
+    <!-- PRICING TABLE -->
+    <section class="pricing">
+      <div class="pricing-wrapper">
+        <div class="pricing__category">
+          <div class="pricing__category--item writing" id="active-category">
+            <span>Writing (draft)</span>
           </div>
-
-          <!-- ITEM 2 -->
-          <div class="whatwedo__cells--item">
-            <div class="item__img blue-bg">
-              <img src="../img/ic_research.png" alt="" />
-            </div>
-            <h3>Research Papers</h3>
-            <p>Order a professional outline for&nbsp;your&nbsp;research</p>
-          </div>
-
-          <!-- ITEM 3 -->
-          <div class="whatwedo__cells--item">
-            <div class="item__img green-bg">
-              <img src="../img/ic_presentation.png" alt="" />
-            </div>
-            <h3>Presentations</h3>
-            <p>
-              We can help to create a nice PowerPoint presentation based on
-              your&nbsp;research
-            </p>
-          </div>
-
-          <!-- ITEM 4 -->
-          <div class="whatwedo__cells--item">
-            <div class="item__img black-bg">
-              <img src="../img/ic_cv.png" alt="" />
-            </div>
-            <h3>Professional CV</h3>
-            <p>
-              Have an outstanding CV prepared in&nbsp;just&nbsp;1&nbsp;day
-            </p>
-          </div>
-
-          <!-- ITEM 5 -->
-          <div class="whatwedo__cells--item">
-            <div class="item__img orange-bg">
-              <img src="../img/Frame.png" alt="" />
-            </div>
-            <h3>Exams</h3>
-            <p>
-              Get urgent help with a smooth draft for&nbsp;your&nbsp;exams
-            </p>
+          <div class="pricing__category--item editing">
+            <span>Editing</span>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- DISCOUNT -->
-    <section class="discount">
-      <div class="discount-wrapper">
-        <div class="discount__left">
-          <h3>First time here?</h3>
-          <p>
-            You’ll get a high-quality service, that’s for sure.<br
-              class="br-700"
-            />
-            To welcome you, we give you a 15% discount on your first order!
+        <div class="pricing__currency">
+          <p class="pricing__currency--item" id="active-currency">
+            USD
+          </p>
+          <p class="pricing__currency--item">
+            GPB
+          </p>
+          <p class="pricing__currency--item">
+            AUD
+          </p>
+          <p class="pricing__currency--item">
+            EUR
+          </p>
+          <p class="pricing__currency--item">
+            CAD
           </p>
         </div>
-        <div class="discount__right">
-          <img src="../img/off.png" alt="" />
-          <div class="discount__right--use-discount">
-            <span>Use 15% Discount Now!</span>
-          </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <h3>What clients say&nbsp;about Theassignmentlab</h3>
+      <h5>For security reasons we provide random client numbers here</h5>
+      <div class="testimonials__slider">
+        <!-- SLIDE 1 -->
+        <div class="testimonials__slider--slide">
+          <h4>Customer #4783:</h4>
+          <img src="../img/quotes.png" alt="" />
+          <p>
+            I am <span>very grateful</span> that my
+            <span>assignment was done</span> so professionally. I will surely
+            request your service for all my assignments.
+          </p>
         </div>
-        <div class="discount__girl">
-          <img src="../img/girl.png" alt="" />
+        <!-- SLIDE 2 -->
+        <div class="testimonials__slider--slide">
+          <h4>Customer #5413:</h4>
+          <img src="../img/quotes.png" alt="" />
+          <p>
+            I am <span>very happy</span> with your service!
+            <span> received the best grade</span> for the assignment!
+          </p>
+        </div>
+        <!-- SLIDE 3 -->
+        <div class="testimonials__slider--slide">
+          <h4>Customer #5720:</h4>
+          <img src="../img/quotes.png" alt="" />
+          <p>
+            I was stuck and I didn’t know what to do before I requested your
+            service. <span>I really appreciate</span> that you helped me get a
+            <span>very good grade!</span>
+          </p>
+        </div>
+        <!-- SLIDE 4 -->
+        <div class="testimonials__slider--slide">
+          <h4>Customer #4783:</h4>
+          <img src="../img/quotes.png" alt="" />
+          <p>
+            I am very grateful that my assignment was done so professionally. I
+            will surely request your service for all my assignments.
+          </p>
+        </div>
+        <!-- SLIDE 5 -->
+        <div class="testimonials__slider--slide">
+          <h4>Customer #4783:</h4>
+          <img src="../img/quotes.png" alt="" />
+          <p>
+            I am very grateful that my assignment was done so professionally. I
+            will surely request your service for all my assignments.
+          </p>
+        </div>
+        <!-- SLIDE 6 -->
+        <div class="testimonials__slider--slide">
+          <h4>Customer #4783:</h4>
+          <img src="../img/quotes.png" alt="" />
+          <p>
+            I am very grateful that my assignment was done so professionally. I
+            will surely request your service for all my assignments.
+          </p>
+        </div>
+        <!-- SLIDE 7 -->
+        <div class="testimonials__slider--slide">
+          <h4>Customer #4783:</h4>
+          <img src="../img/quotes.png" alt="" />
+          <p>
+            I am <span>very grateful</span> that my
+            <span>assignment was done</span> so professionally. I will surely
+            request your service for all my assignments.
+          </p>
+        </div>
+        <!-- SLIDE 8 -->
+        <div class="testimonials__slider--slide">
+          <h4>Customer #5413:</h4>
+          <img src="../img/quotes.png" alt="" />
+          <p>
+            I am <span>very happy</span> with your service!
+            <span> received the best grade</span> for the assignment!
+          </p>
+        </div>
+        <!-- SLIDE 9 -->
+        <div class="testimonials__slider--slide">
+          <h4>Customer #5720:</h4>
+          <img src="../img/quotes.png" alt="" />
+          <p>
+            I was stuck and I didn’t know what to do before I requested your
+            service. <span>I really appreciate</span> that you helped me get a
+            <span>very good grade!</span>
+          </p>
         </div>
       </div>
     </section>
+
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-wrapper">
@@ -265,8 +317,8 @@
               <img src="../img/theassignmentlab.png" alt="" />
             </div>
             <nav class="footer__left--navbar">
-              <a href="./">Services</a>
-              <a href="../prices/">Prices</a>
+              <a href="../services/">Services</a>
+              <a href="./">Prices</a>
               <a href="#">Blog</a>
               <a href="#">FAQ</a>
             </nav>
@@ -307,8 +359,13 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
     <script src="../js/main.js"></script>
+    <script src="prices.js"></script>
     <script>
       // FONTS LOADER
       $(document).ready(function () {

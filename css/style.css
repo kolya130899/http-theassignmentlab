@@ -200,6 +200,8 @@
 }
 .prices__form--item > img {
   margin-right: 16px;
+  width: 32px;
+  height: 32px;
 }
 .prices__form--item span {
   font-family: Muli;

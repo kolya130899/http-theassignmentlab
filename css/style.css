@@ -449,6 +449,38 @@ input[type="checkbox"]:checked + label:before {
   border-color: #ef8880;
   color: #ef8880;
 }
+.priscing__table {
+  padding: 0 10px;
+}
+.pricing__table--wrapper {
+  max-width: 800px;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: 0 auto;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  box-sizing: content-box;
+}
+.priscing__table--heading,
+.priscing__table--row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.priscing__table--row > p,
+.priscing__table--heading > p {
+  min-width: 160px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+  padding: 18px 0;
+}
+.priscing__table--row > p {
+  font-family: Muli;
+  font-size: 16px;
+}
 /* end PRICING TABLE */
 
 /* WHAT WE DO */

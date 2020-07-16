@@ -166,7 +166,7 @@
 .hero__form {
   box-sizing: border-box;
   max-width: 416px;
-  min-height: 580px;
+  max-height: 580px;
   padding: 32px 48px;
   background: #ffffff;
   box-shadow: 0px 16px 64px rgba(11, 17, 47, 0.08);
@@ -181,6 +181,7 @@
 .prices__form {
   max-width: 496px;
   min-height: 688px;
+  max-height: 1000px;
   text-align: left;
   margin-left: 10px;
 }
@@ -1240,6 +1241,9 @@ input[type="checkbox"]:checked + label:before {
     flex-direction: column;
     align-items: center;
   }
+  .top-row {
+    margin-bottom: 80px;
+  }
 }
 @media screen and (max-width: 645px) {
   .br-645 {
@@ -1265,17 +1269,30 @@ input[type="checkbox"]:checked + label:before {
   .hero__left > h1 {
     font-size: 40px;
     line-height: 50px;
+    margin: 80px 0 0;
   }
   .pricing__category--item {
     padding: 8px 14px;
   }
-
+  .hero__form {
+    padding: 32px 22px;
+  }
+  .hero__form > button {
+    padding: 12px 32px;
+  }
+  .whatwedo-wrapper {
+    padding: 80px 0 0;
+  }
   @supports (-webkit-hyphens: none) {
     .pricing__category--item > span {
       font-size: 16px;
     }
+    .hero__form--checkbox > span {
+      font-size: 14px;
+    }
   }
 }
+
 @media screen and (max-width: 350px) {
   .help__chat {
     padding: 10px 5px;

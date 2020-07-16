@@ -39,8 +39,13 @@ let selectItems = document.querySelectorAll(".form__select");
 
 selectItems.forEach((item) => {
   item.addEventListener("click", function (e) {
-    // ROTATE ARROW
+    //REMOVE INPUT PLACEHOLDER
+    if (e.target.type) {
+      $("input[type=date]").removeClass("placeholderclass");
+      $("input[type=date]").addClass("onfocus");
+    }
     if (e.target.id && !$("#" + e.target.id + " > img").attr("style")) {
+      // ROTATE ARROW
       $("#" + e.target.id + " > img").css("transform", "rotate(180deg)");
     } else if (e.target.id && $("#" + e.target.id + " > img")) {
       $("#" + e.target.id + " > img").removeAttr("style");
@@ -51,6 +56,7 @@ selectItems.forEach((item) => {
       if (this.id !== "deadline-select") {
         $("#" + this.id + "-order").text(chosenText);
       } else {
+        // $("input[type=date]").removeClass("onfocus");
         $("input[type=date]").focusout(function () {
           $("#deadline-select-order").text($("input[type=date]")[0].value);
         });

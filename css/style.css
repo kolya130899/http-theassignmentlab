@@ -564,7 +564,7 @@ input[type="date"].placeholderclass::before {
   content: attr(placeholder);
 }
 
-input[type="date"].placeholderclass:focus::before {
+input[type="date"].onfocus::before {
   display: none;
 }
 .next-step-btn {

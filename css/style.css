@@ -409,6 +409,13 @@ input[type="checkbox"]:checked + label:before {
 /* end CHAT OPTION */
 
 /* ORDER FORM */
+.order-form {
+  padding: 80px 0 120px;
+}
+.order-form-wrapper {
+  max-width: 1224px;
+  margin: 0 auto;
+}
 .order-form__left {
   padding: 0 10px;
 }
@@ -527,7 +534,8 @@ input[type="checkbox"]:checked + label:before {
   line-height: 20px;
 }
 .form__select > input[type="date"] {
-  min-width: 100%;
+  min-width: 95%;
+  min-height: 50px;
   background: #fbfbfd;
   border: 1px solid #efefef;
   box-sizing: border-box;

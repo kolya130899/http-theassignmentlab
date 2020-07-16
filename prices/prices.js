@@ -149,6 +149,8 @@ window.onload = function () {
         );
       }
     }
+    //color odd rows
+    $(".priscing__table--row:nth-child(2n) > p").css("background", "#FBFBFD");
   });
 
   // select all currency buttons
@@ -182,5 +184,6 @@ window.onload = function () {
     );
   }
 
+  //color odd rows
   $(".priscing__table--row:nth-child(2n) > p").css("background", "#FBFBFD");
 };

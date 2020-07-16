@@ -527,7 +527,7 @@ input[type="checkbox"]:checked + label:before {
   line-height: 20px;
 }
 .form__select > input[type="date"] {
-  width: 100%;
+  min-width: 100%;
   background: #fbfbfd;
   border: 1px solid #efefef;
   box-sizing: border-box;

@@ -1,39 +1,10 @@
-// SLICK CAROUSEL
-$(document).ready(function () {
-  $(".testimonials__slider").slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 816,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          dots: true,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+// DROPDOWN ARROW ANIMATION
+let selects = document.querySelectorAll(".hero__form--item");
+selects.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.target.parentElement.classList.toggle("rotated");
   });
 });
-
-// DROPDOWN ARROW ANIMATION
-var selects = document.getElementsByClassName(".hero__form--item");
-var form = document.addEventListener("click", (e) => {
-  e.target.parentElement.classList.toggle("rotated");
-});
-
 //CLOSE HELP TAB
 $(".help__chat--close").click(function () {
   $(".help__chat").hide();

@@ -248,6 +248,15 @@
   font-family: Muli;
   line-height: 28px;
 }
+.hero__form--item > select > option {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 50px;
+  color: #020202;
+  padding: 14px 0;
+}
 .hero__form--item::after {
   content: "";
   position: absolute;
@@ -301,7 +310,8 @@ input[type="checkbox"]:checked + label:before {
   line-height: 28px;
   margin: 35px 0;
 }
-.hero__form > button {
+.hero__form > button,
+.order-prices-link {
   background: #16c17f;
   border-radius: 24px;
   border: none;
@@ -310,6 +320,13 @@ input[type="checkbox"]:checked + label:before {
   line-height: 24px;
   color: #ffffff;
   cursor: pointer;
+}
+.order-prices-link {
+  text-decoration: none;
+}
+.order-prices-link-wrapper {
+  text-align: center;
+  margin: 48px 0 0;
 }
 /* end HERO */
 /* HELP */
@@ -390,6 +407,159 @@ input[type="checkbox"]:checked + label:before {
   margin-bottom: 24px;
 }
 /* end CHAT OPTION */
+
+/* ORDER FORM */
+.order-form__left {
+  padding: 0 10px;
+}
+.order-form__left--form {
+  max-width: 600px;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.order-form__left > h3 {
+  font-size: 28px;
+  line-height: 40px;
+}
+.order-form__heading {
+  background: #fbfbfd;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+}
+.order-form__heading--tab {
+  width: 33.3%;
+}
+.order-form__heading--tab > p {
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #677294;
+  margin: 0;
+}
+#active__tab > p {
+  color: #020202;
+}
+#active__tab > div {
+  width: 100%;
+  height: 4px;
+  background: #ef8880;
+  box-shadow: 0px 4px 8px rgba(185, 45, 45, 0.12);
+}
+.order-form__body {
+  padding: 20px 38px;
+}
+
+.form__select {
+  position: relative;
+}
+.form__select--heading {
+  font-family: Muli;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #677294;
+  margin: 0 0 8px;
+}
+.form__select-input {
+  background: #fbfbfd;
+  margin-bottom: 24px;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 24px 10px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.form__select-input > p {
+  font-family: Muli;
+  line-height: 28px;
+  color: #677294;
+  margin: 0;
+}
+.form__select-input > img {
+  width: 10px;
+  height: 5px;
+  transition: 1s;
+}
+.form__select-input--menu {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #efefef;
+  box-shadow: 0px 8px 8px rgba(11, 17, 47, 0.08);
+  border-radius: 4px;
+  padding: 8px 0;
+  max-height: 256px;
+  overflow-y: auto;
+  position: absolute;
+  top: 82px;
+  z-index: 10;
+}
+.form__select-input--menu::-webkit-scrollbar {
+  width: 20px;
+  max-height: 96px;
+}
+.form__select-input--menu::-webkit-scrollbar-thumb {
+  border: 8px solid rgba(0, 0, 0, 0);
+  background: #efefef;
+  background-clip: padding-box;
+}
+.form__select-input--menu::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.form__select-input--menu::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+.form__select-input--menu > p {
+  margin: 0;
+  padding: 14px 48px;
+  box-sizing: border-box;
+  font-family: Muli;
+  font-size: 14px;
+  line-height: 20px;
+}
+.form__select > input[type="date"] {
+  width: 100%;
+  background: #fbfbfd;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 16px;
+  margin-bottom: 44px;
+  color: #677294;
+  appearance: none;
+}
+.form__select > input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url("../img/ic_calendar.png") no-repeat;
+  width: 24px;
+  height: 24px;
+  border-width: thin;
+}
+input[type="date"].placeholderclass::before {
+  width: 100%;
+  content: attr(placeholder);
+}
+
+input[type="date"].placeholderclass:hover::before {
+  /* width: 0%;
+  content: ""; */
+  display: none;
+}
+.next-step-btn {
+  text-align: right;
+}
+/* end ORDER FORM */
 
 /* PRICING TABLE */
 .pricing {
@@ -1151,6 +1321,10 @@ input[type="checkbox"]:checked + label:before {
 }
 /* end FOOTER */
 
+.show-br-450 {
+  display: none;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1270px) {
   .steps__container > svg,
@@ -1253,6 +1427,12 @@ input[type="checkbox"]:checked + label:before {
 @media screen and (max-width: 450px) {
   .br-450 {
     display: none;
+  }
+  .show-br-450 {
+    display: block;
+  }
+  .order-form__body {
+    padding: 20px 10px;
   }
   .chat-option,
   .help {

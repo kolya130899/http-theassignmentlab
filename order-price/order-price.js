@@ -15,11 +15,22 @@ let menuItem = document.querySelectorAll(".form__select-input--menu > p");
 menuItem.forEach((item) => {
   item.addEventListener("mouseover", (e) => {
     e.target.setAttribute("style", "background: #FBFBFD;");
+    e.target.setAttribute("class", "active-menu-item");
   });
   item.addEventListener("mouseout", (e) => {
     e.target.setAttribute("style", "background: #FFF;");
+    e.target.removeAttribute("class");
   });
 });
+window.onload = function () {
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, "0");
+  var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+  var yyyy = today.getFullYear();
+
+  today = yyyy + "-" + mm + "-" + dd;
+  $("input[type=date]")[0].value = today;
+};
 
 //HIDE DROPDOWN
 $(".form__select-input--menu").hide();
@@ -36,6 +47,15 @@ selectItems.forEach((item) => {
     } else {
       // PUT DROPDOWN CHOSE TEXT TO INPUT
       let chosenText = e.target.textContent;
+
+      if (this.id !== "deadline-select") {
+        $("#" + this.id + "-order").text(chosenText);
+      } else {
+        $("input[type=date]").focusout(function () {
+          $("#deadline-select-order").text($("input[type=date]")[0].value);
+        });
+      }
+
       $("#" + this.id + " > div:nth-child(2) > p").text(chosenText);
       $("#" + this.id + " > div:nth-child(2) > p").css("color", "#020202");
       $("#" + this.id + "-item > img").removeAttr("style");

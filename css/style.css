@@ -547,6 +547,9 @@ input[type="checkbox"]:checked + label:before {
   -moz-appearance: none;
   appearance: none;
   -webkit-box-sizing: border-box;
+
+  font-family: Muli;
+  line-height: 28px;
 }
 .form__select > input[type="date"]::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);

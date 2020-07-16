@@ -534,16 +534,19 @@ input[type="checkbox"]:checked + label:before {
   line-height: 20px;
 }
 .form__select > input[type="date"] {
-  min-width: 95%;
-  min-height: 70px;
+  min-width: 100%;
+  min-height: 50px;
   background: #fbfbfd;
   border: 1px solid #efefef;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 10px 16px;
+  padding: 0 16px;
   margin-bottom: 44px;
   color: #677294;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
+  -webkit-box-sizing: border-box;
 }
 .form__select > input[type="date"]::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);

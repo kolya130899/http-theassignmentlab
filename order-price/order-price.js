@@ -18,19 +18,6 @@ nextBtn.forEach((item) => {
   });
 });
 
-// orderPriceTab.forEach((item) => {
-//   item.addEventListener("click", (e) => {
-//     if (!item.hasAttribute("id")) {
-//       document.querySelector("#active-tab").removeAttribute("id");
-//       $(".active-form").removeClass("active-form").addClass("not-active-form");
-//       item.setAttribute("id", "active-tab");
-//       console.log(item.classList[1]);
-//       $("#" + item.classList[1]).removeClass("not-active-form");
-//       $("#" + item.classList[1]).addClass("active-form");
-//     }
-//   });
-// });
-
 //CHANGE DROPDOWN ITEM BACKGROUND ON HOVER
 let menuItem = document.querySelectorAll(".form__select-input--menu > p");
 
@@ -69,22 +56,17 @@ selectItems.forEach((item) => {
       if (this.id !== "deadline-select") {
         $("#" + this.id + "-order").text(chosenText);
       } else {
-        // var today = new Date();
-        // var dd = String(today.getDate()).padStart(2, "0");
-        // var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
-        // var yyyy = today.getFullYear();
-
-        // today = yyyy + "-" + mm + "-" + dd;
-        // $("input[type=date]")[0].value = today;
         $("input[type=date]").focusout(function () {
           $("#deadline-select-order").text($("input[type=date]")[0].value);
         });
       }
 
-      $("#" + this.id + " > div:nth-child(2) > p").text(chosenText);
-      $("#" + this.id + " > div:nth-child(2) > p").css("color", "#020202");
-      $("#" + this.id + "-item > img").removeAttr("style");
-      $("#" + this.id + "-item-menu").slideToggle(700);
+      if (this.id) {
+        $("#" + this.id + " > div:nth-child(2) > p").text(chosenText);
+        $("#" + this.id + " > div:nth-child(2) > p").css("color", "#020202");
+        $("#" + this.id + "-item > img").removeAttr("style");
+        $("#" + this.id + "-item-menu").slideToggle(700);
+      }
     }
 
     // SLIDE DROPDOWN
@@ -95,4 +77,15 @@ selectItems.forEach((item) => {
 // SELECT FILE
 $("#custom-file").change(function () {
   $("#custom-input-file").text(this.files[0].name);
+});
+
+// SHOW PASSWORD
+$(".show-pass").click(function () {
+  let passwordInput = document.querySelector(".password");
+
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+  } else {
+    passwordInput.type = "password";
+  }
 });

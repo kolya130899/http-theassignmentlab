@@ -575,6 +575,21 @@ input[type="text"],
   line-height: 28px;
   color: #677294;
 }
+.form__select-input {
+  font-family: Muli;
+  line-height: 28px;
+  color: #677294;
+}
+.form__select-input.password {
+  position: relative;
+}
+.password + img {
+  position: absolute;
+  z-index: 10;
+  top: 60%;
+  /* transform: translateY(-50%); */
+  right: 5%;
+}
 textarea {
   resize: none;
   cursor: default;

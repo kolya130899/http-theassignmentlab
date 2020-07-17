@@ -89,3 +89,18 @@ $(".show-pass").click(function () {
     passwordInput.type = "password";
   }
 });
+
+$(".login").hide();
+// LOGIN OR SIGN UP FORM
+$("#sign-up").click(function () {
+  if ($(this).is(":checked")) {
+    $(".login").hide();
+    $(".sign-up").show();
+  }
+});
+$("#login").click(function () {
+  if ($(this).is(":checked")) {
+    $(".sign-up").hide();
+    $(".login").show();
+  }
+});

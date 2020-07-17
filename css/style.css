@@ -580,15 +580,49 @@ input[type="text"],
   line-height: 28px;
   color: #677294;
 }
+.login-password,
 .form__select-input.password {
   position: relative;
 }
+.login-password + img,
 .password + img {
   position: absolute;
   z-index: 10;
   top: 60%;
-  /* transform: translateY(-50%); */
   right: 5%;
+}
+.iti {
+  width: 100%;
+}
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent !important;
+}
+.iti__selected-flag {
+  padding: 0 16px !important;
+}
+.agreement {
+  margin-bottom: 44px;
+}
+.agreement-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.agreement-item > p {
+  font-family: Muli;
+  font-size: 12px;
+  line-height: 16px;
+  color: #677294;
+}
+.agreement-item > p > a {
+  color: blue;
+  font-family: Muli;
+  font-size: 12px;
+  line-height: 16px;
+}
+.login-btn,
+.create-acc-btn {
+  text-align: right;
 }
 textarea {
   resize: none;

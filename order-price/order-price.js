@@ -104,3 +104,11 @@ $("#login").click(function () {
     $(".login").show();
   }
 });
+
+$(".account-info").hide();
+$("#login-btn-item").click(function () {
+  $(".login").hide();
+  $(".customer-type").hide();
+  $(".continuing-options").hide();
+  $(".account-info").show();
+});

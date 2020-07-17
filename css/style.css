@@ -624,6 +624,21 @@ input[type="text"],
 .create-acc-btn {
   text-align: right;
 }
+.account-info-wrapper {
+  border-bottom: 1px solid #efefef;
+}
+.account-info__text {
+  font-family: Muli;
+  line-height: 28px;
+  margin: 0;
+}
+.account-info > p {
+  font-family: Muli;
+  line-height: 28px;
+  color: #677294;
+  margin: 32px 0 0;
+  text-align: center;
+}
 textarea {
   resize: none;
   cursor: default;

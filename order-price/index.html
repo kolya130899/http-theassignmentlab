@@ -104,21 +104,26 @@
           <div class="order-form__left--form">
             <!-- FORM HEADING -->
             <div class="order-form__heading">
-              <div class="order-form__heading--tab" id="active__tab">
+              <div
+                class="order-form__heading--tab price-calculation active-tab1"
+                id="active-tab"
+              >
                 <p>
                   Price<br class="show-br-450" />
                   Calculation
                 </p>
                 <div class="tab-border"></div>
               </div>
-              <div class="order-form__heading--tab">
+              <div
+                class="order-form__heading--tab project-details active-tab11"
+              >
                 <p>
                   Project<br class="show-br-450" />
                   Details
                 </p>
                 <div class="tab-border"></div>
               </div>
-              <div class="order-form__heading--tab">
+              <div class="order-form__heading--tab contact-info active-tab111">
                 <p>
                   Contact<br class="show-br-450" />
                   Info
@@ -128,7 +133,8 @@
             </div>
 
             <!-- FORM BODY -->
-            <div class="order-form__body">
+            <!-- PRICE CALCULATION FORM -->
+            <div class="order-form__body" id="price-calculation">
               <!-- SERVICE SELECT -->
               <div class="form__select" id="service-select">
                 <p class="form__select--heading">Type of Service</p>
@@ -237,6 +243,178 @@
               <!-- NEXT STEP BUTTON -->
               <div class="next-step-btn">
                 <a href="#" class="page-btn" id="next-btn">Next Step</a>
+              </div>
+            </div>
+
+            <!-- PROJECT DETAILS FORM -->
+            <div class="order-form__body not-active-form" id="project-details">
+              <!-- TYPE OF DOCUMENT SELECT -->
+              <div class="form__select" id="type-select">
+                <p class="form__select--heading">Type of Document</p>
+                <div class="form__select-input" id="type-select-item">
+                  <p>Select type of document</p>
+                  <img src="../img/arrow.png" alt="" />
+                </div>
+                <div
+                  class="form__select-input--menu"
+                  id="type-select-item-menu"
+                >
+                  <p>Paper / Essay</p>
+                  <p>Type of service 02</p>
+                  <p>Type of service 03</p>
+                  <p>Type of service 04</p>
+                  <p>Type of service 05</p>
+                  <p>Type of service 06</p>
+                </div>
+              </div>
+
+              <!-- TOPIC SELECT -->
+              <div class="form__select" id="topic-select">
+                <p class="form__select--heading">What is your topic?</p>
+                <div class="form__select-input" id="topic-select-item">
+                  <p>Write your answer</p>
+                  <img src="../img/arrow.png" alt="" />
+                </div>
+                <div
+                  class="form__select-input--menu"
+                  id="topic-select-item-menu"
+                >
+                  <p>Paper / Essay</p>
+                  <p>Type of service 02</p>
+                  <p>Type of service 03</p>
+                  <p>Type of service 04</p>
+                  <p>Type of service 05</p>
+                  <p>Type of service 06</p>
+                </div>
+              </div>
+
+              <!-- SITATION STYLE SELECT -->
+              <div class="form__select" id="sitation-select">
+                <p class="form__select--heading">Sitation style</p>
+                <div class="form__select-input" id="sitation-select-item">
+                  <p>Select sitation style</p>
+                  <img src="../img/arrow.png" alt="" />
+                </div>
+                <div
+                  class="form__select-input--menu"
+                  id="sitation-select-item-menu"
+                >
+                  <p>High School</p>
+                  <p>College</p>
+                  <p>Master</p>
+                  <p>PhD</p>
+                </div>
+              </div>
+
+              <!-- NAME OF SOURCES SELECT -->
+              <div class="form__select">
+                <p class="form__select--heading">Name of sources</p>
+                <input
+                  type="text"
+                  placeholder="e.g 3 Sources (1. Literary, 2. Peer Reviewed Academic Sources)"
+                  class="form__select-input"
+                />
+              </div>
+
+              <!-- TIMEZONE SELECT -->
+              <div class="form__select" id="description">
+                <p class="form__select--heading">Description</p>
+                <textarea
+                  name="description"
+                  id=""
+                  cols="30"
+                  rows="7"
+                  placeholder="Describe your task in detailor attach original file with Teacher’s instructions"
+                ></textarea>
+              </div>
+
+              <!-- DEADLINE SELECT -->
+              <div class="form__select" id="attached-file">
+                <p class="form__select--heading">Attach a file (optional)</p>
+                <label for="custom-file" id="custom-input-file"
+                  >Your file</label
+                >
+                <input type="file" id="custom-file" style="display: none;" />
+              </div>
+
+              <!-- NEXT STEP BUTTON -->
+              <div class="next-step-btn">
+                <a href="#" class="page-btn" id="next-btn">Next Step</a>
+              </div>
+
+              <!-- --- -->
+            </div>
+
+            <!-- CONTACT INFO FORM -->
+            <!-- not-active-form -->
+            <div class="order-form__body" id="contact-info">
+              <!-- RADIO BTNS -->
+              <div class="customer-type">
+                <div class="customer-type__container">
+                  <input type="radio" id="new" checked name="customer" />
+                  <label for="new" id="new-label"></label>
+                  <p>New customer</p>
+                </div>
+
+                <div class="customer-type__container">
+                  <input type="radio" id="returning" name="customer" />
+                  <label for="returning" id="returning-label"></label>
+                  <p>Returning customer</p>
+                </div>
+              </div>
+              <div class="continuing-options">
+                <a href="#" class="continuing-options__facebook">
+                  <img src="../img/ic_facebook.png" alt="" />
+                  <span>Continue with facebook</span>
+                </a>
+                <p>Or complete the fields below</p>
+              </div>
+              <!-- EMAIL SELECT -->
+              <div class="form__select">
+                <p class="form__select--heading">Email</p>
+                <input
+                  type="email"
+                  class="form__select-input"
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+
+              <!-- PASSWORD SELECT -->
+              <div class="form__select">
+                <p class="form__select--heading">Password</p>
+
+                <input
+                  type="password"
+                  class="form__select-input"
+                  placeholder="Create password"
+                />
+              </div>
+
+              <!-- NAME OF SOURCES SELECT -->
+              <div class="form__select">
+                <p class="form__select--heading">Name (optional)</p>
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  class="form__select-input"
+                />
+              </div>
+
+              <!-- DEADLINE SELECT -->
+              <div class="form__select" id="phone">
+                <p class="form__select--heading">Phone (optional)</p>
+                <!-- <label for="custom-file" id="custom-input-file"
+                  >Your file</label
+                >
+                <input type="file" id="custom-file" style="display: none;" /> -->
+              </div>
+
+              <!-- NEXT STEP BUTTON -->
+              <div class="create-acc-btn">
+                <a href="#" class="page-btn" id="creaete-acc"
+                  >Create Account & Login</a
+                >
               </div>
 
               <!-- --- -->

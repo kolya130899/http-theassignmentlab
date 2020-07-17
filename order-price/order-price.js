@@ -112,3 +112,10 @@ $("#login-btn-item").click(function () {
   $(".continuing-options").hide();
   $(".account-info").show();
 });
+
+$(".promocode-container").hide();
+
+$("#promocode").click(function () {
+  $("#promocode").hide();
+  $(".promocode-container").show();
+});

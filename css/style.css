@@ -37,11 +37,11 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 6px;
+  top: 4px;
 }
 
 .toggle-mnu > span:after {
-  top: 12px;
+  top: 8px;
 }
 
 .toggle-mnu > span {
@@ -138,10 +138,10 @@
   align-items: center;
   justify-content: space-between;
 }
-.header-wrapper > a {
+.header__logo {
   max-width: 203px;
 }
-.header-wrapper > a > svg {
+.header__logo img {
   width: 100%;
 }
 .header__navbar {

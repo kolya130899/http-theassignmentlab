@@ -69,7 +69,7 @@
 }
 
 .toggle-mnu.on span:after {
-  transform: rotate(-45deg) translate(4px, -5px);
+  transform: rotate(-45deg) translate(3px, -3px);
 }
 .mobile-menu {
   position: absolute;

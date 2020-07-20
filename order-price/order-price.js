@@ -70,7 +70,7 @@ selectItems.forEach((item) => {
     }
 
     // SLIDE DROPDOWN
-    $("#" + e.target.id + "-menu").slideToggle(1000);
+    $("#" + e.target.id + "-menu").slideToggle();
   });
 });
 

@@ -39,3 +39,21 @@ $(".header__navbar--dropdown").hover(
     $(".services-nav").hide();
   }
 );
+
+//MENU NAV TOGGLER
+
+$(".mobile-menu").hide();
+$(".toggle-mnu").click(function () {
+  $(".overlay").toggleClass("bg-opacity");
+  $("body").toggleClass("fixed");
+  $(this).toggleClass("on");
+  $(".mobile-menu").slideToggle();
+});
+
+// SUB MENU TOGGLER
+$(".mobile-sub-menu").hide();
+$(".mobile-menu__dropdown ").click(function () {
+  $(".mobile-sub-menu").slideToggle();
+  $(".mobile-menu__dropdown").toggleClass("rotated");
+  $(".mobile-menu__dropdown > a").toggleClass("orange-color");
+});

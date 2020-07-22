@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <title>theassignmentlab</title>
+
     <!--need to change favicon -->
     <link rel="icon" href="../img/thumbnail.png" />
 
     <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
     <link
@@ -34,7 +30,7 @@
               Writing Services
             </a>
             <nav class="mobile-sub-menu">
-              <a href="./">Essay Writing Help</a>
+              <a href="../essay-writing/">Essay Writing Help</a>
               <a href="../online-course/">Online Course</a>
               <a href="../exams/">Exams</a>
               <a href="../assignment/">Assignment</a>
@@ -42,7 +38,7 @@
           </div>
 
           <a href="../prices/">Prices</a>
-          <a href="../blog/">Blog</a>
+          <a href="./">Blog</a>
           <a href="../faq/">FAQ</a>
           <a href="#">Live Chat</a>
         </nav>
@@ -55,11 +51,9 @@
 
         <nav class="header__navbar desktop">
           <div class="header__navbar--dropdown">
-            <a href="../services/" id="services" class="services-active"
-              >Writing Services</a
-            >
+            <a href="../services/">Writing Services</a>
             <nav class="services-nav">
-              <a href="./">Essay Writing Help</a>
+              <a href="../essay-writing/">Essay Writing Help</a>
               <a href="../online-course/">Online Course</a>
               <a href="../exams/">Exams</a>
               <a href="../assignment/">Assignment</a>
@@ -67,7 +61,7 @@
           </div>
 
           <a href="../prices/">Prices</a>
-          <a href="../blog/">Blog</a>
+          <a href="./" class="services-active">Blog</a>
           <a href="../faq/">FAQ</a>
           <a href="#">Live Chat</a>
         </nav>
@@ -77,27 +71,104 @@
     </header>
 
     <div class="overlay">
-      <!-- HERO -->
-      <section class="hero essay-writing-hero">
-        <img src="../img/pattern.svg" alt="" />
-        <img src="../img/pattern.svg" alt="" />
-        <div class="essay-writing-hero__container">
-          <h1>Write My Essay</h1>
-          <h2>About Our Company</h2>
-          <p>
-            We are a team of dedicated professionals, who strongly believe in
-            the mission of the company - to boost your academic skills. All
-            writers have to prove their analytical and communication ability,
-            English language proficiency and to pass challenging interviews with
-            our senior consultants.
-          </p>
-          <h2>What included?</h2>
-          <p>
-            Some text about service. Different text for different services.
-            Beyond commitment and dedication, there is also a very strict
-            recruiting process for our expert writers, researchers and
-            proofreaders.
-          </p>
+      <!-- BLOG -->
+      <section class="blog">
+        <div class="blog-wrapper">
+          <div class="blog__navbar">
+            <span class="item-categories-tag" id="article-tag"
+              >article tag</span
+            >
+            <span class="item-categories-tag" id="essay-tag">essay</span>
+          </div>
+          <div class="blog__gallery">
+            <!--GALLERY ITEM 1 -->
+            <div class="blog__gallery--item" data-tags="article-tag">
+              <div class="item-img">
+                <img src="../img/article1.svg" alt="" />
+                <a href="../article1/">
+                  <div>
+                    Read Article
+                  </div>
+                </a>
+              </div>
+
+              <h3>Bla Bla Bla</h3>
+              <p>
+                Let it be Lorem for first time. Show only 3 rows of text. non
+                amet cmna. Feugiat adipiscing llentesque an non amet cm feugiat
+                mugiat adipiscin...
+              </p>
+              <div class="item-categories">
+                <span class="item-categories-tag">article tag</span>
+              </div>
+            </div>
+
+            <!--GALLERY ITEM 2 -->
+            <div class="blog__gallery--item" data-tags="article-tag essay-tag">
+              <div class="item-img">
+                <img src="../img/article2.svg" alt="" />
+                <a href="#">
+                  <div>
+                    Read Article
+                  </div>
+                </a>
+              </div>
+              <h3>Argumentative Essay Topics on Beauty...</h3>
+              <p>
+                Let it be Lorem for first time. Show only 3 rows of text. non
+                amet cmna. Feugiat adipiscing llentesque an non amet cm feugiat
+                mugiat adipiscin...
+              </p>
+              <div class="item-categories">
+                <span class="item-categories-tag">article tag</span>
+                <span class="item-categories-tag">essay</span>
+              </div>
+            </div>
+
+            <!--GALLERY ITEM 3 -->
+            <div class="blog__gallery--item" data-tags="essay-tag">
+              <div class="item-img">
+                <img src="../img/article3.svg" alt="" />
+                <a href="#">
+                  <div>
+                    Read Article
+                  </div>
+                </a>
+              </div>
+              <h3>Blog Title</h3>
+              <p>
+                Let it be Lorem for first time. Show only 3 rows of text. non
+                amet cmna. Feugiat adipiscing llentesque an non amet cm feugiat
+                mugiat adipiscin...
+              </p>
+              <div class="item-categories">
+                <span class="item-categories-tag">essay</span>
+              </div>
+            </div>
+
+            <!--GALLERY ITEM 4 -->
+            <div class="blog__gallery--item" data-tags="essay-tag">
+              <div class="item-img">
+                <img src="../img/article4.svg" alt="" />
+                <a href="#">
+                  <div>
+                    Read Article
+                  </div>
+                </a>
+              </div>
+              <h3>Blog Title</h3>
+              <p>
+                Let it be Lorem for first time. Show only 3 rows of text. non
+                amet cmna. Feugiat adipiscing llentesque an non amet cm feugiat
+                mugiat adipiscin...
+              </p>
+              <div class="item-categories">
+                <span class="item-categories-tag">essay</span>
+              </div>
+            </div>
+
+            <!-- --- -->
+          </div>
         </div>
       </section>
 
@@ -135,112 +206,6 @@
         </div>
       </section>
 
-      <!-- WHY US -->
-      <section class="why-us">
-        <div class="why-us-wrapper">
-          <h2 class="block-title">Why Theassignmentlab?</h2>
-          <h4>
-            Check out our teem paper writing service features. We guarantee that
-            your custom term paper will not only be delivered on time, but will
-            be of the highest quality
-          </h4>
-          <div class="why-us__container">
-            <!-- WHY US ITEM 1 -->
-            <div class="why-us__container--item">
-              <img src="../img/il_satisfaction.svg" alt="" />
-              <h3>Customer Satisfaction Guaranteed</h3>
-              <p>
-                Pay when you are completely satisfied with your paper. Unlimited
-                revisions.
-              </p>
-            </div>
-
-            <!-- WHY US ITEM 2 -->
-            <div class="why-us__container--item">
-              <img src="../img/il_intime.svg" alt="" />
-              <h3>Quick Results</h3>
-              <p>
-                With over 450 dedicated writerrs, we’ll fet your research
-                written for you in as little as 3 hours.
-              </p>
-            </div>
-
-            <!-- WHY US ITEM 3 -->
-            <div class="why-us__container--item">
-              <img src="../img/il_support.svg" alt="" />
-              <h3>24/7 Support</h3>
-              <p>
-                Our support staff will responf to you in less than a minute -
-                anytime!
-              </p>
-            </div>
-
-            <!-- WHY US ITEM 4 -->
-            <div class="why-us__container--item">
-              <img src="../img/il_plagiarism.svg" alt="" />
-              <h3>No Plagiarism</h3>
-              <p>
-                Every paper is chacked to verify authenticity and that it’s 100%
-                plagiarism-free!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PRICING TABLE -->
-      <section class="pricing">
-        <div class="pricing-wrapper">
-          <!-- CATEGORY -->
-          <div class="pricing__category">
-            <div class="pricing__category--item writing" id="active-category">
-              <span>Writing (draft)</span>
-            </div>
-            <div class="pricing__category--item editing">
-              <span>Editing</span>
-            </div>
-          </div>
-          <!-- CURRENCY -->
-          <div class="pricing__currency">
-            <p class="pricing__currency--item usd" id="active-currency">
-              USD
-            </p>
-            <p class="pricing__currency--item gpb">
-              GPB
-            </p>
-            <p class="pricing__currency--item aud">
-              AUD
-            </p>
-            <p class="pricing__currency--item eur">
-              EUR
-            </p>
-            <p class="pricing__currency--item cad">
-              CAD
-            </p>
-          </div>
-          <!-- TABLE -->
-          <div class="priscing__table">
-            <div class="pricing__table--wrapper">
-              <!-- HEADING -->
-              <div class="priscing__table--heading">
-                <p>Duration</p>
-                <p>High School</p>
-                <p>College</p>
-                <p>Master</p>
-                <p>PhD</p>
-              </div>
-              <!-- ROWS -->
-              <div class="pricing__table--container"></div>
-            </div>
-          </div>
-
-          <div class="hero__left--btn-block services-table-btn">
-            <a href="#" class="page-btn">Write My Paper</a><br />
-            <p>You won’t be charget yet</p>
-          </div>
-        </div>
-      </section>
-
       <!-- DISCOUNT -->
       <section class="discount">
         <div class="discount-wrapper">
@@ -256,7 +221,7 @@
           <div class="discount__right">
             <img src="../img/off.svg" alt="" />
             <div class="discount__right--use-discount">
-              <a href="#">Use 15% Discount Now!</a>
+              <a href="">Use 15% Discount Now!</a>
             </div>
           </div>
           <div class="discount__girl">
@@ -264,100 +229,6 @@
           </div>
         </div>
       </section>
-
-      <!-- TESTIMONIALS -->
-      <section class="testimonials">
-        <h3>What clients say&nbsp;about Theassignmentlab</h3>
-        <h5>For security reasons we provide random client numbers here</h5>
-        <div class="testimonials__slider">
-          <!-- SLIDE 1 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am <span>very grateful</span> that my
-              <span>assignment was done</span> so professionally. I will surely
-              request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 2 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #5413:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am <span>very happy</span> with your service!
-              <span> received the best grade</span> for the assignment!
-            </p>
-          </div>
-          <!-- SLIDE 3 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #5720:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I was stuck and I didn’t know what to do before I requested your
-              service. <span>I really appreciate</span> that you helped me get a
-              <span>very good grade!</span>
-            </p>
-          </div>
-          <!-- SLIDE 4 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am very grateful that my assignment was done so professionally.
-              I will surely request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 5 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am very grateful that my assignment was done so professionally.
-              I will surely request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 6 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am very grateful that my assignment was done so professionally.
-              I will surely request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 7 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am <span>very grateful</span> that my
-              <span>assignment was done</span> so professionally. I will surely
-              request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 8 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #5413:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am <span>very happy</span> with your service!
-              <span> received the best grade</span> for the assignment!
-            </p>
-          </div>
-          <!-- SLIDE 9 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #5720:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I was stuck and I didn’t know what to do before I requested your
-              service. <span>I really appreciate</span> that you helped me get a
-              <span>very good grade!</span>
-            </p>
-          </div>
-        </div>
-      </section>
-
       <!-- FOOTER -->
       <footer class="footer">
         <div class="footer-wrapper">
@@ -369,7 +240,7 @@
               <nav class="footer__left--navbar">
                 <a href="../services/">Services</a>
                 <a href="../prices/">Prices</a>
-                <a href="../blog/">Blog</a>
+                <a href="./">Blog</a>
                 <a href="../faq/">FAQ</a>
               </nav>
               <div class="footer__left--icons">
@@ -453,15 +324,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- slick cdn -->
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-
     <script src="../js/main.js"></script>
-    <script src="../prices/prices.js"></script>
-    <script src="../js/slick-settings.js"></script>
+    <script src="blog.js"></script>
     <script>
       // FONTS LOADER
       $(document).ready(function () {

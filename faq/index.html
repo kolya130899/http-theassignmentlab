@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <title>theassignmentlab</title>
+
     <!--need to change favicon -->
     <link rel="icon" href="../img/thumbnail.png" />
 
     <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
     <link
@@ -34,7 +30,7 @@
               Writing Services
             </a>
             <nav class="mobile-sub-menu">
-              <a href="./">Essay Writing Help</a>
+              <a href="../essay-writing/">Essay Writing Help</a>
               <a href="../online-course/">Online Course</a>
               <a href="../exams/">Exams</a>
               <a href="../assignment/">Assignment</a>
@@ -43,7 +39,7 @@
 
           <a href="../prices/">Prices</a>
           <a href="../blog/">Blog</a>
-          <a href="../faq/">FAQ</a>
+          <a href="./">FAQ</a>
           <a href="#">Live Chat</a>
         </nav>
 
@@ -55,11 +51,9 @@
 
         <nav class="header__navbar desktop">
           <div class="header__navbar--dropdown">
-            <a href="../services/" id="services" class="services-active"
-              >Writing Services</a
-            >
+            <a href="../services/">Writing Services</a>
             <nav class="services-nav">
-              <a href="./">Essay Writing Help</a>
+              <a href="../essay-writing/">Essay Writing Help</a>
               <a href="../online-course/">Online Course</a>
               <a href="../exams/">Exams</a>
               <a href="../assignment/">Assignment</a>
@@ -68,7 +62,7 @@
 
           <a href="../prices/">Prices</a>
           <a href="../blog/">Blog</a>
-          <a href="../faq/">FAQ</a>
+          <a href="./" class="services-active">FAQ</a>
           <a href="#">Live Chat</a>
         </nav>
 
@@ -78,27 +72,220 @@
 
     <div class="overlay">
       <!-- HERO -->
-      <section class="hero essay-writing-hero">
-        <img src="../img/pattern.svg" alt="" />
-        <img src="../img/pattern.svg" alt="" />
-        <div class="essay-writing-hero__container">
-          <h1>Write My Essay</h1>
-          <h2>About Our Company</h2>
-          <p>
-            We are a team of dedicated professionals, who strongly believe in
-            the mission of the company - to boost your academic skills. All
-            writers have to prove their analytical and communication ability,
-            English language proficiency and to pass challenging interviews with
-            our senior consultants.
-          </p>
-          <h2>What included?</h2>
-          <p>
-            Some text about service. Different text for different services.
-            Beyond commitment and dedication, there is also a very strict
-            recruiting process for our expert writers, researchers and
-            proofreaders.
-          </p>
+      <section class="hero services-hero">
+        <div class="hero-wrapper">
+          <div class="hero__left services-title faq-block">
+            <h1 class="">
+              Frequently Asked Questions
+            </h1>
+
+            <div class="hero__left-search">
+              <input
+                type="search"
+                id="faq-search"
+                placeholder="Search by key words"
+              />
+              <!-- <label for="faq-search" id="faq-search-label"
+                >Search by key words</label
+              > -->
+            </div>
+            <div class="hero__left--faqs">
+              <!-- FAQ 1 -->
+              <div class="faqs-item">
+                <h3>
+                  1. Write clear and concise pages. (Here has to be a question)
+                </h3>
+                <p>
+                  Here - answer. In terms of FAQ pages, "the more the merrier"
+                  is actually a fallacy. Too much text can end up being too
+                  confusing, causing readers to have to search for the answer
+                  they need. Rather than writing long and eloquent paragraphs,
+                  it's best to be straightforward and brief when providing
+                  answers.
+                </p>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="faqs-item">
+                <h3>
+                  2. Regularly update each page.
+                </h3>
+                <p>
+                  It's important that every FAQ page you have is always
+                  accurate. As your organization faces product launches and
+                  updates, your FAQ pages should reflect these changes as well.
+                  This means your team needs to consistently review each page
+                  and revise it after launching new features.
+                </p>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="faqs-item">
+                <h3>
+                  3. Include a search bar.
+                </h3>
+                <p>
+                  While it's helpful to list out all FAQ questions on a single
+                  page or link to them from a landing page, this dense format
+                  can end up being tedious for many customers. Often times,
+                  customers come to a FAQ page with a single question in mind
+                  and are forced to scroll through tens or hundreds of other
+                  questions to find theirs. If they have access to a search bar,
+                  they can easily search their question or related keywords to
+                  save time.
+                </p>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div class="faqs-item">
+                <h3>
+                  4. Organize questions by category.
+                </h3>
+                <p>
+                  What can also be tedious is listing all the questions in a
+                  random order. This is especially frustrating for customers who
+                  have several related questions regarding a single topic. Thus,
+                  it's helpful if you divide up questions into overarching
+                  topics, such as products, security, and billing.
+                </p>
+              </div>
+
+              <!-- FAQ 5 -->
+              <div class="faqs-item">
+                <h3>
+                  5. Link top questions.
+                </h3>
+                <p>
+                  It's good to have categories laid out on the landing page of
+                  your FAQ section. However, there are likely some questions
+                  that are more popular than others. To save customers even more
+                  time, these top questions should have their own section and a
+                  link to their answer at the top of your FAQ page. That way you
+                  can maintain your categorical organization while making your
+                  most commonly asked questions more accessible.
+                </p>
+              </div>
+
+              <!-- FAQ 6 -->
+              <div class="faqs-item">
+                <h3>
+                  6. Stick to the basics.
+                </h3>
+                <p>
+                  You might want to lighten up your FAQ pages with fun colors,
+                  themes, or humor. These can be effective based on your
+                  organization and its branding, but customers aren't on your
+                  FAQ pages to be entertained. It's typically best to stick to a
+                  basic format and simple design that can be quickly accessed
+                  and easily read.
+                </p>
+              </div>
+
+              <!-- FAQ 7 -->
+              <div class="faqs-item">
+                <h3>
+                  #. Next question and answer
+                </h3>
+                <p>
+                  These can be effective based on your organization and its
+                  branding, but customers aren't on your FAQ pages to be
+                  entertained. It's typically best to stick to a basic format
+                  and simple design that can be quickly accessed and easily
+                  read.
+                </p>
+              </div>
+            </div>
+
+            <div class="hero__left--btn-block faq-btn">
+              <h3>Did’t find an answer?</h3>
+              <a href="#" class="page-btn">Ask Your Question in Live Chat!</a>
+            </div>
+          </div>
+          <!-- HERO FORM -->
+          <form action="" method="" class="hero__form faq-form">
+            <h3>Check Prices</h3>
+
+            <!-- <div class="hero__form--item" id="1">
+              <label for="service">Type of Service</label>
+              <select name="" id="service">
+                <option value="">Eassy</option>
+              </select>
+            </div> -->
+            <div class="form__select" id="service-select">
+              <p class="form__select--heading">Type of Service</p>
+              <div class="form__select-input" id="service-select-item ">
+                <p>Select type of service</p>
+                <img src="../img/arrow.svg" alt="" />
+              </div>
+              <div
+                class="form__select-input--menu"
+                id="service-select-item-menu"
+              >
+                <p>Paper / Essay</p>
+                <p>Type of service 02</p>
+                <p>Type of service 03</p>
+                <p>Type of service 04</p>
+                <p>Type of service 05</p>
+                <p>Type of service 06</p>
+              </div>
+            </div>
+
+            <!-- <div class="hero__form--item" id="2">
+              <label for="pages">Pages</label>
+              <select name="" id="pages">
+                <option value="">1 page / 300 words</option>
+              </select>
+            </div> -->
+
+            <div class="form__select" id="pages-select">
+              <p class="form__select--heading">Pages</p>
+              <div class="form__select-input" id="pages-select-item">
+                <p>Select pages number</p>
+                <img src="../img/arrow.svg" alt="" />
+              </div>
+              <div class="form__select-input--menu" id="pages-select-item-menu">
+                <p>High School</p>
+                <p>College</p>
+                <p>Master</p>
+                <p>PhD</p>
+              </div>
+            </div>
+
+            <!-- <div class="hero__form--item" id="3">
+              <label for="urgency">Urgency</label>
+              <select name="" id="urgency">
+                <option value="">10 days</option>
+              </select>
+            </div> -->
+            <div class="form__select" id="urgency-select">
+              <p class="form__select--heading">Urgency</p>
+              <div class="form__select-input" id="urgency-select-item">
+                <p>Select urgency</p>
+                <img src="../img/arrow.svg" alt="" />
+              </div>
+              <div
+                class="form__select-input--menu"
+                id="urgency-select-item-menu"
+              >
+                <p>High School</p>
+                <p>College</p>
+                <p>Master</p>
+                <p>PhD</p>
+              </div>
+            </div>
+
+            <div class="hero__form--checkbox">
+              <input type="checkbox" id="custom" />
+              <label for="custom"></label>
+              <span>I’m a new costumer (15% off)</span>
+            </div>
+
+            <p class="hero__form--total">Total: $12.39</p>
+
+            <button type="submit">Continue</button>
+          </form>
         </div>
+        <div class="scroll-target"></div>
       </section>
 
       <!-- HELP -->
@@ -135,112 +322,6 @@
         </div>
       </section>
 
-      <!-- WHY US -->
-      <section class="why-us">
-        <div class="why-us-wrapper">
-          <h2 class="block-title">Why Theassignmentlab?</h2>
-          <h4>
-            Check out our teem paper writing service features. We guarantee that
-            your custom term paper will not only be delivered on time, but will
-            be of the highest quality
-          </h4>
-          <div class="why-us__container">
-            <!-- WHY US ITEM 1 -->
-            <div class="why-us__container--item">
-              <img src="../img/il_satisfaction.svg" alt="" />
-              <h3>Customer Satisfaction Guaranteed</h3>
-              <p>
-                Pay when you are completely satisfied with your paper. Unlimited
-                revisions.
-              </p>
-            </div>
-
-            <!-- WHY US ITEM 2 -->
-            <div class="why-us__container--item">
-              <img src="../img/il_intime.svg" alt="" />
-              <h3>Quick Results</h3>
-              <p>
-                With over 450 dedicated writerrs, we’ll fet your research
-                written for you in as little as 3 hours.
-              </p>
-            </div>
-
-            <!-- WHY US ITEM 3 -->
-            <div class="why-us__container--item">
-              <img src="../img/il_support.svg" alt="" />
-              <h3>24/7 Support</h3>
-              <p>
-                Our support staff will responf to you in less than a minute -
-                anytime!
-              </p>
-            </div>
-
-            <!-- WHY US ITEM 4 -->
-            <div class="why-us__container--item">
-              <img src="../img/il_plagiarism.svg" alt="" />
-              <h3>No Plagiarism</h3>
-              <p>
-                Every paper is chacked to verify authenticity and that it’s 100%
-                plagiarism-free!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PRICING TABLE -->
-      <section class="pricing">
-        <div class="pricing-wrapper">
-          <!-- CATEGORY -->
-          <div class="pricing__category">
-            <div class="pricing__category--item writing" id="active-category">
-              <span>Writing (draft)</span>
-            </div>
-            <div class="pricing__category--item editing">
-              <span>Editing</span>
-            </div>
-          </div>
-          <!-- CURRENCY -->
-          <div class="pricing__currency">
-            <p class="pricing__currency--item usd" id="active-currency">
-              USD
-            </p>
-            <p class="pricing__currency--item gpb">
-              GPB
-            </p>
-            <p class="pricing__currency--item aud">
-              AUD
-            </p>
-            <p class="pricing__currency--item eur">
-              EUR
-            </p>
-            <p class="pricing__currency--item cad">
-              CAD
-            </p>
-          </div>
-          <!-- TABLE -->
-          <div class="priscing__table">
-            <div class="pricing__table--wrapper">
-              <!-- HEADING -->
-              <div class="priscing__table--heading">
-                <p>Duration</p>
-                <p>High School</p>
-                <p>College</p>
-                <p>Master</p>
-                <p>PhD</p>
-              </div>
-              <!-- ROWS -->
-              <div class="pricing__table--container"></div>
-            </div>
-          </div>
-
-          <div class="hero__left--btn-block services-table-btn">
-            <a href="#" class="page-btn">Write My Paper</a><br />
-            <p>You won’t be charget yet</p>
-          </div>
-        </div>
-      </section>
-
       <!-- DISCOUNT -->
       <section class="discount">
         <div class="discount-wrapper">
@@ -256,7 +337,7 @@
           <div class="discount__right">
             <img src="../img/off.svg" alt="" />
             <div class="discount__right--use-discount">
-              <a href="#">Use 15% Discount Now!</a>
+              <a href="">Use 15% Discount Now!</a>
             </div>
           </div>
           <div class="discount__girl">
@@ -264,100 +345,6 @@
           </div>
         </div>
       </section>
-
-      <!-- TESTIMONIALS -->
-      <section class="testimonials">
-        <h3>What clients say&nbsp;about Theassignmentlab</h3>
-        <h5>For security reasons we provide random client numbers here</h5>
-        <div class="testimonials__slider">
-          <!-- SLIDE 1 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am <span>very grateful</span> that my
-              <span>assignment was done</span> so professionally. I will surely
-              request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 2 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #5413:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am <span>very happy</span> with your service!
-              <span> received the best grade</span> for the assignment!
-            </p>
-          </div>
-          <!-- SLIDE 3 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #5720:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I was stuck and I didn’t know what to do before I requested your
-              service. <span>I really appreciate</span> that you helped me get a
-              <span>very good grade!</span>
-            </p>
-          </div>
-          <!-- SLIDE 4 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am very grateful that my assignment was done so professionally.
-              I will surely request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 5 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am very grateful that my assignment was done so professionally.
-              I will surely request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 6 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am very grateful that my assignment was done so professionally.
-              I will surely request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 7 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am <span>very grateful</span> that my
-              <span>assignment was done</span> so professionally. I will surely
-              request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 8 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #5413:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am <span>very happy</span> with your service!
-              <span> received the best grade</span> for the assignment!
-            </p>
-          </div>
-          <!-- SLIDE 9 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #5720:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I was stuck and I didn’t know what to do before I requested your
-              service. <span>I really appreciate</span> that you helped me get a
-              <span>very good grade!</span>
-            </p>
-          </div>
-        </div>
-      </section>
-
       <!-- FOOTER -->
       <footer class="footer">
         <div class="footer-wrapper">
@@ -370,7 +357,7 @@
                 <a href="../services/">Services</a>
                 <a href="../prices/">Prices</a>
                 <a href="../blog/">Blog</a>
-                <a href="../faq/">FAQ</a>
+                <a href="./">FAQ</a>
               </nav>
               <div class="footer__left--icons">
                 <a href="#">
@@ -453,15 +440,9 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- slick cdn -->
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-
     <script src="../js/main.js"></script>
-    <script src="../prices/prices.js"></script>
-    <script src="../js/slick-settings.js"></script>
+    <script src="faq.js"></script>
+    <script src="../order-price/order-price.js"></script>
     <script>
       // FONTS LOADER
       $(document).ready(function () {

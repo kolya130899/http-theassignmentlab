@@ -8,6 +8,7 @@ selects.forEach((item) => {
 //CLOSE HELP TAB
 $(".help__chat--close").click(function () {
   $(".help__chat").hide();
+  // $(".help__chat").animate({ width: "toggle" });
 });
 
 $(document).ready(function () {
@@ -15,14 +16,17 @@ $(document).ready(function () {
   $(".chat-option").hide();
 
   $(".help__btn").click(function () {
-    $(".help").hide();
-    $(".chat-option").show();
+    // $(".help").hide();
+
+    $(".help").animate({ width: "toggle" }, 300);
+    $(".chat-option").slideToggle(300);
   });
 
   $(".chat-option__close").click(function () {
-    $(".help").show();
-    $(".help__chat").show();
-    $(".chat-option").hide();
+    // $(".help").slideToggle();
+    $(".help").animate({ width: "toggle" }, 300);
+    $(".help__chat").show(300);
+    $(".chat-option").slideToggle(300);
   });
 });
 
@@ -47,13 +51,13 @@ $(".toggle-mnu").click(function () {
   $(".overlay").toggleClass("bg-opacity");
   $("body").toggleClass("fixed");
   $(this).toggleClass("on");
-  $(".mobile-menu").slideToggle();
+  $(".mobile-menu").slideToggle(300);
 });
 
 // SUB MENU TOGGLER
 $(".mobile-sub-menu").hide();
 $(".mobile-menu__dropdown ").click(function () {
-  $(".mobile-sub-menu").slideToggle();
-  $(".mobile-menu__dropdown").toggleClass("rotated");
+  $(".mobile-sub-menu").slideToggle(300);
   $(".mobile-menu__dropdown > a").toggleClass("orange-color");
+  $(".mobile-menu__dropdown").toggleClass("orange-toggler");
 });

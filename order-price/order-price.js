@@ -1,6 +1,33 @@
 let orderPriceTab = document.querySelectorAll(".order-form__heading--tab");
 let nextBtn = document.querySelectorAll(".next-step-btn");
 
+// tabs toggler
+orderPriceTab.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    if (!e.target.id) {
+      // make form not active
+      let activeFormId = document.querySelector("#active-tab").classList[1];
+
+      $("#" + activeFormId).addClass("not-active-form");
+
+      document.querySelector("#active-tab").removeAttribute("id");
+      let target = e.target;
+      console.log(target);
+      if (target.parentElement.classList.contains("order-form__heading")) {
+        target.setAttribute("id", "active-tab");
+        let newActiveFormId = document.querySelector("#active-tab")
+          .classList[1];
+        $("#" + newActiveFormId).removeClass("not-active-form");
+      } else {
+        target.parentElement.setAttribute("id", "active-tab");
+        let newActiveFormId = document.querySelector("#active-tab")
+          .classList[1];
+        $("#" + newActiveFormId).removeClass("not-active-form");
+      }
+    }
+  });
+});
+
 nextBtn.forEach((item) => {
   item.addEventListener("click", () => {
     // MAKE TAB NOT ACTIVE
@@ -65,18 +92,32 @@ selectItems.forEach((item) => {
         $("#" + this.id + " > div:nth-child(2) > p").text(chosenText);
         $("#" + this.id + " > div:nth-child(2) > p").css("color", "#020202");
         $("#" + this.id + "-item > img").removeAttr("style");
-        $("#" + this.id + "-item-menu").slideToggle(700);
+        $("#" + this.id + "-item-menu").slideToggle(300);
       }
     }
 
     // SLIDE DROPDOWN
-    $("#" + e.target.id + "-menu").slideToggle();
+    $("#" + e.target.id + "-menu").slideToggle(300);
   });
 });
 
 // SELECT FILE
 $("#custom-file").change(function () {
   $("#custom-input-file").text(this.files[0].name);
+  let files = this.files;
+  console.log(files[0].name);
+
+  $(".custom-input-file-img > img").attr("src", "../img/reset-input.svg");
+  $(".custom-input-file-img").css("top", "59%");
+  $(".custom-input-file-img").click(function () {
+    $("#custom-file")[0].value = "";
+    // console.log($("#custom-file"));
+
+    $(".custom-input-file-img > img").attr("src", "../img/ic_attach.svg");
+    $(".custom-input-file-img").css("top", "50%");
+    document.querySelector("#custom-input-file").textContent = "Your file";
+    console.log($("#custom-input-file"));
+  });
 });
 
 // SHOW PASSWORD

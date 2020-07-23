@@ -1821,9 +1821,11 @@ input[type="date"].onfocus::before {
   margin-bottom: 80px;
 }
 .support__info--item > h2 {
+  margin: 0;
+}
+.support__info--item > h2 > span {
   font-size: 44px;
   line-height: 56px;
-  margin: 0;
 }
 .support__info--item > p {
   font-family: Muli;
@@ -1831,19 +1833,19 @@ input[type="date"].onfocus::before {
   margin: 0;
 }
 
-.color-violet {
+.support__info--item > h2.color-violet > span {
   color: #c36cf7;
 }
-.color-orange {
+.support__info--item > h2.color-orange > span {
   color: #ef8880;
 }
-.color-blue {
+.support__info--item > h2.color-blue > span {
   color: #6271f6;
 }
-.color-light-blue {
+.support__info--item > h2.color-light-blue > span {
   color: #4b9acf;
 }
-.color-light-blue > span {
+.color-light-blue > span:nth-child(3) {
   opacity: 0.2;
   font-size: 22px;
 }
@@ -1852,10 +1854,12 @@ input[type="date"].onfocus::before {
   margin-bottom: 128px;
 }
 .top-row > h2 {
+  margin-bottom: 8px;
+}
+.top-row > h2 > span {
   font-size: 72px;
   line-height: 96px;
   color: #16c17f;
-  margin-bottom: 8px;
 }
 .support-btn > p {
   margin-left: auto;

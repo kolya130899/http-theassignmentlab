@@ -87,12 +87,12 @@
               Save more time for yourself.
             </p>
             <div class="hero__left--btn-block">
-              <a href="#" class="page-btn">Write My Paper</a><br />
+              <a href="order-price/" class="page-btn">Write My Paper</a><br />
               <p>You won’t be charget yet</p>
             </div>
           </div>
           <!-- HERO FORM -->
-          <form action="" method="" class="hero__form">
+          <!-- <form action="" method="" class="hero__form">
             <h3>Check Prices</h3>
 
             <div class="hero__form--item" id="1">
@@ -115,6 +115,69 @@
               <select name="" id="urgency">
                 <option value="">10 days</option>
               </select>
+            </div>
+
+            <div class="hero__form--checkbox">
+              <input type="checkbox" id="custom" />
+              <label for="custom"></label>
+              <span>I’m a new costumer (15% off)</span>
+            </div>
+
+            <p class="hero__form--total">Total: $12.39</p>
+
+            <button type="submit">Continue</button>
+          </form> -->
+
+          <form action="" method="" class="hero__form faq-form">
+            <h3>Check Prices</h3>
+            <div class="form__select" id="service-select">
+              <p class="form__select--heading">Type of Service</p>
+              <div class="form__select-input" id="service-select-item ">
+                <p>Select type of service</p>
+                <img src="../img/arrow.svg" alt="" />
+              </div>
+              <div
+                class="form__select-input--menu"
+                id="service-select-item-menu"
+              >
+                <p>Paper / Essay</p>
+                <p>Type of service 02</p>
+                <p>Type of service 03</p>
+                <p>Type of service 04</p>
+                <p>Type of service 05</p>
+                <p>Type of service 06</p>
+              </div>
+            </div>
+
+            <div class="form__select" id="pages-select">
+              <p class="form__select--heading">Pages</p>
+              <div class="form__select-input" id="pages-select-item">
+                <p>Select pages number</p>
+                <img src="../img/arrow.svg" alt="" />
+              </div>
+              <div class="form__select-input--menu" id="pages-select-item-menu">
+                <p>High School</p>
+                <p>College</p>
+                <p>Master</p>
+                <p>PhD</p>
+              </div>
+            </div>
+
+            <div class="form__select" id="urgency-select">
+              <p class="form__select--heading">Urgency</p>
+              <div class="form__select-input" id="urgency-select-item">
+                <p>Select urgency</p>
+                <img src="../img/arrow.svg" alt="" />
+              </div>
+              <div
+                class="form__select-input--menu"
+                id="urgency-select-item-menu"
+              >
+                <p>High School</p>
+                <p>College</p>
+                <p>Master</p>
+                <p>PhD</p>
+              </div>
             </div>
 
             <div class="hero__form--checkbox">
@@ -149,15 +212,17 @@
 
       <!-- CHAT OPTION -->
       <section class="chat-option">
-        <div class="chat-option__item">
-          <a href="#fb">
-            <img src="img/fb.svg" alt="" />
-          </a>
-        </div>
-        <div class="chat-option__item">
-          <a href="#chat">
-            <img src="img/chat.svg" alt="" />
-          </a>
+        <div class="chat-option__container">
+          <div class="chat-option__item">
+            <a href="#fb">
+              <img src="img/fb.svg" alt="" />
+            </a>
+          </div>
+          <div class="chat-option__item">
+            <a href="#chat">
+              <img src="img/chat.svg" alt="" />
+            </a>
+          </div>
         </div>
         <div class="chat-option__close">
           <img src="img/close.svg" alt="" />
@@ -422,7 +487,7 @@
             <div class="support-top">
               <!-- TIME -->
               <div class="support__info--item top-row">
-                <h2>6 min</h2>
+                <h2><span class="count">6</span><span>&nbsp;min</span></h2>
                 <p>
                   Within 6 minutes or less, our smart, friendly support experts
                   will be here to help. Our customer support service is
@@ -432,7 +497,7 @@
 
               <!-- SATISFIED CUSTOMERS -->
               <div class="support__info--item top-row">
-                <h2>98.9%</h2>
+                <h2><span class="count">98</span><span>.9%</span></h2>
                 <p>
                   More than 98% of customers were satisfied with the work of our
                   customer support. We respond to any issue as fast as possible
@@ -444,7 +509,9 @@
             <div class="support-bottom">
               <!-- YEARS OF EXPERIENCE -->
               <div class="support__info--item">
-                <h2 class="color-orange">12+</h2>
+                <h2 class="color-orange">
+                  <span class="count">12</span><span>+</span>
+                </h2>
                 <p>
                   years in academic writing
                 </p>
@@ -452,7 +519,9 @@
 
               <!-- ORDERS IN TIME -->
               <div class="support__info--item">
-                <h2 class="color-violet">97,56%</h2>
+                <h2 class="color-violet">
+                  <span class="count">97</span><span>.56%</span>
+                </h2>
                 <p>
                   orders devivered on time
                 </p>
@@ -460,7 +529,7 @@
 
               <!-- EXPERTS -->
               <div class="support__info--item">
-                <h2 class="color-blue">769</h2>
+                <h2 class="color-blue"><span class="count">769</span></h2>
                 <p>
                   experts in our team
                 </p>
@@ -468,14 +537,16 @@
 
               <!-- GRADE -->
               <div class="support__info--item">
-                <h2 class="color-light-blue">4.8<span>/5</span></h2>
+                <h2 class="color-light-blue">
+                  <span class="count">4</span><span>.8</span><span>/5</span>
+                </h2>
                 <p>customers report better grades</p>
               </div>
             </div>
           </div>
 
           <div class="hero__left--btn-block support-btn">
-            <a href="#" class="page-btn">Write My Paper</a><br />
+            <a href="order-price/" class="page-btn">Write My Paper</a><br />
             <p>You won’t be charget yet</p>
           </div>
         </div>
@@ -610,7 +681,7 @@
             </div>
           </div>
           <div class="guarantee__btn">
-            <a href="#" class="page-btn">Place My Order Now!</a>
+            <a href="order-price/" class="page-btn">Place My Order Now!</a>
           </div>
         </div>
       </section>
@@ -938,7 +1009,9 @@
     ></script>
 
     <script src="js/main.js"></script>
+    <script src="order-price/order-price.js"></script>
     <script src="js/slick-settings.js"></script>
+    <script src="js/counter.js"></script>
     <script>
       $(document).ready(function () {
         $(".loadfont").prepend(

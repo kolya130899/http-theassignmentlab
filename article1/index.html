@@ -238,14 +238,63 @@
               <img src="../img/fb.svg" alt="" />
             </a>
           </div>
-          <div class="chat-option__item">
-            <a href="#chat">
-              <img src="../img/chat.svg" alt="" />
-            </a>
+          <div class="chat-option__item chat">
+            <img src="../img/chat.svg" alt="" />
           </div>
         </div>
         <div class="chat-option__close">
           <img src="../img/close.svg" alt="" />
+        </div>
+      </section>
+
+      <!-- LIVE CHAT -->
+      <section class="live-chat">
+        <div class="live-chat__header">
+          <div class="live-chat__header--left">
+            <img src="../img/help-hero.svg" alt="" />
+            <p>Lisa (assistant)</p>
+          </div>
+          <div class="live-chat__header--right">
+            <img src="../img/close-live.svg" alt="" />
+          </div>
+        </div>
+        <div class="live-chat__container">
+          <div class="live-chat__container-incoming">
+            <span>How can I help you?</span>
+          </div>
+          <div class="live-chat__question-number">
+            <span> Question №3241</span>
+          </div>
+          <div class="live-chat__container--outgoing">
+            <div>
+              <span>19:00</span>
+              <span
+                >What can also be tedious is listing all the questions in a
+                random orde especially frustrating for customers who have
+                several related questions?</span
+              >
+            </div>
+
+            <span>Read</span>
+          </div>
+
+          <div class="live-chat__container-incoming">
+            <span
+              >You have to go to Prices, than click on button “Order Now!”</span
+            >
+            <span class="time">19:02</span>
+          </div>
+        </div>
+        <div class="live-chat__msg">
+          <div class="live-chat__msg--input">
+            <textarea
+              name=""
+              id=""
+              rows="1"
+              placeholder="Type your question..."
+            ></textarea>
+            <button>Send</button>
+          </div>
         </div>
       </section>
 
@@ -370,7 +419,12 @@
 
     <script src="../js/main.js"></script>
     <script src="article.js"></script>
+    <script src="../node_modules/jquery-autosize/jquery.autosize.min.js"></script>
     <script>
+      $(".live-chat__msg--input > textarea").focus(function () {
+        $(".live-chat__msg--input > textarea").autosize();
+      });
+
       // FONTS LOADER
       $(document).ready(function () {
         $(".loadfont").prepend(

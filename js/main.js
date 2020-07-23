@@ -130,7 +130,7 @@ function isScrolledIntoView(elem) {
 }
 
 function testScroll() {
-  if (isScrolledIntoView($(".support-top")) && !viewed) {
+  if (isScrolledIntoView($(".support-wrapper > h4")) && !viewed) {
     viewed = true;
     $(".count").each(function () {
       $(this)

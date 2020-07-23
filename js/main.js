@@ -5,30 +5,57 @@ selects.forEach((item) => {
     e.target.parentElement.classList.toggle("rotated");
   });
 });
+
 //CLOSE HELP TAB
 $(".help__chat--close").click(function () {
-  $(".help__chat").hide();
-  // $(".help__chat").animate({ width: "toggle" });
+  $(".help__chat").fadeOut(300);
 });
 
 $(document).ready(function () {
   //CHAT OPTION TOGGLE
-  $(".chat-option").hide();
+  $(".chat-option__container").hide();
+  $(".chat-option__close").hide();
 
   $(".help__btn").click(function () {
-    // $(".help").hide();
+    $(".help").fadeOut(300);
 
-    $(".help").animate({ width: "toggle" }, 300);
-    $(".chat-option").slideToggle(300);
+    $(".chat-option__container").slideToggle(300);
+    $(".chat-option__close").fadeIn(400);
   });
 
   $(".chat-option__close").click(function () {
-    // $(".help").slideToggle();
-    $(".help").animate({ width: "toggle" }, 300);
-    $(".help__chat").show(300);
-    $(".chat-option").slideToggle(300);
+    $(".help__chat").fadeIn(300);
+    $(".chat-option__container").slideToggle(300);
+    $(".chat-option__close").fadeOut(300);
+
+    $(".help").fadeIn(300);
   });
 });
+
+// //CLOSE HELP TAB
+// $(".help__chat--close").click(function () {
+//   $(".help__chat").hide();
+//   // $(".help__chat").animate({ width: "toggle" });
+// });
+
+// $(document).ready(function () {
+//   //CHAT OPTION TOGGLE
+//   $(".chat-option").hide();
+
+//   $(".help__btn").click(function () {
+//     // $(".help").hide();
+
+//     $(".help").animate({ width: "toggle" }, 300);
+//     $(".chat-option").slideToggle(300);
+//   });
+
+//   $(".chat-option__close").click(function () {
+//     // $(".help").slideToggle();
+//     $(".help").animate({ width: "toggle" }, 300);
+//     $(".help__chat").show(300);
+//     $(".chat-option").slideToggle(300);
+//   });
+// });
 
 // SERVICEs MENU
 $(".services-nav").hide();

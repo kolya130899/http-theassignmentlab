@@ -91,50 +91,19 @@
               <p>You won’t be charget yet</p>
             </div>
           </div>
+
           <!-- HERO FORM -->
-          <!-- <form action="" method="" class="hero__form">
-            <h3>Check Prices</h3>
-
-            <div class="hero__form--item" id="1">
-              <label for="service">Type of Service</label>
-              <select name="" id="service">
-                <option value="">Eassy</option>
-                <option value="">Eassy</option>
-              </select>
-            </div>
-
-            <div class="hero__form--item" id="2">
-              <label for="pages">Pages</label>
-              <select name="" id="pages">
-                <option value="">1 page / 300 words</option>
-              </select>
-            </div>
-
-            <div class="hero__form--item" id="3">
-              <label for="urgency">Urgency</label>
-              <select name="" id="urgency">
-                <option value="">10 days</option>
-              </select>
-            </div>
-
-            <div class="hero__form--checkbox">
-              <input type="checkbox" id="custom" />
-              <label for="custom"></label>
-              <span>I’m a new costumer (15% off)</span>
-            </div>
-
-            <p class="hero__form--total">Total: $12.39</p>
-
-            <button type="submit">Continue</button>
-          </form> -->
-
-          <form action="" method="" class="hero__form faq-form">
+          <form action="" method="" class="hero__form">
             <h3>Check Prices</h3>
             <div class="form__select" id="service-select">
               <p class="form__select--heading">Type of Service</p>
-              <div class="form__select-input" id="service-select-item ">
+              <div class="form__select-input" id="service-select-item">
                 <p>Select type of service</p>
-                <img src="../img/arrow.svg" alt="" />
+                <img
+                  src="img/arrow.svg"
+                  alt=""
+                  class="form__select-input--arrow"
+                />
               </div>
               <div
                 class="form__select-input--menu"
@@ -153,7 +122,7 @@
               <p class="form__select--heading">Pages</p>
               <div class="form__select-input" id="pages-select-item">
                 <p>Select pages number</p>
-                <img src="../img/arrow.svg" alt="" />
+                <img src="img/arrow.svg" alt="" />
               </div>
               <div class="form__select-input--menu" id="pages-select-item-menu">
                 <p>High School</p>
@@ -167,7 +136,7 @@
               <p class="form__select--heading">Urgency</p>
               <div class="form__select-input" id="urgency-select-item">
                 <p>Select urgency</p>
-                <img src="../img/arrow.svg" alt="" />
+                <img src="img/arrow.svg" alt="" />
               </div>
               <div
                 class="form__select-input--menu"
@@ -202,7 +171,7 @@
             <p>How can I help you?</p>
           </div>
           <div class="help__chat--close">
-            <span>&times;</span>
+            <img src="img/close-live.svg" alt="" />
           </div>
         </div>
         <div class="help__btn">
@@ -930,7 +899,6 @@
               </nav>
               <div class="footer__left--icons">
                 <a href="#">
-                  <!-- <img src="img/linkedin-icon.svg" alt="" /> -->
                   <svg
                     width="16"
                     height="16"
@@ -945,7 +913,6 @@
                   </svg>
                 </a>
                 <a href="#">
-                  <!-- <img src="img/facebook.svg" alt="" /> -->
                   <svg
                     width="9"
                     height="16"
@@ -960,7 +927,6 @@
                   </svg>
                 </a>
                 <a href="#">
-                  <!-- <img src="img/twitter.svg" alt="" /> -->
                   <svg
                     width="19"
                     height="15"
@@ -1015,9 +981,8 @@
     ></script>
 
     <script src="js/main.js"></script>
-    <script src="order-price/order-price.js"></script>
+    <script src="js/dropdowns.js"></script>
     <script src="js/slick-settings.js"></script>
-    <script src="js/counter.js"></script>
     <script>
       $(document).ready(function () {
         $(".loadfont").prepend(

@@ -37,7 +37,10 @@
 .services-table-btn > p {
   margin: 0 auto;
 }
-
+.scroll-target {
+  width: 100%;
+  height: 5px;
+}
 /* MOBILE MENU */
 .toggle-mnu {
   display: none;
@@ -271,6 +274,7 @@
   margin: 24px 0 60px;
 }
 .hero__left--descriptor > span {
+  font-family: Muli;
   background: #d9f2fe;
   border-radius: 1px;
   color: #020202;
@@ -286,6 +290,7 @@
   margin-right: 16px;
 }
 .hero__left--btn-block > p {
+  font-family: Muli;
   width: 170px;
   font-weight: 500;
   font-size: 12px;
@@ -305,6 +310,7 @@
   text-align: center;
   margin-top: 80px;
   margin-left: 10px;
+  margin-bottom: 100px;
   position: relative;
   z-index: 10;
 }
@@ -401,8 +407,7 @@
   pointer-events: none;
   transition: 0.5s;
 }
-.mobile-menu__dropdown.rotated::after,
-.hero__form--item.rotated::after {
+.mobile-menu__dropdown.rotated::after {
   transform: rotateX(180deg);
 }
 
@@ -543,12 +548,15 @@ input[type="checkbox"]:checked + label:before {
   padding: 10px 0px;
 
   max-width: 320px;
-  border: 1px solid #677294;
+  border: 1px solid #efefef;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 10px 16px 10px 48px;
   background: url("../img/ic_search.svg") no-repeat;
   background-position: 12px 50%;
+}
+.hero__left-search:hover {
+  border: 1px solid #677294;
 }
 #faq-search {
   width: 100%;
@@ -562,9 +570,15 @@ input[type="checkbox"]:checked + label:before {
   outline: none;
   color: #020202;
 }
+#faq-search::-webkit-clear {
+  color: #677294;
+}
 /* end FAQ HERO */
 
 /* BLOG GALLERY */
+.blog {
+  padding-bottom: 250px;
+}
 .blog__navbar {
   max-width: 1224px;
   margin: 54px auto;
@@ -746,10 +760,7 @@ input[type="checkbox"]:checked + label:before {
   top: 16px;
   right: 16px;
 }
-.help__chat--close > span {
-  color: #ea4c1a;
-  font-size: 22px;
-  line-height: 12px;
+.help__chat--close > img {
   cursor: pointer;
 }
 .help__btn {
@@ -1034,6 +1045,7 @@ input[type="checkbox"]:checked + label:before {
   line-height: 20px;
   color: #677294;
   margin: 0 0 8px;
+  text-align: left;
 }
 #custom-input-file,
 textarea,
@@ -1145,6 +1157,9 @@ input[type="text"],
   line-height: 28px;
   color: #677294;
 }
+.rotated {
+  transform: rotate(180deg);
+}
 .form__select-input:hover {
   background-color: #fff;
 }
@@ -1165,8 +1180,8 @@ textarea:hover,
 .password + img {
   position: absolute;
   z-index: 10;
-  top: 60%;
-  right: 5%;
+  top: 53%;
+  right: 3%;
 }
 .iti {
   width: 100%;
@@ -1265,6 +1280,7 @@ textarea {
   font-family: Muli;
   font-size: 14px;
   line-height: 20px;
+  text-align: left;
 }
 .form__select > input[type="date"] {
   min-width: 100%;
@@ -1300,6 +1316,7 @@ input[type="date"].placeholderclass::before {
 
 input[type="date"].onfocus::before {
   display: none;
+  color: #020202;
 }
 .next-step-btn {
   text-align: right;
@@ -1409,6 +1426,8 @@ input[type="date"].onfocus::before {
 }
 .active-menu-item {
   position: relative;
+  cursor: pointer;
+  background: #fbfbfd;
 }
 .active-menu-item:before {
   content: "";
@@ -1435,6 +1454,7 @@ input[type="date"].onfocus::before {
 }
 .why-us-wrapper > h4 {
   font-family: Muli;
+  font-weight: normal;
   line-height: 28px;
   text-align: center;
   color: #677294;
@@ -2064,6 +2084,7 @@ input[type="date"].onfocus::before {
   margin: 14px 0 0;
 }
 .testimonials__slider--slide > p > span {
+  font-family: Muli;
   background: #d9f2fe;
   border-radius: 1px;
 }

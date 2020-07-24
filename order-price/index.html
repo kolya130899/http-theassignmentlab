@@ -80,7 +80,7 @@
           <p>How can I help you?</p>
         </div>
         <div class="help__chat--close">
-          <span>&times;</span>
+          <img src="../img/close-live.svg" alt="" />
         </div>
       </div>
       <div class="help__btn">
@@ -107,549 +107,564 @@
       </div>
     </section>
 
-    <!-- ORDER FORM -->
-    <section class="order-form">
-      <div class="order-form-wrapper">
-        <div class="order-form__left">
-          <h3>Place your order by filling required&nbsp;fields</h3>
+    <div class="overlay">
+      <!-- ORDER FORM -->
+      <section class="order-form">
+        <div class="order-form-wrapper">
+          <div class="order-form__left">
+            <h3>Place your order by filling required&nbsp;fields</h3>
 
-          <!-- FORM -->
-          <div class="order-form__left--form">
-            <!-- FORM HEADING -->
-            <div class="order-form__heading">
-              <div
-                class="order-form__heading--tab price-calculation active-tab1"
-                id="active-tab"
-              >
-                <p>
-                  Price<br class="show-br-450" />
-                  Calculation
-                </p>
-                <div class="tab-border"></div>
-              </div>
-              <div
-                class="order-form__heading--tab project-details active-tab11"
-              >
-                <p>
-                  Project<br class="show-br-450" />
-                  Details
-                </p>
-                <div class="tab-border"></div>
-              </div>
-              <div class="order-form__heading--tab contact-info active-tab111">
-                <p>
-                  Contact<br class="show-br-450" />
-                  Info
-                </p>
-                <div class="tab-border"></div>
-              </div>
-            </div>
-
-            <!-- FORM BODY -->
-            <!-- PRICE CALCULATION FORM -->
-            <div class="order-form__body" id="price-calculation">
-              <!-- SERVICE SELECT -->
-              <div class="form__select" id="service-select">
-                <p class="form__select--heading">Type of Service</p>
-                <div class="form__select-input" id="service-select-item">
-                  <p>Select type of service</p>
-                  <img src="../img/arrow.svg" alt="" />
+            <!-- FORM -->
+            <div class="order-form__left--form">
+              <!-- FORM HEADING -->
+              <div class="order-form__heading">
+                <div
+                  class="order-form__heading--tab price-calculation active-tab1"
+                  id="active-tab"
+                >
+                  <p>
+                    Price<br class="show-br-450" />
+                    Calculation
+                  </p>
+                  <div class="tab-border"></div>
                 </div>
                 <div
-                  class="form__select-input--menu"
-                  id="service-select-item-menu"
+                  class="order-form__heading--tab project-details active-tab11"
                 >
-                  <p>Paper / Essay</p>
-                  <p>Type of service 02</p>
-                  <p>Type of service 03</p>
-                  <p>Type of service 04</p>
-                  <p>Type of service 05</p>
-                  <p>Type of service 06</p>
-                </div>
-              </div>
-
-              <!-- SUBJECT SELECT -->
-              <div class="form__select" id="subject-select">
-                <p class="form__select--heading">Select your subject</p>
-                <div class="form__select-input" id="subject-select-item">
-                  <p>Select your subject</p>
-                  <img src="../img/arrow.svg" alt="" />
+                  <p>
+                    Project<br class="show-br-450" />
+                    Details
+                  </p>
+                  <div class="tab-border"></div>
                 </div>
                 <div
-                  class="form__select-input--menu"
-                  id="subject-select-item-menu"
+                  class="order-form__heading--tab contact-info active-tab111"
                 >
-                  <p>Paper / Essay</p>
-                  <p>Type of service 02</p>
-                  <p>Type of service 03</p>
-                  <p>Type of service 04</p>
-                  <p>Type of service 05</p>
-                  <p>Type of service 06</p>
+                  <p>
+                    Contact<br class="show-br-450" />
+                    Info
+                  </p>
+                  <div class="tab-border"></div>
                 </div>
               </div>
 
-              <!-- ACADEMIC SELECT -->
-              <div class="form__select" id="academic-select">
-                <p class="form__select--heading">Academic level</p>
-                <div class="form__select-input" id="academic-select-item">
-                  <p>Select your level</p>
-                  <img src="../img/arrow.svg" alt="" />
-                </div>
-                <div
-                  class="form__select-input--menu"
-                  id="academic-select-item-menu"
-                >
-                  <p>High School</p>
-                  <p>College</p>
-                  <p>Master</p>
-                  <p>PhD</p>
-                </div>
-              </div>
-
-              <!-- NUMBER OF PAGES SELECT -->
-              <div class="form__select" id="pages-select">
-                <p class="form__select--heading">Number of pages</p>
-                <div class="form__select-input" id="pages-select-item">
-                  <p>Select pages number</p>
-                  <img src="../img/arrow.svg" alt="" />
-                </div>
-                <div
-                  class="form__select-input--menu"
-                  id="pages-select-item-menu"
-                >
-                  <p>High School</p>
-                  <p>College</p>
-                  <p>Master</p>
-                  <p>PhD</p>
-                </div>
-              </div>
-
-              <!-- TIMEZONE SELECT -->
-              <div class="form__select" id="timezone-select">
-                <p class="form__select--heading">Timezone</p>
-                <div class="form__select-input" id="timezone-select-item">
-                  <p>Select your timezone</p>
-                  <img src="../img/arrow.svg" alt="" />
-                </div>
-                <div
-                  class="form__select-input--menu"
-                  id="timezone-select-item-menu"
-                >
-                  <p>Time1</p>
-                  <p>Time2</p>
-                  <p>Time3</p>
-                  <p>Time4</p>
-                </div>
-              </div>
-
-              <!-- DEADLINE SELECT -->
-              <div class="form__select" id="deadline-select">
-                <p class="form__select--heading">Select deadline</p>
-                <input
-                  type="date"
-                  placeholder="Select your order deadline"
-                  class="placeholderclass"
-                  value="2000-05-05"
-                />
-              </div>
-
-              <!-- NEXT STEP BUTTON -->
-              <div class="next-step-btn">
-                <span class="page-btn" id="next-btn">Next Step</span>
-              </div>
-            </div>
-
-            <!-- PROJECT DETAILS FORM -->
-            <div class="order-form__body not-active-form" id="project-details">
-              <!-- TYPE OF DOCUMENT SELECT -->
-              <div class="form__select" id="type-select">
-                <p class="form__select--heading">Type of Document</p>
-                <div class="form__select-input" id="type-select-item">
-                  <p>Select type of document</p>
-                  <img src="../img/arrow.svg" alt="" />
-                </div>
-                <div
-                  class="form__select-input--menu"
-                  id="type-select-item-menu"
-                >
-                  <p>Paper / Essay</p>
-                  <p>Type of service 02</p>
-                  <p>Type of service 03</p>
-                  <p>Type of service 04</p>
-                  <p>Type of service 05</p>
-                  <p>Type of service 06</p>
-                </div>
-              </div>
-
-              <!-- TOPIC SELECT -->
-              <div class="form__select" id="topic-select">
-                <p class="form__select--heading">What is your topic?</p>
-                <div class="form__select-input" id="topic-select-item">
-                  <p>Write your answer</p>
-                  <img src="../img/arrow.svg" alt="" />
-                </div>
-                <div
-                  class="form__select-input--menu"
-                  id="topic-select-item-menu"
-                >
-                  <p>Paper / Essay</p>
-                  <p>Type of service 02</p>
-                  <p>Type of service 03</p>
-                  <p>Type of service 04</p>
-                  <p>Type of service 05</p>
-                  <p>Type of service 06</p>
-                </div>
-              </div>
-
-              <!-- SITATION STYLE SELECT -->
-              <div class="form__select" id="sitation-select">
-                <p class="form__select--heading">Sitation style</p>
-                <div class="form__select-input" id="sitation-select-item">
-                  <p>Select sitation style</p>
-                  <img src="../img/arrow.svg" alt="" />
-                </div>
-                <div
-                  class="form__select-input--menu"
-                  id="sitation-select-item-menu"
-                >
-                  <p>High School</p>
-                  <p>College</p>
-                  <p>Master</p>
-                  <p>PhD</p>
-                </div>
-              </div>
-
-              <!-- NAME OF SOURCES SELECT -->
-              <div class="form__select">
-                <p class="form__select--heading">Name of sources</p>
-                <input
-                  type="text"
-                  placeholder="e.g 3 Sources (1. Literary, 2. Peer Reviewed Academic Sources)"
-                  class="form__select-input"
-                />
-              </div>
-
-              <!-- TIMEZONE SELECT -->
-              <div class="form__select" id="description">
-                <p class="form__select--heading">Description</p>
-                <textarea
-                  name="description"
-                  id=""
-                  cols="30"
-                  rows="7"
-                  placeholder="Describe your task in detailor attach original file with Teacher’s instructions"
-                ></textarea>
-              </div>
-
-              <!-- DEADLINE SELECT -->
-              <div class="form__select" id="attached-file">
-                <p class="form__select--heading">Attach a file (optional)</p>
-                <label for="custom-file" id="custom-input-file"
-                  >Your file</label
-                >
-                <input type="file" id="custom-file" style="display: none;" />
-                <div class="custom-input-file-img">
-                  <img src="../img/ic_attach.svg" alt="" />
-                </div>
-              </div>
-
-              <!-- NEXT STEP BUTTON -->
-              <div class="next-step-btn">
-                <span class="page-btn" id="next-btn">Next Step</span>
-              </div>
-
-              <!-- --- -->
-            </div>
-
-            <!-- CONTACT INFO FORM -->
-            <div class="order-form__body not-active-form" id="contact-info">
-              <!-- RADIO BTNS -->
-              <div class="customer-type">
-                <div class="customer-type__container">
-                  <input type="radio" id="sign-up" checked name="customer" />
-                  <label for="sign-up" id="new-label"></label>
-                  <p>New customer</p>
+              <!-- FORM BODY -->
+              <!-- PRICE CALCULATION FORM -->
+              <div class="order-form__body" id="price-calculation">
+                <!-- SERVICE SELECT -->
+                <div class="form__select" id="service-select">
+                  <p class="form__select--heading">Type of Service</p>
+                  <div class="form__select-input" id="service-select-item">
+                    <p>Select type of service</p>
+                    <img src="../img/arrow.svg" alt="" />
+                  </div>
+                  <div
+                    class="form__select-input--menu"
+                    id="service-select-item-menu"
+                  >
+                    <p>Paper / Essay</p>
+                    <p>Type of service 02</p>
+                    <p>Type of service 03</p>
+                    <p>Type of service 04</p>
+                    <p>Type of service 05</p>
+                    <p>Type of service 06</p>
+                  </div>
                 </div>
 
-                <div class="customer-type__container">
-                  <input type="radio" id="login" name="customer" />
-                  <label for="login" id="returning-label"></label>
-                  <p>Returning customer</p>
+                <!-- SUBJECT SELECT -->
+                <div class="form__select" id="subject-select">
+                  <p class="form__select--heading">Select your subject</p>
+                  <div class="form__select-input" id="subject-select-item">
+                    <p>Select your subject</p>
+                    <img src="../img/arrow.svg" alt="" />
+                  </div>
+                  <div
+                    class="form__select-input--menu"
+                    id="subject-select-item-menu"
+                  >
+                    <p>Paper / Essay</p>
+                    <p>Type of service 02</p>
+                    <p>Type of service 03</p>
+                    <p>Type of service 04</p>
+                    <p>Type of service 05</p>
+                    <p>Type of service 06</p>
+                  </div>
                 </div>
-              </div>
-              <div class="continuing-options">
-                <a href="#" class="continuing-options__facebook">
-                  <img src="../img/ic_facebook.svg" alt="" />
-                  <span>Continue with facebook</span>
-                </a>
-                <p>Or complete the fields below</p>
-              </div>
-              <div class="sign-up">
-                <!-- EMAIL SELECT -->
-                <div class="form__select">
-                  <p class="form__select--heading">Email</p>
+
+                <!-- ACADEMIC SELECT -->
+                <div class="form__select" id="academic-select">
+                  <p class="form__select--heading">Academic level</p>
+                  <div class="form__select-input" id="academic-select-item">
+                    <p>Select your level</p>
+                    <img src="../img/arrow.svg" alt="" />
+                  </div>
+                  <div
+                    class="form__select-input--menu"
+                    id="academic-select-item-menu"
+                  >
+                    <p>High School</p>
+                    <p>College</p>
+                    <p>Master</p>
+                    <p>PhD</p>
+                  </div>
+                </div>
+
+                <!-- NUMBER OF PAGES SELECT -->
+                <div class="form__select" id="pages-select">
+                  <p class="form__select--heading">Number of pages</p>
+                  <div class="form__select-input" id="pages-select-item">
+                    <p>Select pages number</p>
+                    <img src="../img/arrow.svg" alt="" />
+                  </div>
+                  <div
+                    class="form__select-input--menu"
+                    id="pages-select-item-menu"
+                  >
+                    <p>High School</p>
+                    <p>College</p>
+                    <p>Master</p>
+                    <p>PhD</p>
+                  </div>
+                </div>
+
+                <!-- TIMEZONE SELECT -->
+                <div class="form__select" id="timezone-select">
+                  <p class="form__select--heading">Timezone</p>
+                  <div class="form__select-input" id="timezone-select-item">
+                    <p>Select your timezone</p>
+                    <img src="../img/arrow.svg" alt="" />
+                  </div>
+                  <div
+                    class="form__select-input--menu"
+                    id="timezone-select-item-menu"
+                  >
+                    <p>Time1</p>
+                    <p>Time2</p>
+                    <p>Time3</p>
+                    <p>Time4</p>
+                  </div>
+                </div>
+
+                <!-- DEADLINE SELECT -->
+                <div class="form__select" id="deadline-select">
+                  <p class="form__select--heading">Select deadline</p>
                   <input
-                    type="email"
-                    class="form__select-input"
-                    placeholder="Your email"
-                    required
+                    type="date"
+                    placeholder="Select your order deadline"
+                    class="placeholderclass"
+                    value="2020-05-05"
                   />
                 </div>
 
-                <!-- PASSWORD SELECT -->
-                <div class="form__select">
-                  <p class="form__select--heading">Password</p>
+                <!-- NEXT STEP BUTTON -->
+                <div class="next-step-btn">
+                  <span class="page-btn" id="next-btn">Next Step</span>
+                </div>
+              </div>
 
-                  <input
-                    type="password"
-                    class="form__select-input password"
-                    placeholder="Create password"
-                  />
-                  <img src="../img/ic_show_pass.svg" alt="" class="show-pass" />
+              <!-- PROJECT DETAILS FORM -->
+              <div
+                class="order-form__body not-active-form"
+                id="project-details"
+              >
+                <!-- TYPE OF DOCUMENT SELECT -->
+                <div class="form__select" id="type-select">
+                  <p class="form__select--heading">Type of Document</p>
+                  <div class="form__select-input" id="type-select-item">
+                    <p>Select type of document</p>
+                    <img src="../img/arrow.svg" alt="" />
+                  </div>
+                  <div
+                    class="form__select-input--menu"
+                    id="type-select-item-menu"
+                  >
+                    <p>Paper / Essay</p>
+                    <p>Type of service 02</p>
+                    <p>Type of service 03</p>
+                    <p>Type of service 04</p>
+                    <p>Type of service 05</p>
+                    <p>Type of service 06</p>
+                  </div>
+                </div>
+
+                <!-- TOPIC SELECT -->
+                <div class="form__select" id="topic-select">
+                  <p class="form__select--heading">What is your topic?</p>
+                  <div class="form__select-input" id="topic-select-item">
+                    <p>Write your answer</p>
+                    <img src="../img/arrow.svg" alt="" />
+                  </div>
+                  <div
+                    class="form__select-input--menu"
+                    id="topic-select-item-menu"
+                  >
+                    <p>Paper / Essay</p>
+                    <p>Type of service 02</p>
+                    <p>Type of service 03</p>
+                    <p>Type of service 04</p>
+                    <p>Type of service 05</p>
+                    <p>Type of service 06</p>
+                  </div>
+                </div>
+
+                <!-- SITATION STYLE SELECT -->
+                <div class="form__select" id="sitation-select">
+                  <p class="form__select--heading">Sitation style</p>
+                  <div class="form__select-input" id="sitation-select-item">
+                    <p>Select sitation style</p>
+                    <img src="../img/arrow.svg" alt="" />
+                  </div>
+                  <div
+                    class="form__select-input--menu"
+                    id="sitation-select-item-menu"
+                  >
+                    <p>High School</p>
+                    <p>College</p>
+                    <p>Master</p>
+                    <p>PhD</p>
+                  </div>
                 </div>
 
                 <!-- NAME OF SOURCES SELECT -->
                 <div class="form__select">
-                  <p class="form__select--heading">Name (optional)</p>
+                  <p class="form__select--heading">Name of sources</p>
                   <input
                     type="text"
-                    placeholder="Your name"
+                    placeholder="e.g 3 Sources (1. Literary, 2. Peer Reviewed Academic Sources)"
                     class="form__select-input"
                   />
+                </div>
+
+                <!-- TIMEZONE SELECT -->
+                <div class="form__select" id="description">
+                  <p class="form__select--heading">Description</p>
+                  <textarea
+                    name="description"
+                    id=""
+                    cols="30"
+                    rows="7"
+                    placeholder="Describe your task in detailor attach original file with Teacher’s instructions"
+                  ></textarea>
                 </div>
 
                 <!-- DEADLINE SELECT -->
-                <div class="form__select" id="phone">
-                  <p class="form__select--heading">Phone (optional)</p>
-
-                  <input
-                    type="tel"
-                    placeholder=""
-                    id="telephone"
-                    class="form__select-input"
-                  />
-                </div>
-                <div class="agreement">
-                  <div class="agreement-item">
-                    <input type="checkbox" id="agreement-checkbox1" />
-                    <label for="agreement-checkbox1"></label>
-                    <p>
-                      I agree to receive discount coupons, exclusive offers,
-                      andthe latest news by email, SMS, phone, and other
-                      electronic means
-                    </p>
-                  </div>
-                  <div class="agreement-item">
-                    <input type="checkbox" id="agreement-checkbox2" />
-                    <label for="agreement-checkbox2"></label>
-                    <p>
-                      I agree to the <a href="#">Terms & Conditions</a> and
-                      <a href="#">Privacy Policy</a>
-                    </p>
-                  </div>
-                </div>
-
-                <!-- NEXT STEP BUTTON -->
-                <div class="create-acc-btn">
-                  <a href="#" class="page-btn" id="creaete-acc"
-                    >Create Account & Login</a
+                <div class="form__select" id="attached-file">
+                  <p class="form__select--heading">Attach a file (optional)</p>
+                  <label for="custom-file" id="custom-input-file"
+                    >Your file</label
                   >
-                </div>
-              </div>
-
-              <div class="login">
-                <!-- EMAIL SELECT -->
-                <div class="form__select">
-                  <p class="form__select--heading">Email</p>
-                  <input
-                    type="email"
-                    class="form__select-input login-email"
-                    placeholder="Your email"
-                    required
-                  />
-                </div>
-
-                <!-- PASSWORD SELECT -->
-                <div class="form__select">
-                  <p class="form__select--heading">Password</p>
-
-                  <input
-                    type="password"
-                    class="form__select-input login-password"
-                    placeholder="Your password"
-                  />
-                  <img src="../img/ic_show_pass.svg" alt="" class="show-pass" />
+                  <input type="file" id="custom-file" style="display: none;" />
+                  <div class="custom-input-file-img">
+                    <img src="../img/ic_attach.svg" alt="" />
+                  </div>
                 </div>
 
                 <!-- NEXT STEP BUTTON -->
-                <div class="login-btn">
-                  <a href="#" class="page-btn" id="login-btn-item">Login</a>
+                <div class="next-step-btn">
+                  <span class="page-btn" id="next-btn">Next Step</span>
                 </div>
+
+                <!-- --- -->
               </div>
 
-              <!-- ACCOUNT INFO -->
-              <div class="account-info">
-                <div class="account-info-wrapper">
-                  <div class="form__select">
-                    <p class="form__select--heading">Name</p>
-                    <p class="account-info__text">Andrii Teslia</p>
+              <!-- CONTACT INFO FORM -->
+              <div class="order-form__body not-active-form" id="contact-info">
+                <!-- RADIO BTNS -->
+                <div class="customer-type">
+                  <div class="customer-type__container">
+                    <input type="radio" id="sign-up" checked name="customer" />
+                    <label for="sign-up" id="new-label"></label>
+                    <p>New customer</p>
                   </div>
+
+                  <div class="customer-type__container">
+                    <input type="radio" id="login" name="customer" />
+                    <label for="login" id="returning-label"></label>
+                    <p>Returning customer</p>
+                  </div>
+                </div>
+                <div class="continuing-options">
+                  <a href="#" class="continuing-options__facebook">
+                    <img src="../img/ic_facebook.svg" alt="" />
+                    <span>Continue with facebook</span>
+                  </a>
+                  <p>Or complete the fields below</p>
+                </div>
+                <div class="sign-up">
+                  <!-- EMAIL SELECT -->
                   <div class="form__select">
                     <p class="form__select--heading">Email</p>
-                    <p class="account-info__text">example@email.com</p>
+                    <input
+                      type="email"
+                      class="form__select-input"
+                      placeholder="Your email"
+                      required
+                    />
                   </div>
+
+                  <!-- PASSWORD SELECT -->
                   <div class="form__select">
-                    <p class="form__select--heading">Phone</p>
-                    <p class="account-info__text">+380 95 508 5475</p>
+                    <p class="form__select--heading">Password</p>
+
+                    <input
+                      type="password"
+                      class="form__select-input password"
+                      placeholder="Create password"
+                    />
+                    <img
+                      src="../img/ic_show_pass.svg"
+                      alt=""
+                      class="show-pass"
+                    />
+                  </div>
+
+                  <!-- NAME OF SOURCES SELECT -->
+                  <div class="form__select">
+                    <p class="form__select--heading">Name (optional)</p>
+                    <input
+                      type="text"
+                      placeholder="Your name"
+                      class="form__select-input"
+                    />
+                  </div>
+
+                  <!-- DEADLINE SELECT -->
+                  <div class="form__select" id="phone">
+                    <p class="form__select--heading">Phone (optional)</p>
+
+                    <input
+                      type="tel"
+                      placeholder=""
+                      id="telephone"
+                      class="form__select-input"
+                    />
+                  </div>
+                  <div class="agreement">
+                    <div class="agreement-item">
+                      <input type="checkbox" id="agreement-checkbox1" />
+                      <label for="agreement-checkbox1"></label>
+                      <p>
+                        I agree to receive discount coupons, exclusive offers,
+                        andthe latest news by email, SMS, phone, and other
+                        electronic means
+                      </p>
+                    </div>
+                    <div class="agreement-item">
+                      <input type="checkbox" id="agreement-checkbox2" />
+                      <label for="agreement-checkbox2"></label>
+                      <p>
+                        I agree to the <a href="#">Terms & Conditions</a> and
+                        <a href="#">Privacy Policy</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- NEXT STEP BUTTON -->
+                  <div class="create-acc-btn">
+                    <a href="#" class="page-btn" id="creaete-acc"
+                      >Create Account & Login</a
+                    >
                   </div>
                 </div>
-                <p>
-                  You will receive all information about your orded by your
-                  email
-                </p>
+
+                <div class="login">
+                  <!-- EMAIL SELECT -->
+                  <div class="form__select">
+                    <p class="form__select--heading">Email</p>
+                    <input
+                      type="email"
+                      class="form__select-input login-email"
+                      placeholder="Your email"
+                      required
+                    />
+                  </div>
+
+                  <!-- PASSWORD SELECT -->
+                  <div class="form__select">
+                    <p class="form__select--heading">Password</p>
+
+                    <input
+                      type="password"
+                      class="form__select-input login-password"
+                      placeholder="Your password"
+                    />
+                    <img
+                      src="../img/ic_show_pass.svg"
+                      alt=""
+                      class="show-pass"
+                    />
+                  </div>
+
+                  <!-- NEXT STEP BUTTON -->
+                  <div class="login-btn">
+                    <a href="#" class="page-btn" id="login-btn-item">Login</a>
+                  </div>
+                </div>
+
+                <!-- ACCOUNT INFO -->
+                <div class="account-info">
+                  <div class="account-info-wrapper">
+                    <div class="form__select">
+                      <p class="form__select--heading">Name</p>
+                      <p class="account-info__text">Andrii Teslia</p>
+                    </div>
+                    <div class="form__select">
+                      <p class="form__select--heading">Email</p>
+                      <p class="account-info__text">example@email.com</p>
+                    </div>
+                    <div class="form__select">
+                      <p class="form__select--heading">Phone</p>
+                      <p class="account-info__text">+380 95 508 5475</p>
+                    </div>
+                  </div>
+                  <p>
+                    You will receive all information about your orded by your
+                    email
+                  </p>
+                </div>
+
+                <!-- --- -->
               </div>
 
               <!-- --- -->
             </div>
-
-            <!-- --- -->
-          </div>
-        </div>
-
-        <div class="order-form__right">
-          <h3>Order Cost</h3>
-
-          <div class="order-form__right--item">
-            <p>Type of Service</p>
-            <p id="service-select-order">Not Selected</p>
           </div>
 
-          <div class="order-form__right--item">
-            <p>Number of pages</p>
-            <p id="pages-select-order">Not Selected</p>
-          </div>
+          <div class="order-form__right">
+            <h3>Order Cost</h3>
 
-          <div class="order-form__right--item order-border">
-            <p>Deadline</p>
-            <p id="deadline-select-order">Not Selected</p>
-          </div>
-
-          <div class="order-form__right--item">
-            <p>Type of Document</p>
-            <p>Not Selected</p>
-          </div>
-
-          <div class="order-form__right--item order-border">
-            <p>Topic</p>
-            <p>Not Selected</p>
-          </div>
-
-          <div class="order-form__right--bottom">
-            <p id="promocode">Do you have a promocode?</p>
-            <div class="promocode-container">
-              <input type="text" placeholder="Your promocode" />
-              <a href="#">Apply</a>
+            <div class="order-form__right--item">
+              <p>Type of Service</p>
+              <p id="service-select-order">Not Selected</p>
             </div>
 
-            <p class="bottom__total">
-              <span>Total Price: $</span>
-              <span>0.00</span>
-            </p>
-            <div class="bottom__complete">
-              <a href="#">Complete my order</a>
+            <div class="order-form__right--item">
+              <p>Number of pages</p>
+              <p id="pages-select-order">Not Selected</p>
+            </div>
+
+            <div class="order-form__right--item order-border">
+              <p>Deadline</p>
+              <p id="deadline-select-order">Not Selected</p>
+            </div>
+
+            <div class="order-form__right--item">
+              <p>Type of Document</p>
+              <p>Not Selected</p>
+            </div>
+
+            <div class="order-form__right--item order-border">
+              <p>Topic</p>
+              <p>Not Selected</p>
+            </div>
+
+            <div class="order-form__right--bottom">
+              <p id="promocode">Do you have a promocode?</p>
+              <div class="promocode-container">
+                <input type="text" placeholder="Your promocode" />
+                <a href="#">Apply</a>
+              </div>
+
+              <p class="bottom__total">
+                <span>Total Price: $</span>
+                <span>0.00</span>
+              </p>
+              <div class="bottom__complete">
+                <a href="#">Complete my order</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-wrapper">
-        <div class="footer__container">
-          <div class="footer__left">
-            <div class="footer__left--logo">
-              <img src="../img/footer-logo.svg" alt="" />
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <div class="footer__container">
+            <div class="footer__left">
+              <div class="footer__left--logo">
+                <img src="../img/footer-logo.svg" alt="" />
+              </div>
+              <nav class="footer__left--navbar">
+                <a href="../services/">Services</a>
+                <a href="../prices/">Prices</a>
+                <a href="../blog/">Blog</a>
+                <a href="../faq/">FAQ</a>
+              </nav>
+              <div class="footer__left--icons">
+                <a href="#">
+                  <!-- <img src="../img/linkedin-icon.svg" alt="" /> -->
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 2.44305C0 1.92824 0.180185 1.50353 0.540541 1.16892C0.900896 0.834297 1.36937 0.666992 1.94595 0.666992C2.51223 0.666992 2.97039 0.831718 3.32046 1.1612C3.68082 1.50097 3.861 1.94369 3.861 2.48938C3.861 2.98359 3.68598 3.39542 3.33591 3.7249C2.97555 4.06467 2.50193 4.23456 1.91506 4.23456H1.89961C1.33333 4.23456 0.875166 4.06467 0.525097 3.7249C0.175027 3.38514 0 2.95785 0 2.44305ZM0.200772 15.9566V5.63996H3.62934V15.9566H0.200772ZM5.52896 15.9566H8.95753V10.1959C8.95753 9.83557 8.99872 9.55758 9.08108 9.36196C9.22522 9.01189 9.44402 8.71588 9.73745 8.47393C10.0309 8.23197 10.399 8.111 10.8417 8.111C11.9949 8.111 12.5714 8.88834 12.5714 10.443V15.9566H16V10.0415C16 8.51769 15.6396 7.36197 14.9189 6.57432C14.1982 5.78668 13.2458 5.39286 12.0618 5.39286C10.7336 5.39286 9.69884 5.96428 8.95753 7.10714V7.13803H8.94208L8.95753 7.10714V5.63996H5.52896C5.54954 5.96943 5.55985 6.99387 5.55985 8.71332C5.55985 10.4327 5.54954 12.8471 5.52896 15.9566Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a href="#">
+                  <!-- <img src="../img/facebook.svg" alt="" /> -->
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.39204 15.9992V8.7025H7.84125L8.20794 5.85885H5.39204V4.04327C5.39204 3.21998 5.62068 2.65887 6.80138 2.65887L8.3072 2.65818V0.114859C8.04665 0.0803299 7.15284 0.00292969 6.11297 0.00292969C3.94191 0.00292969 2.45555 1.32808 2.45555 3.76179V5.85893H0V8.70258H2.45548V15.9993L5.39204 15.9992Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a href="#">
+                  <!-- <img src="../img/twitter.svg" alt="" /> -->
+                  <svg
+                    width="19"
+                    height="15"
+                    viewBox="0 0 19 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.8059 0.336263V0.333008H13.6811L14.0009 0.394865C14.2142 0.435023 14.4077 0.487651 14.5816 0.552764C14.7556 0.617876 14.9239 0.693847 15.0866 0.780659C15.2493 0.86747 15.3969 0.955926 15.5293 1.04599C15.6606 1.13499 15.7784 1.2294 15.8828 1.32923C15.986 1.43016 16.147 1.4562 16.3658 1.40737C16.5847 1.35853 16.8203 1.2907 17.0728 1.20389C17.3253 1.11708 17.5749 1.01941 17.8218 0.910884C18.0687 0.802357 18.2191 0.733452 18.2729 0.704151C18.3257 0.673776 18.3537 0.657498 18.3571 0.655316L18.3604 0.650433L18.3773 0.642294L18.3941 0.634155L18.4109 0.626016L18.4278 0.617876L18.4311 0.612993L18.4362 0.609737L18.4412 0.606482L18.4446 0.601598L18.4614 0.596715L18.4783 0.593459L18.4749 0.617876L18.4698 0.642294L18.4614 0.666711L18.453 0.691128L18.4446 0.707407L18.4362 0.723685L18.4278 0.748102C18.4221 0.76438 18.4165 0.786079 18.4109 0.813215C18.4053 0.840351 18.352 0.948861 18.251 1.13878C18.15 1.3287 18.0238 1.52132 17.8723 1.71666C17.7208 1.91199 17.585 2.05957 17.465 2.15942C17.3438 2.26035 17.2636 2.33088 17.2243 2.37104C17.185 2.41227 17.1373 2.45025 17.0812 2.48499L16.997 2.53871L16.9802 2.54684L16.9634 2.55498L16.96 2.55987L16.955 2.56312L16.9499 2.56638L16.9465 2.57126L16.9297 2.5794L16.9129 2.58754L16.9095 2.59242L16.9045 2.59568L16.8994 2.59893L16.896 2.60382L16.8927 2.6087L16.8876 2.61196L16.8826 2.61521L16.8792 2.6201H16.9634L17.4347 2.52243C17.7489 2.45731 18.049 2.37864 18.3352 2.28639L18.7896 2.13989L18.8401 2.12361L18.8654 2.11547L18.8822 2.10733L18.899 2.09919L18.9159 2.09105L18.9327 2.08292L18.9664 2.07803L19 2.07478V2.10733L18.9916 2.11059L18.9832 2.11547L18.9799 2.12036L18.9748 2.12361L18.9697 2.12687L18.9664 2.13175L18.963 2.13663L18.958 2.13989L18.9529 2.14314L18.9495 2.14803L18.9462 2.15291L18.9411 2.15617L18.9327 2.17245L18.9243 2.18872L18.9192 2.19198C18.917 2.19523 18.8458 2.28747 18.7055 2.46871C18.5652 2.65102 18.4895 2.74326 18.4783 2.74544C18.467 2.74869 18.4513 2.76497 18.4311 2.79427C18.412 2.82465 18.2931 2.94566 18.0743 3.15728C17.8555 3.36889 17.6412 3.55717 17.4313 3.72213C17.2204 3.88817 17.1137 4.09218 17.1115 4.33419C17.1081 4.57511 17.0952 4.84751 17.0728 5.15136C17.0503 5.45522 17.0083 5.78349 16.9465 6.13619C16.8848 6.48889 16.7894 6.88771 16.6604 7.33264C16.5314 7.77757 16.3743 8.21166 16.1891 8.63489C16.0039 9.05813 15.8104 9.43795 15.6084 9.77437C15.4064 10.1108 15.2213 10.3957 15.0529 10.629C14.8846 10.8623 14.7135 11.082 14.5396 11.2882C14.3656 11.4944 14.1457 11.7267 13.8798 11.985C13.6127 12.2421 13.4668 12.3832 13.4421 12.4082C13.4163 12.4321 13.3064 12.5211 13.1122 12.6751C12.9192 12.8303 12.7116 12.9855 12.4894 13.1407C12.2684 13.2948 12.0653 13.4234 11.8801 13.5265C11.695 13.6296 11.4717 13.7473 11.2102 13.8797C10.9499 14.0132 10.6682 14.1369 10.3652 14.2509C10.0623 14.3648 9.74245 14.4706 9.40581 14.5683C9.06917 14.666 8.74376 14.7419 8.42956 14.7962C8.11537 14.8505 7.75909 14.8966 7.36073 14.9346L6.76319 14.9915V14.9997H5.66911V14.9915L5.52604 14.9834C5.43067 14.978 5.35212 14.9725 5.29039 14.9671C5.22869 14.9617 4.99583 14.9318 4.59187 14.8776C4.1879 14.8233 3.8709 14.7691 3.64086 14.7148C3.41083 14.6606 3.06857 14.5574 2.61411 14.4055C2.15964 14.2536 1.77083 14.1 1.44765 13.9448C1.1256 13.7907 0.923621 13.6931 0.8417 13.6518C0.760906 13.6117 0.670014 13.5618 0.569022 13.5021L0.417534 13.4125L0.414184 13.4077L0.409118 13.4044L0.404068 13.4012L0.400702 13.3963L0.38387 13.3881L0.367038 13.38L0.363688 13.3751L0.358622 13.3719L0.353572 13.3686L0.350206 13.3637L0.346856 13.3588L0.34179 13.3556H0.333374V13.323L0.350206 13.3263L0.367038 13.3312L0.442782 13.3393C0.493278 13.3447 0.630745 13.3529 0.855165 13.3637C1.0796 13.3746 1.31804 13.3746 1.57052 13.3637C1.823 13.3529 2.08111 13.3284 2.3448 13.2905C2.6085 13.2525 2.91989 13.1874 3.27897 13.0951C3.63806 13.0029 3.96797 12.8933 4.26871 12.7663C4.56832 12.6383 4.78151 12.5428 4.90832 12.4798C5.03399 12.418 5.22588 12.3029 5.48396 12.1347L5.8711 11.8824L5.87446 11.8775L5.87951 11.8743L5.88458 11.871L5.88793 11.8661L5.89129 11.8612L5.89634 11.858L5.90141 11.8547L5.90476 11.8498L5.92159 11.845L5.93842 11.8417L5.94179 11.8254L5.94684 11.8091L5.95191 11.8059L5.95526 11.801L5.8206 11.7929C5.73083 11.7874 5.64386 11.782 5.5597 11.7766C5.47554 11.7712 5.3437 11.7468 5.16415 11.7033C4.98462 11.6599 4.79105 11.5948 4.58345 11.508C4.37586 11.4212 4.17388 11.3181 3.9775 11.1987C3.78114 11.0793 3.63917 10.98 3.55165 10.9008C3.46525 10.8227 3.35303 10.712 3.21501 10.5687C3.07811 10.4244 2.95916 10.2763 2.85817 10.1244C2.75718 9.97243 2.66068 9.79714 2.56868 9.59857L2.42896 9.3023L2.42054 9.27788L2.41212 9.25347L2.40707 9.23719L2.40371 9.22091L2.42896 9.22417L2.4542 9.22905L2.63936 9.25347C2.7628 9.26974 2.95637 9.27517 3.22006 9.26974C3.48377 9.26432 3.66611 9.25347 3.7671 9.23719C3.86809 9.22091 3.92981 9.21005 3.95225 9.20463L3.98591 9.19649L4.02799 9.18835L4.07007 9.18021L4.07344 9.17533L4.07849 9.17208L4.08356 9.16882L4.08691 9.16394L4.05324 9.1558L4.01958 9.14766L3.98591 9.13952L3.95225 9.13138L3.91859 9.12324C3.89615 9.11782 3.85688 9.10696 3.80076 9.09068C3.74466 9.07441 3.59317 9.01471 3.3463 8.91162C3.09944 8.80853 2.90306 8.70815 2.75718 8.61048C2.61093 8.51252 2.47149 8.4054 2.33975 8.2898C2.20846 8.17259 2.06427 8.02174 1.90716 7.83726C1.75007 7.65278 1.60981 7.43845 1.48636 7.19427C1.36294 6.9501 1.27036 6.71678 1.20864 6.49431C1.14716 6.27314 1.1066 6.04703 1.08746 5.81876L1.05715 5.47692L1.07398 5.48018L1.09081 5.48506L1.10765 5.4932L1.12448 5.50134L1.14131 5.50948L1.15814 5.51762L1.41904 5.63157C1.59298 5.70754 1.80898 5.77265 2.06707 5.8269C2.32517 5.88116 2.47945 5.91101 2.52995 5.91643L2.60569 5.92457H2.75718L2.75383 5.91969L2.74876 5.91643L2.74371 5.91318L2.74035 5.90829L2.737 5.90341L2.73193 5.90016L2.72688 5.8969L2.72352 5.89202L2.70668 5.88388L2.68985 5.87574L2.6865 5.87085L2.68144 5.8676L2.67639 5.86434L2.67302 5.85946L2.65619 5.85132L2.63936 5.84318L2.63601 5.8383C2.63264 5.83612 2.58438 5.8014 2.49123 5.73412C2.39921 5.66575 2.30272 5.57731 2.20172 5.46878C2.10073 5.36026 1.99974 5.24631 1.89875 5.12694C1.79757 5.0073 1.70745 4.87929 1.62944 4.7444C1.5509 4.60876 1.46785 4.43619 1.38032 4.22676C1.29392 4.01839 1.22828 3.80841 1.18339 3.59679C1.13851 3.38517 1.11327 3.17627 1.10765 2.97008C1.10204 2.76388 1.10765 2.58754 1.12448 2.44104C1.14131 2.29453 1.17497 2.12903 1.22547 1.94455C1.27596 1.76007 1.34891 1.56473 1.44428 1.35853L1.58736 1.04925L1.59577 1.02483L1.60419 1.00041L1.60926 0.997159L1.6126 0.992275L1.61597 0.987392L1.62102 0.984136L1.62609 0.987392L1.62944 0.992275L1.6328 0.997159L1.63785 1.00041L1.64292 1.00367L1.64627 1.00855L1.64963 1.01344L1.65468 1.01669L1.6631 1.03297L1.67152 1.04925L1.67658 1.0525L1.67993 1.05739L1.90716 1.30156C2.05865 1.46434 2.2382 1.64612 2.44579 1.84688C2.65339 2.04764 2.76841 2.15182 2.79084 2.15942C2.8133 2.1681 2.84134 2.19305 2.875 2.2343C2.90867 2.27446 3.02089 2.3705 3.21164 2.52243C3.40242 2.67435 3.65209 2.85071 3.96067 3.05147C4.26926 3.25223 4.61151 3.45028 4.98742 3.64562C5.36334 3.84096 5.76731 4.0173 6.19932 4.17467C6.63135 4.33203 6.93432 4.43512 7.10825 4.48395C7.28219 4.53279 7.57954 4.59518 8.00034 4.67115C8.42114 4.74712 8.73815 4.79596 8.95135 4.81765C9.16456 4.83935 9.31044 4.85184 9.38898 4.85509L9.5068 4.85835L9.50345 4.83393L9.49839 4.80952L9.46472 4.60604C9.44229 4.47039 9.43106 4.28047 9.43106 4.0363C9.43106 3.79213 9.4507 3.56695 9.48997 3.36075C9.52926 3.15456 9.58817 2.94566 9.66671 2.73404C9.74526 2.52243 9.82213 2.35258 9.89731 2.22454C9.97362 2.09757 10.0735 1.95269 10.1969 1.78991C10.3204 1.62713 10.4803 1.45892 10.6766 1.28528C10.873 1.11164 11.0974 0.957 11.3499 0.821354C11.6024 0.685708 11.8352 0.582602 12.0484 0.512068C12.2616 0.441535 12.4412 0.395402 12.5871 0.373703C12.7329 0.352004 12.8059 0.339519 12.8059 0.336263Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
-            <nav class="footer__left--navbar">
-              <a href="../services/">Services</a>
-              <a href="../prices/">Prices</a>
-              <a href="../blog/">Blog</a>
-              <a href="../faq/">FAQ</a>
-            </nav>
-            <div class="footer__left--icons">
-              <a href="#">
-                <!-- <img src="../img/linkedin-icon.svg" alt="" /> -->
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 2.44305C0 1.92824 0.180185 1.50353 0.540541 1.16892C0.900896 0.834297 1.36937 0.666992 1.94595 0.666992C2.51223 0.666992 2.97039 0.831718 3.32046 1.1612C3.68082 1.50097 3.861 1.94369 3.861 2.48938C3.861 2.98359 3.68598 3.39542 3.33591 3.7249C2.97555 4.06467 2.50193 4.23456 1.91506 4.23456H1.89961C1.33333 4.23456 0.875166 4.06467 0.525097 3.7249C0.175027 3.38514 0 2.95785 0 2.44305ZM0.200772 15.9566V5.63996H3.62934V15.9566H0.200772ZM5.52896 15.9566H8.95753V10.1959C8.95753 9.83557 8.99872 9.55758 9.08108 9.36196C9.22522 9.01189 9.44402 8.71588 9.73745 8.47393C10.0309 8.23197 10.399 8.111 10.8417 8.111C11.9949 8.111 12.5714 8.88834 12.5714 10.443V15.9566H16V10.0415C16 8.51769 15.6396 7.36197 14.9189 6.57432C14.1982 5.78668 13.2458 5.39286 12.0618 5.39286C10.7336 5.39286 9.69884 5.96428 8.95753 7.10714V7.13803H8.94208L8.95753 7.10714V5.63996H5.52896C5.54954 5.96943 5.55985 6.99387 5.55985 8.71332C5.55985 10.4327 5.54954 12.8471 5.52896 15.9566Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-              <a href="#">
-                <!-- <img src="../img/facebook.svg" alt="" /> -->
-                <svg
-                  width="9"
-                  height="16"
-                  viewBox="0 0 9 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.39204 15.9992V8.7025H7.84125L8.20794 5.85885H5.39204V4.04327C5.39204 3.21998 5.62068 2.65887 6.80138 2.65887L8.3072 2.65818V0.114859C8.04665 0.0803299 7.15284 0.00292969 6.11297 0.00292969C3.94191 0.00292969 2.45555 1.32808 2.45555 3.76179V5.85893H0V8.70258H2.45548V15.9993L5.39204 15.9992Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-              <a href="#">
-                <!-- <img src="../img/twitter.svg" alt="" /> -->
-                <svg
-                  width="19"
-                  height="15"
-                  viewBox="0 0 19 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.8059 0.336263V0.333008H13.6811L14.0009 0.394865C14.2142 0.435023 14.4077 0.487651 14.5816 0.552764C14.7556 0.617876 14.9239 0.693847 15.0866 0.780659C15.2493 0.86747 15.3969 0.955926 15.5293 1.04599C15.6606 1.13499 15.7784 1.2294 15.8828 1.32923C15.986 1.43016 16.147 1.4562 16.3658 1.40737C16.5847 1.35853 16.8203 1.2907 17.0728 1.20389C17.3253 1.11708 17.5749 1.01941 17.8218 0.910884C18.0687 0.802357 18.2191 0.733452 18.2729 0.704151C18.3257 0.673776 18.3537 0.657498 18.3571 0.655316L18.3604 0.650433L18.3773 0.642294L18.3941 0.634155L18.4109 0.626016L18.4278 0.617876L18.4311 0.612993L18.4362 0.609737L18.4412 0.606482L18.4446 0.601598L18.4614 0.596715L18.4783 0.593459L18.4749 0.617876L18.4698 0.642294L18.4614 0.666711L18.453 0.691128L18.4446 0.707407L18.4362 0.723685L18.4278 0.748102C18.4221 0.76438 18.4165 0.786079 18.4109 0.813215C18.4053 0.840351 18.352 0.948861 18.251 1.13878C18.15 1.3287 18.0238 1.52132 17.8723 1.71666C17.7208 1.91199 17.585 2.05957 17.465 2.15942C17.3438 2.26035 17.2636 2.33088 17.2243 2.37104C17.185 2.41227 17.1373 2.45025 17.0812 2.48499L16.997 2.53871L16.9802 2.54684L16.9634 2.55498L16.96 2.55987L16.955 2.56312L16.9499 2.56638L16.9465 2.57126L16.9297 2.5794L16.9129 2.58754L16.9095 2.59242L16.9045 2.59568L16.8994 2.59893L16.896 2.60382L16.8927 2.6087L16.8876 2.61196L16.8826 2.61521L16.8792 2.6201H16.9634L17.4347 2.52243C17.7489 2.45731 18.049 2.37864 18.3352 2.28639L18.7896 2.13989L18.8401 2.12361L18.8654 2.11547L18.8822 2.10733L18.899 2.09919L18.9159 2.09105L18.9327 2.08292L18.9664 2.07803L19 2.07478V2.10733L18.9916 2.11059L18.9832 2.11547L18.9799 2.12036L18.9748 2.12361L18.9697 2.12687L18.9664 2.13175L18.963 2.13663L18.958 2.13989L18.9529 2.14314L18.9495 2.14803L18.9462 2.15291L18.9411 2.15617L18.9327 2.17245L18.9243 2.18872L18.9192 2.19198C18.917 2.19523 18.8458 2.28747 18.7055 2.46871C18.5652 2.65102 18.4895 2.74326 18.4783 2.74544C18.467 2.74869 18.4513 2.76497 18.4311 2.79427C18.412 2.82465 18.2931 2.94566 18.0743 3.15728C17.8555 3.36889 17.6412 3.55717 17.4313 3.72213C17.2204 3.88817 17.1137 4.09218 17.1115 4.33419C17.1081 4.57511 17.0952 4.84751 17.0728 5.15136C17.0503 5.45522 17.0083 5.78349 16.9465 6.13619C16.8848 6.48889 16.7894 6.88771 16.6604 7.33264C16.5314 7.77757 16.3743 8.21166 16.1891 8.63489C16.0039 9.05813 15.8104 9.43795 15.6084 9.77437C15.4064 10.1108 15.2213 10.3957 15.0529 10.629C14.8846 10.8623 14.7135 11.082 14.5396 11.2882C14.3656 11.4944 14.1457 11.7267 13.8798 11.985C13.6127 12.2421 13.4668 12.3832 13.4421 12.4082C13.4163 12.4321 13.3064 12.5211 13.1122 12.6751C12.9192 12.8303 12.7116 12.9855 12.4894 13.1407C12.2684 13.2948 12.0653 13.4234 11.8801 13.5265C11.695 13.6296 11.4717 13.7473 11.2102 13.8797C10.9499 14.0132 10.6682 14.1369 10.3652 14.2509C10.0623 14.3648 9.74245 14.4706 9.40581 14.5683C9.06917 14.666 8.74376 14.7419 8.42956 14.7962C8.11537 14.8505 7.75909 14.8966 7.36073 14.9346L6.76319 14.9915V14.9997H5.66911V14.9915L5.52604 14.9834C5.43067 14.978 5.35212 14.9725 5.29039 14.9671C5.22869 14.9617 4.99583 14.9318 4.59187 14.8776C4.1879 14.8233 3.8709 14.7691 3.64086 14.7148C3.41083 14.6606 3.06857 14.5574 2.61411 14.4055C2.15964 14.2536 1.77083 14.1 1.44765 13.9448C1.1256 13.7907 0.923621 13.6931 0.8417 13.6518C0.760906 13.6117 0.670014 13.5618 0.569022 13.5021L0.417534 13.4125L0.414184 13.4077L0.409118 13.4044L0.404068 13.4012L0.400702 13.3963L0.38387 13.3881L0.367038 13.38L0.363688 13.3751L0.358622 13.3719L0.353572 13.3686L0.350206 13.3637L0.346856 13.3588L0.34179 13.3556H0.333374V13.323L0.350206 13.3263L0.367038 13.3312L0.442782 13.3393C0.493278 13.3447 0.630745 13.3529 0.855165 13.3637C1.0796 13.3746 1.31804 13.3746 1.57052 13.3637C1.823 13.3529 2.08111 13.3284 2.3448 13.2905C2.6085 13.2525 2.91989 13.1874 3.27897 13.0951C3.63806 13.0029 3.96797 12.8933 4.26871 12.7663C4.56832 12.6383 4.78151 12.5428 4.90832 12.4798C5.03399 12.418 5.22588 12.3029 5.48396 12.1347L5.8711 11.8824L5.87446 11.8775L5.87951 11.8743L5.88458 11.871L5.88793 11.8661L5.89129 11.8612L5.89634 11.858L5.90141 11.8547L5.90476 11.8498L5.92159 11.845L5.93842 11.8417L5.94179 11.8254L5.94684 11.8091L5.95191 11.8059L5.95526 11.801L5.8206 11.7929C5.73083 11.7874 5.64386 11.782 5.5597 11.7766C5.47554 11.7712 5.3437 11.7468 5.16415 11.7033C4.98462 11.6599 4.79105 11.5948 4.58345 11.508C4.37586 11.4212 4.17388 11.3181 3.9775 11.1987C3.78114 11.0793 3.63917 10.98 3.55165 10.9008C3.46525 10.8227 3.35303 10.712 3.21501 10.5687C3.07811 10.4244 2.95916 10.2763 2.85817 10.1244C2.75718 9.97243 2.66068 9.79714 2.56868 9.59857L2.42896 9.3023L2.42054 9.27788L2.41212 9.25347L2.40707 9.23719L2.40371 9.22091L2.42896 9.22417L2.4542 9.22905L2.63936 9.25347C2.7628 9.26974 2.95637 9.27517 3.22006 9.26974C3.48377 9.26432 3.66611 9.25347 3.7671 9.23719C3.86809 9.22091 3.92981 9.21005 3.95225 9.20463L3.98591 9.19649L4.02799 9.18835L4.07007 9.18021L4.07344 9.17533L4.07849 9.17208L4.08356 9.16882L4.08691 9.16394L4.05324 9.1558L4.01958 9.14766L3.98591 9.13952L3.95225 9.13138L3.91859 9.12324C3.89615 9.11782 3.85688 9.10696 3.80076 9.09068C3.74466 9.07441 3.59317 9.01471 3.3463 8.91162C3.09944 8.80853 2.90306 8.70815 2.75718 8.61048C2.61093 8.51252 2.47149 8.4054 2.33975 8.2898C2.20846 8.17259 2.06427 8.02174 1.90716 7.83726C1.75007 7.65278 1.60981 7.43845 1.48636 7.19427C1.36294 6.9501 1.27036 6.71678 1.20864 6.49431C1.14716 6.27314 1.1066 6.04703 1.08746 5.81876L1.05715 5.47692L1.07398 5.48018L1.09081 5.48506L1.10765 5.4932L1.12448 5.50134L1.14131 5.50948L1.15814 5.51762L1.41904 5.63157C1.59298 5.70754 1.80898 5.77265 2.06707 5.8269C2.32517 5.88116 2.47945 5.91101 2.52995 5.91643L2.60569 5.92457H2.75718L2.75383 5.91969L2.74876 5.91643L2.74371 5.91318L2.74035 5.90829L2.737 5.90341L2.73193 5.90016L2.72688 5.8969L2.72352 5.89202L2.70668 5.88388L2.68985 5.87574L2.6865 5.87085L2.68144 5.8676L2.67639 5.86434L2.67302 5.85946L2.65619 5.85132L2.63936 5.84318L2.63601 5.8383C2.63264 5.83612 2.58438 5.8014 2.49123 5.73412C2.39921 5.66575 2.30272 5.57731 2.20172 5.46878C2.10073 5.36026 1.99974 5.24631 1.89875 5.12694C1.79757 5.0073 1.70745 4.87929 1.62944 4.7444C1.5509 4.60876 1.46785 4.43619 1.38032 4.22676C1.29392 4.01839 1.22828 3.80841 1.18339 3.59679C1.13851 3.38517 1.11327 3.17627 1.10765 2.97008C1.10204 2.76388 1.10765 2.58754 1.12448 2.44104C1.14131 2.29453 1.17497 2.12903 1.22547 1.94455C1.27596 1.76007 1.34891 1.56473 1.44428 1.35853L1.58736 1.04925L1.59577 1.02483L1.60419 1.00041L1.60926 0.997159L1.6126 0.992275L1.61597 0.987392L1.62102 0.984136L1.62609 0.987392L1.62944 0.992275L1.6328 0.997159L1.63785 1.00041L1.64292 1.00367L1.64627 1.00855L1.64963 1.01344L1.65468 1.01669L1.6631 1.03297L1.67152 1.04925L1.67658 1.0525L1.67993 1.05739L1.90716 1.30156C2.05865 1.46434 2.2382 1.64612 2.44579 1.84688C2.65339 2.04764 2.76841 2.15182 2.79084 2.15942C2.8133 2.1681 2.84134 2.19305 2.875 2.2343C2.90867 2.27446 3.02089 2.3705 3.21164 2.52243C3.40242 2.67435 3.65209 2.85071 3.96067 3.05147C4.26926 3.25223 4.61151 3.45028 4.98742 3.64562C5.36334 3.84096 5.76731 4.0173 6.19932 4.17467C6.63135 4.33203 6.93432 4.43512 7.10825 4.48395C7.28219 4.53279 7.57954 4.59518 8.00034 4.67115C8.42114 4.74712 8.73815 4.79596 8.95135 4.81765C9.16456 4.83935 9.31044 4.85184 9.38898 4.85509L9.5068 4.85835L9.50345 4.83393L9.49839 4.80952L9.46472 4.60604C9.44229 4.47039 9.43106 4.28047 9.43106 4.0363C9.43106 3.79213 9.4507 3.56695 9.48997 3.36075C9.52926 3.15456 9.58817 2.94566 9.66671 2.73404C9.74526 2.52243 9.82213 2.35258 9.89731 2.22454C9.97362 2.09757 10.0735 1.95269 10.1969 1.78991C10.3204 1.62713 10.4803 1.45892 10.6766 1.28528C10.873 1.11164 11.0974 0.957 11.3499 0.821354C11.6024 0.685708 11.8352 0.582602 12.0484 0.512068C12.2616 0.441535 12.4412 0.395402 12.5871 0.373703C12.7329 0.352004 12.8059 0.339519 12.8059 0.336263Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
+            <div class="footer__center">
+              <h2>Contact Us</h2>
+              <p>075 La Avenida St, CA 94043, USA</p>
+              <p>support@theassignmentlab.com</p>
+              <p>+1 888 123 4567</p>
+            </div>
+            <div class="footer__right">
+              <h2>We support payments by:</h2>
+              <div class="footer__right--payments">
+                <img src="../img/mastercard.svg" alt="" />
+                <img src="../img/visa.svg" alt="" />
+                <img src="../img/paypal.svg" alt="" />
+              </div>
+              <div class="footer__right--guarantees">
+                <img src="../img/money-back.svg" alt="" />
+                <img src="../img/image2.svg" alt="" />
+                <img src="../img/image3.png" alt="" />
+              </div>
             </div>
           </div>
-          <div class="footer__center">
-            <h2>Contact Us</h2>
-            <p>075 La Avenida St, CA 94043, USA</p>
-            <p>support@theassignmentlab.com</p>
-            <p>+1 888 123 4567</p>
-          </div>
-          <div class="footer__right">
-            <h2>We support payments by:</h2>
-            <div class="footer__right--payments">
-              <img src="../img/mastercard.svg" alt="" />
-              <img src="../img/visa.svg" alt="" />
-              <img src="../img/paypal.svg" alt="" />
-            </div>
-            <div class="footer__right--guarantees">
-              <img src="../img/money-back.svg" alt="" />
-              <img src="../img/image2.svg" alt="" />
-              <img src="../img/image3.png" alt="" />
-            </div>
+          <div class="footer__copyright">
+            &copy; 2019 - 2020 Theassignmentlab. All Rights Reserved.
           </div>
         </div>
-        <div class="footer__copyright">
-          &copy; 2019 - 2020 Theassignmentlab. All Rights Reserved.
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -659,6 +674,7 @@
 
     <script src="../js/main.js"></script>
     <script src="order-price.js"></script>
+    <script src="../js/dropdowns.js"></script>
     <script src="../build/js/intlTelInput-jquery.min.js"></script>
     <script>
       $("#telephone").intlTelInput({

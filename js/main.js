@@ -1,11 +1,3 @@
-// DROPDOWN ARROW ANIMATION
-let selects = document.querySelectorAll(".hero__form--item");
-selects.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    e.target.parentElement.classList.toggle("rotated");
-  });
-});
-
 //CLOSE HELP TAB
 $(".help__chat--close").click(function () {
   $(".help__chat").fadeOut(300);
@@ -31,31 +23,6 @@ $(document).ready(function () {
     $(".help").fadeIn(300);
   });
 });
-
-// //CLOSE HELP TAB
-// $(".help__chat--close").click(function () {
-//   $(".help__chat").hide();
-//   // $(".help__chat").animate({ width: "toggle" });
-// });
-
-// $(document).ready(function () {
-//   //CHAT OPTION TOGGLE
-//   $(".chat-option").hide();
-
-//   $(".help__btn").click(function () {
-//     // $(".help").hide();
-
-//     $(".help").animate({ width: "toggle" }, 300);
-//     $(".chat-option").slideToggle(300);
-//   });
-
-//   $(".chat-option__close").click(function () {
-//     // $(".help").slideToggle();
-//     $(".help").animate({ width: "toggle" }, 300);
-//     $(".help__chat").show(300);
-//     $(".chat-option").slideToggle(300);
-//   });
-// });
 
 // SERVICEs MENU
 $(".services-nav").hide();
@@ -89,33 +56,6 @@ $(".mobile-menu__dropdown ").click(function () {
   $(".mobile-menu__dropdown").toggleClass("orange-toggler");
 });
 
-// $(document).scroll(function () {
-//   var y = $(this).scrollTop();
-
-//   if (y == $(".top-row").offset().top + 10) {
-//     $(".count").each(function () {
-//       $(this)
-//         .prop("Counter", 0)
-//         .animate(
-//           {
-//             Counter: $(this).text(),
-//           },
-//           {
-//             duration: 1000,
-//             easing: "swing",
-//             step: function (now) {
-//               if (Number.isInteger(now)) {
-//                 $(this).text(now);
-//               } else {
-//                 $(this).text(now.toFixed(2));
-//               }
-//             },
-//           }
-//         );
-//     });
-//   }
-// });
-
 $(window).scroll(function () {
   if ($(".count")) {
     testScroll();
@@ -124,7 +64,7 @@ $(window).scroll(function () {
 var viewed = false;
 
 function isScrolledIntoView(elem) {
-  if (elem) {
+  if ($(elem).length > 0) {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
 

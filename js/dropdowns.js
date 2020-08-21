@@ -62,9 +62,12 @@ menuItem.forEach((item) => {
     let openedItem = document.querySelector(".opened");
     $("#" + openedItem.id + "> p").text(item.textContent);
 
-    if ($("#" + openedItem.id + " > input")) {
+    if ($("#" + openedItem.id + " > input").length) {
       $("#" + openedItem.id + " > input")[0].value = item.textContent;
-      console.log($("#" + openedItem.id + " > input")[0].value);
+      console.log("input", $("#" + openedItem.id + " > input")[0].value);
+    } else {
+      $("#" + openedItem.id)[0].value = item.textContent;
+      console.log("p", $("#" + openedItem.id)[0].value);
     }
 
     let category = openedItem.id.split("-", 1);

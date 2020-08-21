@@ -9,6 +9,11 @@
     <!--need to change favicon -->
     <link rel="icon" href="../img/thumbnail.png" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css"
+    />
+
     <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
@@ -117,59 +122,41 @@
             </div>
           </div>
           <!-- HERO FORM -->
-          <!-- <form action="" method="" class="hero__form">
-            <h3>Check Prices</h3>
-
-            <div class="hero__form--item" id="1">
-              <label for="service">Type of Service</label>
-              <select name="" id="service">
-                <option value="">Eassy</option>
-              </select>
-            </div>
-
-            <div class="hero__form--item" id="2">
-              <label for="pages">Pages</label>
-              <select name="" id="pages">
-                <option value="">1 page / 300 words</option>
-              </select>
-            </div>
-
-            <div class="hero__form--item" id="3">
-              <label for="urgency">Urgency</label>
-              <select name="" id="urgency">
-                <option value="">10 days</option>
-              </select>
-            </div>
-
-            <div class="hero__form--checkbox">
-              <input type="checkbox" id="custom" />
-              <label for="custom"></label>
-              <span>I’m a new costumer (15% off)</span>
-            </div>
-
-            <p class="hero__form--total">Total: $12.39</p>
-
-            <button type="submit">Continue</button>
-          </form> -->
-
           <form action="" method="" class="hero__form">
             <h3>Check Prices</h3>
             <div class="form__select" id="service-select">
               <p class="form__select--heading">Type of Service</p>
               <div class="form__select-input" id="service-select-item">
                 <p>Select type of service</p>
-                <img src="../img/arrow.svg" alt="" />
+                <img
+                  src="../img/arrow.svg"
+                  alt=""
+                  class="form__select-input--arrow"
+                />
               </div>
               <div
                 class="form__select-input--menu"
                 id="service-select-item-menu"
               >
-                <p>Paper / Essay</p>
-                <p>Type of service 02</p>
-                <p>Type of service 03</p>
-                <p>Type of service 04</p>
-                <p>Type of service 05</p>
-                <p>Type of service 06</p>
+                <p data-price="10.00">Writing</p>
+                <p data-price="15.00">Editing</p>
+              </div>
+            </div>
+
+            <div class="form__select" id="academic-level-select">
+              <p class="form__select--heading">Academic Level</p>
+              <div class="form__select-input" id="academic-level-select-item">
+                <p>Select academic level</p>
+                <img src="../img/arrow.svg" alt="" />
+              </div>
+              <div
+                class="form__select-input--menu"
+                id="academic-level-select-item-menu"
+              >
+                <p data-price="5.00">High School</p>
+                <p data-price="10.00">College</p>
+                <p data-price="15.00">Master</p>
+                <p data-price="20.00">PhD</p>
               </div>
             </div>
 
@@ -180,28 +167,21 @@
                 <img src="../img/arrow.svg" alt="" />
               </div>
               <div class="form__select-input--menu" id="pages-select-item-menu">
-                <p>High School</p>
-                <p>College</p>
-                <p>Master</p>
-                <p>PhD</p>
+                <p data-price="0.55">1 page / 300 words</p>
+                <p data-price="2.2">5 page / 1500 words</p>
+                <p data-price="3.96">10 page / 3000 words</p>
+                <p data-price="7.5">20 page / 6000 words</p>
               </div>
             </div>
 
-            <div class="form__select" id="urgency-select">
-              <p class="form__select--heading">Urgency</p>
-              <div class="form__select-input" id="urgency-select-item">
-                <p>Select urgency</p>
-                <img src="../img/arrow.svg" alt="" />
-              </div>
-              <div
-                class="form__select-input--menu"
-                id="urgency-select-item-menu"
-              >
-                <p>High School</p>
-                <p>College</p>
-                <p>Master</p>
-                <p>PhD</p>
-              </div>
+            <!-- DEADLINE SELECT -->
+            <div class="form__select">
+              <p class="form__select--heading">Select deadline</p>
+              <input
+                id="datetimepicker"
+                type="text"
+                placeholder="Select your order deadline"
+              />
             </div>
 
             <div class="hero__form--checkbox">
@@ -210,9 +190,11 @@
               <span>I’m a new costumer (15% off)</span>
             </div>
 
-            <p class="hero__form--total">Total: $12.39</p>
+            <p class="hero__form--total">
+              Total: $<span class="total-price-value">0.00</span>
+            </p>
 
-            <button type="submit">Continue</button>
+            <a href="order-price/">Continue</a>
           </form>
         </div>
       </section>
@@ -222,7 +204,7 @@
         <div class="help__chat">
           <img src="../img/help-hero.svg" alt="" />
           <div class="help__chat--text">
-            <h5>Lisa (assistant)</h5>
+            <h5>Jessica (assistant)</h5>
             <p>How can I help you?</p>
           </div>
           <div class="help__chat--close">
@@ -441,6 +423,18 @@
         $(".loadfont").prepend(
           "@font-face{font-family:'ProductSansRegular'; src: url('../fonts/ProductSans-Regular.ttf') format('truetype'); font-weight: 400;} @font-face {font-family: 'ProductSans-Bold'; src: url('../fonts/ProductSans-Bold.ttf');}"
         );
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="http://cdn.craig.is/js/rainbow-custom.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.datetimepicker.setLocale("en");
+        $("#datetimepicker").datetimepicker({
+          format: "Y-m-d H:i",
+        });
       });
     </script>
   </body>

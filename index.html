@@ -4,6 +4,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="description"
+      content="No matter what kind of academic paper you need, it is simple and secure to hire an essay writer for a price you can afford at Theassignmentlab."
+    />
+    <meta
+      name="keywords"
+      content="essay, writing, editing, writing services, Research Papers, Presentations, CV, Exams"
+    />
     <title>theassignmentlab</title>
     <!--need to change favicon -->
     <link rel="icon" href="../img/thumbnail.png" />
@@ -13,6 +21,10 @@
       rel="stylesheet"
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -109,12 +121,25 @@
                 class="form__select-input--menu"
                 id="service-select-item-menu"
               >
-                <p>Paper / Essay</p>
-                <p>Type of service 02</p>
-                <p>Type of service 03</p>
-                <p>Type of service 04</p>
-                <p>Type of service 05</p>
-                <p>Type of service 06</p>
+                <p data-price="10.00">Writing</p>
+                <p data-price="15.00">Editing</p>
+              </div>
+            </div>
+
+            <div class="form__select" id="academic-level-select">
+              <p class="form__select--heading">Academic Level</p>
+              <div class="form__select-input" id="academic-level-select-item">
+                <p>Select academic level</p>
+                <img src="img/arrow.svg" alt="" />
+              </div>
+              <div
+                class="form__select-input--menu"
+                id="academic-level-select-item-menu"
+              >
+                <p data-price="5.00">High School</p>
+                <p data-price="10.00">College</p>
+                <p data-price="15.00">Master</p>
+                <p data-price="20.00">PhD</p>
               </div>
             </div>
 
@@ -125,28 +150,21 @@
                 <img src="img/arrow.svg" alt="" />
               </div>
               <div class="form__select-input--menu" id="pages-select-item-menu">
-                <p>High School</p>
-                <p>College</p>
-                <p>Master</p>
-                <p>PhD</p>
+                <p data-price="0.55">1 page / 300 words</p>
+                <p data-price="2.2">5 page / 1500 words</p>
+                <p data-price="3.96">10 page / 3000 words</p>
+                <p data-price="7.5">20 page / 6000 words</p>
               </div>
             </div>
 
-            <div class="form__select" id="urgency-select">
-              <p class="form__select--heading">Urgency</p>
-              <div class="form__select-input" id="urgency-select-item">
-                <p>Select urgency</p>
-                <img src="img/arrow.svg" alt="" />
-              </div>
-              <div
-                class="form__select-input--menu"
-                id="urgency-select-item-menu"
-              >
-                <p>High School</p>
-                <p>College</p>
-                <p>Master</p>
-                <p>PhD</p>
-              </div>
+            <!-- DEADLINE SELECT -->
+            <div class="form__select">
+              <p class="form__select--heading">Select deadline</p>
+              <input
+                id="datetimepicker"
+                type="text"
+                placeholder="Select your order deadline"
+              />
             </div>
 
             <div class="hero__form--checkbox">
@@ -155,9 +173,11 @@
               <span>I’m a new costumer (15% off)</span>
             </div>
 
-            <p class="hero__form--total">Total: $12.39</p>
+            <p class="hero__form--total">
+              Total: $<span class="total-price-value">0.00</span>
+            </p>
 
-            <button type="submit">Continue</button>
+            <a href="order-price/">Continue</a>
           </form>
         </div>
       </section>
@@ -167,7 +187,7 @@
         <div class="help__chat">
           <img src="img/help-hero.svg" alt="" />
           <div class="help__chat--text">
-            <h5>Lisa (assistant)</h5>
+            <h5>Jessica (assistant)</h5>
             <p>How can I help you?</p>
           </div>
           <div class="help__chat--close">
@@ -293,13 +313,15 @@
           <div class="samples__container">
             <!-- SAMPLE 1 -->
             <div class="samples__container--item">
-              <h5>Culture</h5>
+              <h5>Healthcare</h5>
               <p>
                 Consequat justo lectus quam ultrices id risus. Mollis eget etiam
                 viverra porttitor. Tortor sagittis id nibh luctus enimphasellus
                 odio.
               </p>
-              <a href="#">Download Example</a>
+              <a href="samples/medicalhealth.pdf" target="_blank"
+                >Show Example</a
+              >
             </div>
 
             <!-- SAMPLE 2 -->
@@ -310,18 +332,22 @@
                 venenatis tempus volutpat nullam mollis leo tincidunt eu sed.
                 Nam enim, convallis facilisis in habitant orci. Pellentesque.
               </p>
-              <a href="#">Download Example</a>
+              <a href="samples/Order_JXFR_Art_History_Final.pdf" target="_blank"
+                >Show Example</a
+              >
             </div>
 
             <!-- SAMPLE 3 -->
             <div class="samples__container--item">
-              <h5>Economics</h5>
+              <h5>Microeconomics</h5>
               <p>
                 Nisi pellentesque in enim pulvinar tellus pretium. Amet eu, at
                 phasellus lorem elit dap. Salesuada lacinia feugiat duis
                 porttitor quam.
               </p>
-              <a href="#">Download Example</a>
+              <a href="samples/PHWR-You_Decide-complete_1.pdf" target="_blank"
+                >Show Example</a
+              >
             </div>
 
             <!-- SAMPLE 4 -->
@@ -332,7 +358,11 @@
                 sed at sem sit ut. Dolor hac leo velit viverra lectus magna
                 vulputate convallis fermentum. Donec sem feugiat risus.
               </p>
-              <a href="#">Download Example</a>
+              <a
+                href="samples/RCTG_Reflection_on_Usage_of_Countries_as_Brands.pdf"
+                target="_blank"
+                >Show Example</a
+              >
             </div>
 
             <!-- SAMPLE 5 -->
@@ -342,7 +372,11 @@
                 Senectus diam feugiat purus lobortis purus. Phasellus cursus eu
                 nisl, ut. Platea ac, vestibulum, eleifend tincidunt ut eu risus.
               </p>
-              <a href="#">Download Example</a>
+              <a
+                href="samples/Final_Impact_of_Covid_19_on_Amazon_Business_Operations.pdf"
+                target="_blank"
+                >Show Example</a
+              >
             </div>
 
             <!-- SAMPLE 6 -->
@@ -353,7 +387,25 @@
                 egestas proin sem nulla. Sed lobortis tristique in ornare
                 lobortis dictum. Nunc eget potenti ut habitant adipiscing.
               </p>
-              <a href="#">Download Example</a>
+              <a
+                href="samples/Chinese_social_media,_language,_and_communications.pdf"
+                target="_blank"
+                >Show Example</a
+              >
+            </div>
+            <!-- SAMPLE 7 -->
+            <div class="samples__container--item">
+              <h5>Management</h5>
+              <p>
+                Scelerisque nec tincidunt nibh phasellus cras. Vitae vitae,
+                egestas proin sem nulla. Sed lobortis tristique in ornare
+                lobortis dictum. Nunc eget potenti ut habitant adipiscing.
+              </p>
+              <a
+                href="samples/GKPH-Service_Operations_Management.pdf"
+                target="_blank"
+                >Show Example</a
+              >
             </div>
           </div>
         </div>
@@ -988,6 +1040,18 @@
         $(".loadfont").prepend(
           "@font-face{font-family:'ProductSansRegular'; src: url('fonts/ProductSans-Regular.ttf') format('truetype'); }@font-face {font-family: 'ProductSans-Bold'; src: url(fonts/ProductSans-Bold.ttf) format('truetype');}"
         );
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="http://cdn.craig.is/js/rainbow-custom.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.datetimepicker.setLocale("en");
+        $("#datetimepicker").datetimepicker({
+          format: "Y-m-d H:i",
+        });
       });
     </script>
   </body>

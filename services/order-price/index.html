@@ -162,10 +162,7 @@
               >
                 <!-- SERVICE SELECT -->
 
-                <div
-                  class="form__select paper exam online-course assignment"
-                  id="service-select"
-                >
+                <div class="form__select" id="service-select">
                   <p class="form__select--heading">Type of Service</p>
                   <div class="form__select-input" id="service-select-item">
                     <input type="hidden" value="" name="service" />
@@ -176,18 +173,15 @@
                     class="form__select-input--menu"
                     id="service-select-item-menu"
                   >
-                    <p data-service="paper">Paper / Essay</p>
-                    <p data-service="exam">Exam</p>
-                    <p data-service="online-course">Online course</p>
-                    <p data-service="assignment">Assignment</p>
+                    <p>Paper / Essay</p>
+                    <p>Exam</p>
+                    <p>Online course</p>
+                    <p>Assignment</p>
                   </div>
                 </div>
 
                 <!-- SUBJECT SELECT -->
-                <div
-                  class="form__select paper exam online-course assignment"
-                  id="subject-select"
-                >
+                <div class="form__select" id="subject-select">
                   <p class="form__select--heading">Select your subject</p>
                   <div class="form__select-input" id="subject-select-item">
                     <input type="hidden" value="" name="subject" />
@@ -208,10 +202,7 @@
                 </div>
 
                 <!-- ACADEMIC SELECT -->
-                <div
-                  class="form__select paper exam online-course assignment"
-                  id="academic-select"
-                >
+                <div class="form__select" id="academic-select">
                   <p class="form__select--heading">Academic level</p>
                   <div class="form__select-input" id="academic-select-item">
                     <input type="hidden" value="" name="academicLevel" />
@@ -230,7 +221,7 @@
                 </div>
 
                 <!-- NUMBER OF PAGES SELECT -->
-                <div class="form__select paper" id="pages-select">
+                <div class="form__select" id="pages-select">
                   <p class="form__select--heading">Number of pages</p>
                   <div class="form__select-input" id="pages-select-item">
                     <input type="hidden" value="" name="numberOfPages" />
@@ -249,10 +240,7 @@
                 </div>
 
                 <!-- TIMEZONE SELECT -->
-                <div
-                  class="form__select paper exam online-course assignment"
-                  id="timezone-select"
-                >
+                <div class="form__select" id="timezone-select">
                   <p class="form__select--heading">Timezone</p>
                   <div class="form__select-input" id="timezone-select-item">
                     <input type="hidden" value="" name="timezone" />
@@ -271,7 +259,7 @@
                 </div>
 
                 <!-- DEADLINE SELECT -->
-                <div class="form__select paper exam online-course assignment">
+                <div class="form__select">
                   <p class="form__select--heading">Select deadline</p>
                   <input
                     id="datetimepicker"
@@ -280,102 +268,6 @@
                     name="deadline"
                   />
                 </div>
-
-                <!-- EXAM DURATION SELECT -->
-                <div class="form__select exam" id="exam-duration-select">
-                  <p class="form__select--heading">Exam duration</p>
-                  <div
-                    class="form__select-input"
-                    id="exam-duration-select-item"
-                  >
-                    <input type="hidden" value="" name="exam-duration" />
-                    <p>Select exam duration</p>
-                    <img src="../img/arrow.svg" alt="" />
-                  </div>
-                  <div
-                    class="form__select-input--menu"
-                    id="exam-duration-select-item-menu"
-                  >
-                    <p>Time1</p>
-                    <p>Time2</p>
-                    <p>Time3</p>
-                    <p>Time4</p>
-                  </div>
-                </div>
-                <!-- EXAM TYPE SELECT -->
-                <div class="form__select exam" id="exam-type-select">
-                  <p class="form__select--heading">Exam type</p>
-                  <div class="form__select-input" id="exam-type-select-item">
-                    <input type="hidden" value="" name="exam-type" />
-                    <p>Select exam type</p>
-                    <img src="../img/arrow.svg" alt="" />
-                  </div>
-                  <div
-                    class="form__select-input--menu"
-                    id="exam-type-select-item-menu"
-                  >
-                    <p>Time1</p>
-                    <p>Time2</p>
-                    <p>Time3</p>
-                    <p>Time4</p>
-                  </div>
-                </div>
-
-                <!-- EXAM SCOPE SELECT -->
-                <div class="form__select exam" id="exam-scope-select">
-                  <p class="form__select--heading">Exam scope</p>
-                  <div class="form__select-input" id="exam-scope-select-item">
-                    <input type="hidden" value="" name="exam-scope" />
-                    <p>Select exam scope</p>
-                    <img src="../img/arrow.svg" alt="" />
-                  </div>
-                  <div
-                    class="form__select-input--menu"
-                    id="exam-scope-select-item-menu"
-                  >
-                    <p>Time1</p>
-                    <p>Time2</p>
-                    <p>Time3</p>
-                    <p>Time4</p>
-                  </div>
-                </div>
-
-                <!-- Online Course DURATION SELECT -->
-                <div
-                  class="form__select online-course"
-                  id="online-course-select"
-                >
-                  <p class="form__select--heading">Online course duration</p>
-                  <div
-                    class="form__select-input"
-                    id="online-course-select-item"
-                  >
-                    <input type="hidden" value="" name="online-course" />
-                    <p>Select course duration</p>
-                    <img src="../img/arrow.svg" alt="" />
-                  </div>
-                  <div
-                    class="form__select-input--menu"
-                    id="online-course-select-item-menu"
-                  >
-                    <p>Time1</p>
-                    <p>Time2</p>
-                    <p>Time3</p>
-                    <p>Time4</p>
-                  </div>
-                </div>
-
-                <p class="form__select form__select--service-descr exam">
-                  You'll receive all information about your order, included
-                  price, by your email in 15-20 minutes.
-                </p>
-
-                <p
-                  class="form__select form__select--service-descr online-course"
-                >
-                  After you send syllabus, you'll receive all information about
-                  your order, included price, by your email in 15-20 minutes.
-                </p>
 
                 <!-- NEXT STEP BUTTON -->
                 <div class="next-step-btn serialize">
@@ -391,7 +283,7 @@
                 id="project-details"
               >
                 <!-- TYPE OF DOCUMENT SELECT -->
-                <div class="form__select paper assignment" id="type-select">
+                <div class="form__select" id="type-select">
                   <p class="form__select--heading">Type of Document</p>
                   <div class="form__select-input" id="type-select-item">
                     <input type="hidden" value="" name="documentType" />
@@ -412,7 +304,7 @@
                 </div>
 
                 <!-- TOPIC SELECT -->
-                <div class="form__select paper assignment" id="topic-select">
+                <div class="form__select" id="topic-select">
                   <p class="form__select--heading">What is your topic?</p>
                   <div class="form__select-input" id="topic-select-item">
                     <input type="hidden" value="" name="topic" />
@@ -433,7 +325,7 @@
                 </div>
 
                 <!-- SITATION STYLE SELECT -->
-                <div class="form__select paper assignment" id="sitation-select">
+                <div class="form__select" id="sitation-select">
                   <p class="form__select--heading">Sitation style</p>
                   <div class="form__select-input" id="sitation-select-item">
                     <input type="hidden" value="" name="sitation" />
@@ -452,7 +344,7 @@
                 </div>
 
                 <!-- NAME OF SOURCES SELECT -->
-                <div class="form__select paper assignment">
+                <div class="form__select">
                   <p class="form__select--heading">Name of sources</p>
                   <input
                     type="text"
@@ -461,32 +353,9 @@
                     name="source"
                   />
                 </div>
-                <!-- TYPE OF QUESTION -->
-                <div class="form__select exam" id="question-select">
-                  <p class="form__select--heading">Type of question</p>
-                  <div class="form__select-input" id="question-select-item">
-                    <input type="hidden" value="" name="question" />
-                    <p>Select type of question</p>
-                    <img src="../img/arrow.svg" alt="" />
-                  </div>
-                  <div
-                    class="form__select-input--menu"
-                    id="question-select-item-menu"
-                  >
-                    <p>Paper / Essay</p>
-                    <p>Type of service 02</p>
-                    <p>Type of service 03</p>
-                    <p>Type of service 04</p>
-                    <p>Type of service 05</p>
-                    <p>Type of service 06</p>
-                  </div>
-                </div>
 
                 <!-- Description -->
-                <div
-                  class="form__select paper exam online-course assignment"
-                  id="description"
-                >
+                <div class="form__select" id="description">
                   <p class="form__select--heading">Description</p>
                   <textarea
                     name="description"
@@ -498,10 +367,7 @@
                 </div>
 
                 <!-- FILE SELECT -->
-                <div
-                  class="form__select paper exam online-course assignment"
-                  id="attached-file"
-                >
+                <div class="form__select" id="attached-file">
                   <p class="form__select--heading">Attach a file (optional)</p>
                   <label for="custom-file" id="custom-input-file"
                     >Your file</label

@@ -33,58 +33,30 @@ let activeForm = document.getElementById(activeFormId);
 
 let dataArray = {};
 
-// activeForm.onsubmit = (e) => {
-//   e.preventDefault();
+activeForm.onsubmit = (e) => {
+  e.preventDefault();
 
-//   activeTabClass = document.getElementById("active-tab").classList[2];
-//   activeFormId = document.querySelector("." + activeTabClass).classList[1];
-//   activeForm = document.getElementById(activeFormId);
+  activeTabClass = document.getElementById("active-tab").classList[2];
+  activeFormId = document.querySelector("." + activeTabClass).classList[1];
+  activeForm = document.getElementById(activeFormId);
 
-//   let formData = new FormData(activeForm);
+  let formData = new FormData(activeForm);
 
-//   for (let key of formData.keys()) {
-//     dataArray = {
-//       ...dataArray,
-//       [key]: formData.get(key),
-//     };
-//   }
+  for (let key of formData.keys()) {
+    dataArray = {
+      ...dataArray,
+      [key]: formData.get(key),
+    };
+  }
 
-//   let emptyFields = [];
-//   for (let key in dataArray) {
-//     if (dataArray[key] === "") {
-//       emptyFields.push(key);
-//     }
-//   }
+  let emptyFields = [];
+  for (let key in dataArray) {
+    if (dataArray[key] === "") {
+      emptyFields.push(key);
+    }
+  }
 
-//   if (emptyFields.length === 0) {
-//     // MAKE TAB NOT ACTIVE
-//     $("." + activeTabClass).removeAttr("id");
-//     // SET ACTIVE TAB
-
-//     $("#" + activeFormId).addClass("not-active-form");
-//     $("." + activeTabClass + 1).attr("id", "active-tab");
-//     activeTabClass = document.querySelector("#active-tab").classList[2];
-//     activeFormId = document.querySelector("." + activeTabClass).classList[1];
-//     $("#" + activeFormId).removeClass("not-active-form");
-//   }
-
-//   console.log(dataArray);
-//   console.log(activeForm);
-// };
-
-nextBtn.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    e.preventDefault();
-    let activeTabClass = document.getElementById("active-tab").classList[2];
-
-    let activeFormId = document.querySelector("." + activeTabClass)
-      .classList[1];
-
-    // let result = data.filter((item) => item.value === "");
-    // console.log("result", data);
-    // console.log(result);
-
-    // if (result.length === 0) {
+  if (emptyFields.length === 0) {
     // MAKE TAB NOT ACTIVE
     $("." + activeTabClass).removeAttr("id");
     // SET ACTIVE TAB
@@ -94,9 +66,36 @@ nextBtn.forEach((item) => {
     activeTabClass = document.querySelector("#active-tab").classList[2];
     activeFormId = document.querySelector("." + activeTabClass).classList[1];
     $("#" + activeFormId).removeClass("not-active-form");
-    // }
-  });
-});
+  }
+
+  console.log(dataArray);
+  console.log(activeForm);
+};
+// nextBtn.forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     let activeTabClass = document.getElementById("active-tab").classList[2];
+
+//     let activeFormId = document.querySelector("." + activeTabClass)
+//       .classList[1];
+
+//     let result = data.filter((item) => item.value === "");
+//     console.log("result", data);
+//     console.log(result);
+
+//     if (result.length === 0) {
+//       // MAKE TAB NOT ACTIVE
+//       $("." + activeTabClass).removeAttr("id");
+//       // SET ACTIVE TAB
+
+//       $("#" + activeFormId).addClass("not-active-form");
+//       $("." + activeTabClass + 1).attr("id", "active-tab");
+//       activeTabClass = document.querySelector("#active-tab").classList[2];
+//       activeFormId = document.querySelector("." + activeTabClass).classList[1];
+//       $("#" + activeFormId).removeClass("not-active-form");
+//     }
+//   });
+// });
 
 // SELECT FILE
 $("#custom-file").change(function () {
@@ -165,25 +164,3 @@ $("#promocode").click(function () {
   $("#promocode").hide();
   $(".promocode-container").show();
 });
-
-let formFields = document.getElementsByClassName("form__select");
-
-Array.from(formFields).map((item) => {
-  if (!item.classList.contains("paper")) {
-    item.style = "display: none;";
-  }
-});
-
-document
-  .getElementById("service-select-item-menu")
-  .addEventListener("click", (e) => {
-    if (e.target.dataset.service) {
-      Array.from(formFields).map((item) => {
-        if (item.classList.contains(e.target.dataset.service)) {
-          item.style = "display: block;";
-        } else {
-          item.style = "display: none;";
-        }
-      });
-    }
-  });

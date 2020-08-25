@@ -167,8 +167,15 @@ $("#promocode").click(function () {
 });
 
 let formFields = document.getElementsByClassName("form__select");
+let orderDetails = document.getElementsByClassName("order-form__right--item");
 
 Array.from(formFields).map((item) => {
+  if (!item.classList.contains("paper")) {
+    item.style = "display: none;";
+  }
+});
+
+Array.from(orderDetails).map((item) => {
   if (!item.classList.contains("paper")) {
     item.style = "display: none;";
   }
@@ -185,5 +192,24 @@ document
           item.style = "display: none;";
         }
       });
+      Array.from(orderDetails).map((item) => {
+        if (item.classList.contains(e.target.dataset.service)) {
+          item.style = "display: block;";
+        } else {
+          item.style = "display: none;";
+        }
+      });
     }
   });
+
+// EXAM TYPE HINT
+// $(".exam-type-hint").hide();
+
+// $(".active-menu-item").hover(
+//   function () {
+//     $(".exam-type-hint").show();
+//   },
+//   function () {
+//     $(".exam-type-hint").hide();
+//   }
+// );

@@ -310,15 +310,34 @@
                     <p>Select exam type</p>
                     <img src="../img/arrow.svg" alt="" />
                   </div>
+                  <!-- <div class="exam-type-wrapper"> -->
                   <div
                     class="form__select-input--menu"
                     id="exam-type-select-item-menu"
                   >
-                    <p>Time1</p>
-                    <p>Time2</p>
-                    <p>Time3</p>
-                    <p>Time4</p>
+                    <p>
+                      Online
+                    </p>
+                    <span class="exam-type-hint">
+                      You send screenshots on questions to the writer
+                    </span>
+
+                    <p>
+                      Take home
+                    </p>
+                    <span class="exam-type-hint">
+                      The writer has more than 12 hours to complete your exam
+                    </span>
+
+                    <p>
+                      In account
+                    </p>
+                    <span class="exam-type-hint">
+                      You should provide log in details and the writer takes
+                      exam in your account
+                    </span>
                   </div>
+                  <!-- </div> -->
                 </div>
 
                 <!-- EXAM SCOPE SELECT -->
@@ -692,27 +711,41 @@
           <div class="order-form__right">
             <h3>Order Cost</h3>
 
-            <div class="order-form__right--item">
+            <div
+              class="order-form__right--item paper exam online-course assignment"
+            >
               <p>Type of Service</p>
               <p id="service-select-order">Not Selected</p>
             </div>
 
-            <div class="order-form__right--item">
+            <div class="order-form__right--item paper">
               <p>Number of pages</p>
               <p id="pages-select-order">Not Selected</p>
             </div>
 
-            <div class="order-form__right--item order-border">
+            <div class="order-form__right--item exam online-course assignment">
+              <p>Subject</p>
+              <p id="pages-select-order">Not Selected</p>
+            </div>
+
+            <div
+              class="order-form__right--item order-border paper exam online-course assignment"
+            >
               <p>Deadline</p>
               <p id="deadline-select-order">Not Selected</p>
             </div>
 
-            <div class="order-form__right--item">
+            <div class="order-form__right--item order-border exam">
+              <p>Type of question</p>
+              <p>Not Selected</p>
+            </div>
+
+            <div class="order-form__right--item paper assignment">
               <p>Type of Document</p>
               <p>Not Selected</p>
             </div>
 
-            <div class="order-form__right--item order-border">
+            <div class="order-form__right--item order-border paper assignment">
               <p>Topic</p>
               <p>Not Selected</p>
             </div>

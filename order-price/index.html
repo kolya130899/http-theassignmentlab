@@ -176,10 +176,12 @@
                     class="form__select-input--menu"
                     id="service-select-item-menu"
                   >
-                    <p data-service="paper">Paper / Essay</p>
-                    <p data-service="exam">Exam</p>
-                    <p data-service="online-course">Online course</p>
-                    <p data-service="assignment">Assignment</p>
+                    <p data-service="paper" data-price="10">Paper / Essay</p>
+                    <p data-service="exam" data-price="15">Exam</p>
+                    <p data-service="online-course" data-price="25">
+                      Online course
+                    </p>
+                    <p data-service="assignment" data-price="5">Assignment</p>
                   </div>
                 </div>
 
@@ -198,12 +200,10 @@
                     class="form__select-input--menu"
                     id="subject-select-item-menu"
                   >
-                    <p>Type of subject 01</p>
-                    <p>Type of subject 02</p>
-                    <p>Type of subject 03</p>
-                    <p>Type of subject 04</p>
-                    <p>Type of subject 05</p>
-                    <p>Type of subject 06</p>
+                    <p data-price="0.10">Type of subject 01</p>
+                    <p data-price="0.20">Type of subject 02</p>
+                    <p data-price="0.30">Type of subject 03</p>
+                    <p data-price="0.40">Type of subject 04</p>
                   </div>
                 </div>
 
@@ -233,7 +233,7 @@
                 <div class="form__select paper" id="pages-select">
                   <p class="form__select--heading">Number of pages</p>
                   <div class="form__select-input" id="pages-select-item">
-                    <input type="hidden" value="" name="numberOfPages" />
+                    <input type="hidden" value="" name="pages" />
                     <p>Select pages number</p>
                     <img src="../img/arrow.svg" alt="" />
                   </div>
@@ -241,10 +241,10 @@
                     class="form__select-input--menu"
                     id="pages-select-item-menu"
                   >
-                    <p>1</p>
-                    <p>5</p>
-                    <p>10</p>
-                    <p>20</p>
+                    <p data-price="1">1</p>
+                    <p data-price="5">5</p>
+                    <p data-price="10">10</p>
+                    <p data-price="20">20</p>
                   </div>
                 </div>
 
@@ -315,23 +315,17 @@
                     class="form__select-input--menu"
                     id="exam-type-select-item-menu"
                   >
-                    <p>
-                      Online
-                    </p>
+                    <p>Online</p>
                     <span class="exam-type-hint">
                       You send screenshots on questions to the writer
                     </span>
 
-                    <p>
-                      Take home
-                    </p>
+                    <p>Take home</p>
                     <span class="exam-type-hint">
                       The writer has more than 12 hours to complete your exam
                     </span>
 
-                    <p>
-                      In account
-                    </p>
+                    <p>In account</p>
                     <span class="exam-type-hint">
                       You should provide log in details and the writer takes
                       exam in your account
@@ -413,7 +407,7 @@
                 <div class="form__select paper assignment" id="type-select">
                   <p class="form__select--heading">Type of Document</p>
                   <div class="form__select-input" id="type-select-item">
-                    <input type="hidden" value="" name="documentType" />
+                    <input type="hidden" value="" name="type" />
                     <p>Select type of document</p>
                     <img src="../img/arrow.svg" alt="" />
                   </div>
@@ -421,12 +415,12 @@
                     class="form__select-input--menu"
                     id="type-select-item-menu"
                   >
-                    <p>Type of document 01</p>
-                    <p>Type of document 02</p>
-                    <p>Type of document 03</p>
-                    <p>Type of document 04</p>
-                    <p>Type of document 05</p>
-                    <p>Type of document 06</p>
+                    <p data-price="1">Type of document 01</p>
+                    <p data-price="2">Type of document 02</p>
+                    <p data-price="3">Type of document 03</p>
+                    <p data-price="4">Type of document 04</p>
+                    <p data-price="5">Type of document 05</p>
+                    <p data-price="6">Type of document 06</p>
                   </div>
                 </div>
 
@@ -442,12 +436,12 @@
                     class="form__select-input--menu"
                     id="topic-select-item-menu"
                   >
-                    <p>Topic 01</p>
-                    <p>Topic 02</p>
-                    <p>Topic 03</p>
-                    <p>Topic 04</p>
-                    <p>Topic 05</p>
-                    <p>Topic 06</p>
+                    <p data-price="1">Topic 01</p>
+                    <p data-price="2">Topic 02</p>
+                    <p data-price="3">Topic 03</p>
+                    <p data-price="4">Topic 04</p>
+                    <p data-price="5">Topic 05</p>
+                    <p data-price="6">Topic 06</p>
                   </div>
                 </div>
 
@@ -492,12 +486,11 @@
                     class="form__select-input--menu"
                     id="question-select-item-menu"
                   >
-                    <p>Type of question 01</p>
-                    <p>Type of question 02</p>
-                    <p>Type of question 03</p>
-                    <p>Type of question 04</p>
-                    <p>Type of question 05</p>
-                    <p>Type of question 06</p>
+                    <p data-price="10">Type of question 01</p>
+                    <p data-price="20">Type of question 02</p>
+                    <p data-price="30">Type of question 03</p>
+                    <p data-price="40">Type of question 04</p>
+                    <p data-price="50">Type of question 05</p>
                   </div>
                 </div>
 
@@ -529,7 +522,7 @@
                     type="file"
                     id="custom-file"
                     name="file"
-                    style="display: none;"
+                    style="display: none"
                   />
                   <div class="custom-input-file-img">
                     <img src="../img/ic_attach.svg" alt="" />
@@ -725,7 +718,7 @@
 
             <div class="order-form__right--item exam online-course assignment">
               <p>Subject</p>
-              <p id="pages-select-order">Not Selected</p>
+              <p id="subject-select-order">Not Selected</p>
             </div>
 
             <div
@@ -737,17 +730,17 @@
 
             <div class="order-form__right--item order-border exam">
               <p>Type of question</p>
-              <p>Not Selected</p>
+              <p id="question-select-order">Not Selected</p>
             </div>
 
             <div class="order-form__right--item paper assignment">
               <p>Type of Document</p>
-              <p>Not Selected</p>
+              <p id="type-select-order">Not Selected</p>
             </div>
 
             <div class="order-form__right--item order-border paper assignment">
               <p>Topic</p>
-              <p>Not Selected</p>
+              <p id="topic-select-order">Not Selected</p>
             </div>
 
             <div class="order-form__right--bottom">
@@ -759,7 +752,7 @@
 
               <p class="bottom__total">
                 <span>Total Price: $</span>
-                <span>0.00</span>
+                <span id="order-cost">0.00</span>
               </p>
               <div class="bottom__complete">
                 <a href="#">Complete my order</a>

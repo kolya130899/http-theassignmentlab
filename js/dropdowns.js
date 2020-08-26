@@ -64,7 +64,6 @@ menuItem.forEach((item) => {
 
     if ($("#" + openedItem.id + " > input").length) {
       $("#" + openedItem.id + " > input")[0].value = item.textContent;
-      console.log("input", $("#" + openedItem.id + " > input")[0].value);
     } else {
       $("#" + openedItem.id)[0].value = item.textContent;
       console.log("p", $("#" + openedItem.id)[0].value);

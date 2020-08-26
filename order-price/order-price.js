@@ -202,14 +202,77 @@ document
     }
   });
 
-// EXAM TYPE HINT
-// $(".exam-type-hint").hide();
+// PUT INPUT VALUES TO ORDER COST
+let inputMenus = document.querySelectorAll(".form__select-input--menu"); //get all menus
 
-// $(".active-menu-item").hover(
-//   function () {
-//     $(".exam-type-hint").show();
+Array.from(inputMenus).map((item) => {
+  //listen event for every menu item
+  item.addEventListener("click", (e) => {
+    let inputName = e.target.parentElement.id.split("-", 1)[0];
+    let inputElement = document.querySelector("input[name=" + inputName + "]");
+    if (inputElement) {
+      let orderCategory = document.getElementById(
+        `${inputElement.name}-select-order`
+      );
+      if (orderCategory) {
+        orderCategory.textContent = inputElement.value;
+        orderCategory.style = "color: #020202;";
+      }
+
+      let optionPrice = e.target.dataset.price;
+
+      addOrderOption(inputElement.name, optionPrice);
+
+      computeOrderPrice(orderOptions);
+    }
+  });
+});
+
+// PUT DEADLINE TO ORDER COST
+let deadlineInput = document.getElementById("datetimepicker");
+deadlineInput.addEventListener("change", () => {
+  document.getElementById("deadline-select-order").textContent =
+    deadlineInput.value;
+  document.getElementById("deadline-select-order").style = "color: #020202;";
+});
+
+// GET ORDER PRICE
+
+let orderOptions = {};
+
+function addOrderOption(newOption, newValue) {
+  if (newOption == "service") {
+    orderOptions = { [newOption]: newValue };
+  } else {
+    orderOptions = { ...orderOptions, [newOption]: newValue };
+  }
+
+  console.log(orderOptions);
+  // return obj;
+}
+
+function computeOrderPrice(obj) {
+  let sum = 0;
+  if (orderOptions) {
+    for (let key in obj) {
+      if (obj[key]) sum += Number(obj[key]);
+    }
+  }
+
+  document.getElementById("order-cost").innerText = sum.toFixed(2);
+
+  // return sum.toFixed(2);
+}
+
+// let handler = {
+//   set(target, key, value) {
+//     target[key] = value;
 //   },
-//   function () {
-//     $(".exam-type-hint").hide();
-//   }
-// );
+//   get(target, key) {
+//     return target[key];
+//   },
+// };
+
+// let proxy = new Proxy(orderOptions, handler);
+
+// let orderPrice = 0;

@@ -698,7 +698,7 @@ input[type="checkbox"]:checked + label:before {
   margin-top: 0;
 
   width: 496px;
-  max-height: 700px;
+  max-height: 800px;
 }
 .article-hero {
   max-width: 705px;

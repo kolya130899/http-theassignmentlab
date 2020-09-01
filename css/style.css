@@ -1260,6 +1260,7 @@ textarea {
   width: 10px;
   height: 5px;
   transition: 1s;
+  margin-left: 10px;
 }
 .form__select-input--menu {
   width: 100%;

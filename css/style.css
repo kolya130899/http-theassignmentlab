@@ -1086,6 +1086,8 @@ input[type="text"],
   line-height: 28px;
   color: #677294;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 #custom-input-file {
   position: relative;

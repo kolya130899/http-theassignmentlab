@@ -72,14 +72,34 @@ menuItem.forEach((item) => {
     let category = openedItem.id.split("-", 1);
 
     let sum = 0;
-    proxy[`${category}`] = item.dataset.price;
-    for (key in proxy) {
-      sum += Number(proxy[key]);
+    console.log(item.dataset.price);
+
+    if (item.dataset.price) {
+      proxy[`${category}`] = item.dataset.price;
+      for (key in proxy) {
+        sum += Number(proxy[key]);
+      }
+
+      if (document.querySelector(".total-price-value")) {
+        document.querySelector(".total-price-value").innerHTML = sum.toFixed(2);
+      }
     }
 
-    if (document.querySelector(".total-price-value")) {
-      document.querySelector(".total-price-value").innerHTML = sum.toFixed(2);
-    }
+    // if (document.querySelector("#custom")) {
+    //   let discount = 0.0;
+    //   let price = document.querySelector(".total-price-value").textContent;
+
+    //   if (document.querySelector("#custom").checked) {
+    //     discount = price * 0.15;
+    //     document.querySelector(".total-price-value").innerHTML = (
+    //       Number(price) - discount
+    //     ).toFixed(2);
+    //   } else {
+    //     document.querySelector(".total-price-value").innerHTML = (
+    //       Number(price) + discount
+    //     ).toFixed(2);
+    //   }
+    // }
 
     $("#" + openedItem.id + "> p").css("color", "#020202");
     $("#" + openedItem.id + "-menu").slideUp(300);

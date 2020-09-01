@@ -260,19 +260,4 @@ function computeOrderPrice(obj) {
   }
 
   document.getElementById("order-cost").innerText = sum.toFixed(2);
-
-  // return sum.toFixed(2);
 }
-
-// let handler = {
-//   set(target, key, value) {
-//     target[key] = value;
-//   },
-//   get(target, key) {
-//     return target[key];
-//   },
-// };
-
-// let proxy = new Proxy(orderOptions, handler);
-
-// let orderPrice = 0;

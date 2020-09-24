@@ -104,11 +104,11 @@ window.onload = function () {
 
   // posible currency
   const currency = {
-    usd: "$",
-    gpb: "&pound;",
-    aud: "&#8371;",
-    eur: "&euro;",
-    cad: "&#36;",
+    usd: ["$", 1.0],
+    gpb: ["&pound;", 1.27],
+    aud: ["&#8371;", 0.71],
+    eur: ["&euro;", 1.17],
+    cad: ["&#36;", 0.75],
   };
 
   let categoryToggler = document.querySelector(".pricing__category"); //get pricing category block
@@ -132,7 +132,7 @@ window.onload = function () {
         // insert data after heading one-by-one
         table.insertAdjacentHTML(
           "beforeend",
-          `<div class='priscing__table--row' id=${i}><p>${editing.package[i].duration}</p><p><span id="current-currency" style=${spanStyle}>${currency[curEl]}</span>${editing.package[i].school}</p><p><span id="current-currency" style=${spanStyle}>${currency[curEl]}</span>${editing.package[i].collage}</p><p><span id="current-currency" style=${spanStyle}>${currency[curEl]}</span>${editing.package[i].master}</p><p><span id="current-currency" style=${spanStyle}>${currency[curEl]}</span>${editing.package[i].phd}</p>`
+          `<div class='priscing__table--row' id=${i}><p>${editing.package[i].duration}</p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price school" id=${i}>${editing.package[i].school}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price collage" id=${i}>${editing.package[i].collage}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price master" id=${i}>${editing.package[i].master}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price phd" id=${i}>${editing.package[i].phd}</span></p>`
         );
       }
     } else {
@@ -145,7 +145,7 @@ window.onload = function () {
         // insert data after heading one-by-one while window is loaded
         table.insertAdjacentHTML(
           "beforeend",
-          `<div class='priscing__table--row' id=${i}><p>${writing.package[i].duration}</p><p><span id="current-currency" style=${spanStyle}>${currency[curEl]}</span>${writing.package[i].school}</p><p><span id="current-currency" style=${spanStyle}>${currency[curEl]}</span>${writing.package[i].collage}</p><p><span id="current-currency" style=${spanStyle}>${currency[curEl]}</span>${writing.package[i].master}</p><p><span id="current-currency" style=${spanStyle}>${currency[curEl]}</span>${writing.package[i].phd}</p>`
+          `<div class='priscing__table--row' id=${i}><p>${writing.package[i].duration}</p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price school" id=${i}>${writing.package[i].school}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price collage" id=${i}>${writing.package[i].collage}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price master" id=${i}>${writing.package[i].master}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price phd" id=${i}>${writing.package[i].phd}</span></p>`
         );
       }
     }
@@ -170,7 +170,16 @@ window.onload = function () {
         // change currency in row
         let currentCurrency = document.querySelectorAll("#current-currency");
         currentCurrency.forEach((item) => {
-          item.innerHTML = currency[e.target.classList[1]];
+          item.innerHTML = currency[e.target.classList[1]][0];
+        });
+        let currentPrice = document.querySelectorAll(".current-price");
+
+        currentPrice.forEach((item) => {
+          let schoolPrice =
+            Number(writing.package[item.id][item.classList[1]]) *
+            Number(currency[e.target.classList[1]][1]);
+
+          item.innerHTML = schoolPrice.toFixed(2);
         });
       }
     });
@@ -180,7 +189,7 @@ window.onload = function () {
     // insert data after heading one-by-one while window is loaded
     table.insertAdjacentHTML(
       "beforeend",
-      `<div class='priscing__table--row' id=${i}><p>${writing.package[i].duration}</p><p><span id="current-currency" style=${spanStyle}>${currency.usd}</span>${writing.package[i].school}</p><p><span id="current-currency" style=${spanStyle}>${currency.usd}</span>${writing.package[i].collage}</p><p><span id="current-currency" style=${spanStyle}>${currency.usd}</span>${writing.package[i].master}</p><p><span id="current-currency" style=${spanStyle}>${currency.usd}</span>${writing.package[i].phd}</p>`
+      `<div class='priscing__table--row' id=${i}><p>${writing.package[i].duration}</p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price school" id=${i}>${writing.package[i].school}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price collage" id=${i}>${writing.package[i].collage}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price master" id=${i}>${writing.package[i].master}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price phd" id=${i}>${writing.package[i].phd}</span></p>`
     );
   }
 

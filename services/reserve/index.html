@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <title>theassignmentlab</title>
+
     <!--need to change favicon -->
     <link rel="icon" href="../img/thumbnail.png" />
 
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css"
     />
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
     <link
@@ -30,7 +31,7 @@
         <div class="toggle-mnu hidden-lg"><span></span></div>
         <nav class="mobile mobile-menu">
           <div class="mobile-menu__dropdown">
-            <a href="../services/" class="mobile-menu__services">
+            <a href="./" class="mobile-menu__services">
               Writing Services
             </a>
             <nav class="mobile-sub-menu">
@@ -41,7 +42,7 @@
             </nav>
           </div>
 
-          <a href="./">Prices</a>
+          <a href="../prices/">Prices</a>
           <a href="../blog/">Blog</a>
           <a href="../faq/">FAQ</a>
           <a href="#">Live Chat</a>
@@ -55,7 +56,7 @@
 
         <nav class="header__navbar desktop">
           <div class="header__navbar--dropdown">
-            <a href="../services/" id="services">Writing Services</a>
+            <a href="./" class="services-active">Writing Services</a>
             <nav class="services-nav">
               <a href="../essay-writing/">Essay Writing Help</a>
               <a href="../online-course/">Online Course</a>
@@ -64,7 +65,7 @@
             </nav>
           </div>
 
-          <a href="./" class="services-active">Prices</a>
+          <a href="../prices/">Prices</a>
           <a href="../blog/">Blog</a>
           <a href="../faq/">FAQ</a>
           <a href="#">Live Chat</a>
@@ -76,87 +77,124 @@
 
     <div class="overlay">
       <!-- HERO -->
-      <section class="hero prices-hero">
+      <section class="hero services-hero">
         <img src="../img/pattern.svg" alt="" />
 
         <div class="hero-wrapper">
           <div class="hero__left services-title">
             <h1 class="">
-              Know exactly<br class="br-450" />
-              what you are paying for
+              Take care of your<br class="br-450" />
+              assignments today!
             </h1>
             <p class="hero__left--descriptor">
-              Have a look at our prices below. You can easily switch between
-              different currencies and types of services to find exact prices
-              for the service you need.
+              <span>Theassignmentlab</span> is your gateway to a full scope
+              academic assistance: from writing an essay draft or outline to
+              proofreading and formatting your paper, checking it for
+              plagiarism. <br /><br />
+              Getting your order completed and delivered on time is our top
+              priority. When placing an order with Assignment-Partner.com, you
+              can be sure that we will produce a custom draft paper with full
+              respect and attention to all your requirements. You can rely on
+              our prompt academic assistance even with the most urgent tasks.
               <br /><br />
-              We are keen to provide you a great value for the service you
-              purchase. Therefore we promise you:
+              Every client is unique and every assignment is original and
+              authentic. We are keen to help you boost your academic skills to a
+              new level.
               <br /><br />
-              <span class="descriptor__guarantees">
-                <img src="../img/Subtract.svg" alt="" />
-                No hidden charges - you pay exactly what you see in the quote
-              </span>
-              <br />
-              <span class="descriptor__guarantees">
-                <img src="../img/Subtract.svg" alt="" />
-                Average of 300 words per page - about 10% more than what our
-                competitors offer
-              </span>
-              <br />
-              <span class="descriptor__guarantees">
-                <img src="../img/Subtract.svg" alt="" />
-                100% money back guarantee
-              </span>
+              We have experts covering over 240 different subjects to ensure
+              that we have a relevant person to help you, no matter what the
+              field of your research is.
+              <br /><br />
+              Before you place your order with us, we check and confirm whether
+              we have a relevant vacant expert able to fulfill your assignment
+              in time.
+              <br /><br />
+              We use our own state-of-the-art matching system to give your
+              assignment to the most suitable expert.
+              <br /><br />
+              Full confidentiality is guaranteed – the personal information
+              provided by you with the order is kept safe and secure with us.
             </p>
+            <div class="hero__left--btn-block">
+              <a href="../order-price/" class="page-btn">Write My Paper</a
+              ><br />
+              <p>You won’t be charget yet</p>
+            </div>
           </div>
           <!-- HERO FORM -->
-          <form action="" method="" class="hero__form prices__form">
-            <h3>How you will benefit using academic paper writing service</h3>
-            <p class="prices__form--item">
-              <img src="../img/number11.svg" alt="" />
-              <span>Save your time</span>
-            </p>
-            <p class="prices__form--item">
-              <img src="../img/number12.svg" alt="" />
-              <span>Save your subject</span>
-            </p>
-            <p class="prices__form--item">
-              <img src="../img/number13.svg" alt="" />
-              <span>Get help with the research</span>
-            </p>
-
-            <h3>How you will benefit using academic paper writing service</h3>
-            <p class="prices__form--item">
-              <img src="../img/number11.svg" alt="" />
-              <span
-                >Professional
-                <span class="bold">writers with Master and PhD</span>
-                degrees</span
+          <form action="" method="" class="hero__form">
+            <h3>Check Prices</h3>
+            <div class="form__select" id="service-select">
+              <p class="form__select--heading">Type of Service</p>
+              <div class="form__select-input" id="service-select-item">
+                <p>Select type of service</p>
+                <img
+                  src="../img/arrow.svg"
+                  alt=""
+                  class="form__select-input--arrow"
+                />
+              </div>
+              <div
+                class="form__select-input--menu"
+                id="service-select-item-menu"
               >
-            </p>
-            <p class="prices__form--item">
-              <img src="../img/number12.svg" alt="" />
-              <span
-                ><span class="bold">15% OFF any paper</span> for new customers;
-                flexible discounts for returning customer</span
-              >
-            </p>
-            <p class="prices__form--item">
-              <img src="../img/number13.svg" alt="" />
-              <span
-                ><span class="bold">FREE</span> amendments, formatting, title
-                and reference page</span
-              >
-            </p>
-            <p class="prices__form--item">
-              <img src="../img/number14.svg" alt="" />
-              <span><span class="bold">3-hr service</span> is available</span>
-            </p>
-
-            <div class="order-prices-link-wrapper">
-              <a href="../order-price/" class="order-prices-link">Order Now!</a>
+                <p data-price="10.00">Writing</p>
+                <p data-price="15.00">Editing</p>
+              </div>
             </div>
+
+            <div class="form__select" id="academic-level-select">
+              <p class="form__select--heading">Academic Level</p>
+              <div class="form__select-input" id="academic-level-select-item">
+                <p>Select academic level</p>
+                <img src="../img/arrow.svg" alt="" />
+              </div>
+              <div
+                class="form__select-input--menu"
+                id="academic-level-select-item-menu"
+              >
+                <p data-price="5.00">High School</p>
+                <p data-price="10.00">College</p>
+                <p data-price="15.00">Master</p>
+                <p data-price="20.00">PhD</p>
+              </div>
+            </div>
+
+            <div class="form__select" id="pages-select">
+              <p class="form__select--heading">Pages</p>
+              <div class="form__select-input" id="pages-select-item">
+                <p>Select pages number</p>
+                <img src="../img/arrow.svg" alt="" />
+              </div>
+              <div class="form__select-input--menu" id="pages-select-item-menu">
+                <p data-price="0.55">1 page / 300 words</p>
+                <p data-price="2.2">5 page / 1500 words</p>
+                <p data-price="3.96">10 page / 3000 words</p>
+                <p data-price="7.5">20 page / 6000 words</p>
+              </div>
+            </div>
+
+            <!-- DEADLINE SELECT -->
+            <div class="form__select">
+              <p class="form__select--heading">Select deadline</p>
+              <input
+                id="datetimepicker"
+                type="text"
+                placeholder="Select your order deadline"
+              />
+            </div>
+
+            <div class="hero__form--checkbox">
+              <input type="checkbox" id="custom" />
+              <label for="custom"></label>
+              <span>I’m a new costumer (15% off)</span>
+            </div>
+
+            <p class="hero__form--total">
+              Total: $<span class="total-price-value">0.00</span>
+            </p>
+
+            <a href="order-price/">Continue</a>
           </form>
         </div>
       </section>
@@ -197,277 +235,91 @@
         </div>
       </section>
 
-      <!-- PRICING TABLE -->
-      <section class="pricing">
-        <div class="pricing-wrapper">
-          <!-- CATEGORY -->
-          <div class="pricing__category">
-            <div class="pricing__category--item writing" id="active-category">
-              <span>Writing (draft)</span>
-            </div>
-            <div class="pricing__category--item editing">
-              <span>Editing</span>
-            </div>
-          </div>
-          <!-- CURRENCY -->
-          <div class="pricing__currency">
-            <p class="pricing__currency--item usd" id="active-currency">USD</p>
-            <p class="pricing__currency--item gpb">GPB</p>
-            <p class="pricing__currency--item aud">AUD</p>
-            <p class="pricing__currency--item eur">EUR</p>
-            <p class="pricing__currency--item cad">CAD</p>
-          </div>
-          <!-- TABLE -->
-          <div class="priscing__table">
-            <div class="pricing__table--wrapper">
-              <!-- HEADING -->
-              <div class="priscing__table--heading">
-                <p>Duration</p>
-                <p>High School</p>
-                <p>College</p>
-                <p>Master</p>
-                <p>PhD</p>
-              </div>
-              <!-- ROWS -->
-              <div class="pricing__table--container"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SEVINGS -->
-      <section class="savings">
-        <div class="savings-wrapper">
-          <h2 class="block-title">Your Savings With&nbsp;Us</h2>
-          <h4>
-            Here is a full list of features you will receive with your draft.
-            Some might call<br class="br-645" />
-            these exclusive benefits but we include them as parts of our
-            minimum&nbsp;standard.
-          </h4>
-          <div class="savings__container">
+      <!-- WHAT WE DO -->
+      <section class="whatwedo">
+        <div class="whatwedo-wrapper">
+          <h2 class="block-title mb">What We Do</h2>
+          <div class="whatwedo__cells">
             <!-- ITEM 1 -->
-            <div class="savings__container--item">
-              <h3>Free</h3>
-              <h4>Proofreading</h4>
-            </div>
-
-            <!-- ITEM 2 -->
-            <div class="savings__container--item">
-              <h3>Free</h3>
-              <h4>Amendments</h4>
-            </div>
-
-            <!-- ITEM 3 -->
-            <div class="savings__container--item">
-              <h3>Free</h3>
-              <h4>Formatting</h4>
-            </div>
-
-            <!-- ITEM 4 -->
-            <div class="savings__container--item">
-              <h3>Free</h3>
-              <h4>Title page</h4>
-            </div>
-
-            <!-- ITEM 5 -->
-            <div class="savings__container--item">
-              <h3>Free</h3>
-              <h4>Bibliography</h4>
-            </div>
-          </div>
-
-          <div class="hero__left--btn-block pricing-btn">
-            <a href="../order-price/" class="page-btn">Write My Paper</a><br />
-            <p>You won’t be charget yet</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- HOW IT WORKS -->
-      <section class="howitworks">
-        <div class="howitworks-wrapper">
-          <h2 class="block-title">See how it works</h2>
-          <h4>Get high-quality paper, completed by a team:</h4>
-          <h2 class="block-title">Researcher + Writer + Proofreader</h2>
-          <div class="howitworks__container">
-            <!-- STEP 1 -->
-            <div class="howitworks__container--item">
-              <img src="../img/number1.svg" alt="" />
-              <p>You place order with paper instructions</p>
-            </div>
-
-            <!-- DASHED LINE 1 -->
-            <svg height="56" width="100%">
-              <line
-                x1="172"
-                y1="44"
-                x2="336"
-                y2="44"
-                style="stroke: #efefef; border-radius: 1px; stroke-width: 4"
-                stroke-dasharray="12"
-              />
-            </svg>
-
-            <!-- STEP 2 -->
-            <div class="howitworks__container--item">
-              <img src="../img/number2.svg" alt="" />
-              <p>Researcher prepares sources for the writer</p>
-            </div>
-
-            <!-- DASHED LINE 2 -->
-            <svg height="56" width="100%">
-              <line
-                x1="412"
-                y1="44"
-                x2="576"
-                y2="44"
-                style="stroke: #efefef; border-radius: 1px; stroke-width: 4"
-                stroke-dasharray="12"
-              />
-            </svg>
-
-            <!-- STEP 3 -->
-            <div class="howitworks__container--item">
-              <img src="../img/number3.svg" alt="" />
+            <div class="whatwedo__cells--item">
+              <div class="item__img red-bg">
+                <img src="../img/icon.svg" alt="" />
+              </div>
+              <h3>Essays</h3>
               <p>
-                Writer from your subject completes<br />
-                your paper
+                Get urgent help with a smooth draft for&nbsp;your&nbsp;essay
               </p>
             </div>
 
-            <!-- DASHED LINE 3 -->
-            <svg height="56" width="100%">
-              <line
-                x1="652"
-                y1="44"
-                x2="816"
-                y2="44"
-                style="stroke: #efefef; border-radius: 1px; stroke-width: 4"
-                stroke-dasharray="12"
-              />
-            </svg>
-
-            <!-- STEP 4 -->
-            <div class="howitworks__container--item">
-              <img src="../img/number4.svg" alt="" />
-              <p>Paper is proofread and formatted</p>
+            <!-- ITEM 2 -->
+            <div class="whatwedo__cells--item">
+              <div class="item__img blue-bg">
+                <img src="../img/ic_research.svg" alt="" />
+              </div>
+              <h3>Research Papers</h3>
+              <p>Order a professional outline for&nbsp;your&nbsp;research</p>
             </div>
 
-            <!-- DASHED LINE 4 -->
-            <svg height="56" width="100%">
-              <line
-                x1="892"
-                y1="44"
-                x2="1056"
-                y2="44"
-                style="stroke: #efefef; border-radius: 1px; stroke-width: 4"
-                stroke-dasharray="12"
-              />
-            </svg>
+            <!-- ITEM 3 -->
+            <div class="whatwedo__cells--item">
+              <div class="item__img green-bg">
+                <img src="../img/ic_presentation.svg" alt="" />
+              </div>
+              <h3>Presentations</h3>
+              <p>
+                We can help to create a nice PowerPoint presentation based on
+                your&nbsp;research
+              </p>
+            </div>
 
-            <!-- STEP 5 -->
-            <div class="howitworks__container--item">
-              <img src="../img/number5.svg" alt="" />
-              <p>You download the final paper</p>
+            <!-- ITEM 4 -->
+            <div class="whatwedo__cells--item">
+              <div class="item__img black-bg">
+                <img src="../img/ic_cv.svg" alt="" />
+              </div>
+              <h3>Professional CV</h3>
+              <p>
+                Have an outstanding CV prepared in&nbsp;just&nbsp;1&nbsp;day
+              </p>
+            </div>
+
+            <!-- ITEM 5 -->
+            <div class="whatwedo__cells--item">
+              <div class="item__img orange-bg">
+                <img src="../img/ic_exams.svg" alt="" />
+              </div>
+              <h3>Exams</h3>
+              <p>
+                Get urgent help with a smooth draft for&nbsp;your&nbsp;exams
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- TESTIMONIALS -->
-      <section class="testimonials">
-        <h3>What clients say&nbsp;about Theassignmentlab</h3>
-        <h5>For security reasons we provide random client numbers here</h5>
-        <div class="testimonials__slider">
-          <!-- SLIDE 1 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
+      <!-- DISCOUNT -->
+      <section class="discount">
+        <div class="discount-wrapper">
+          <div class="discount__left">
+            <h3>First time here?</h3>
             <p>
-              I am <span>very grateful</span> that my
-              <span>assignment was done</span> so professionally. I will surely
-              request your service for all my assignments.
+              You’ll get a high-quality service, that’s for sure.<br
+                class="br-700"
+              />
+              To welcome you, we give you a 15% discount on your first order!
             </p>
           </div>
-          <!-- SLIDE 2 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #5413:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am <span>very happy</span> with your service!
-              <span> received the best grade</span> for the assignment!
-            </p>
+          <div class="discount__right">
+            <img src="../img/off.svg" alt="" />
+            <div class="discount__right--use-discount">
+              <a href="">Use 15% Discount Now!</a>
+            </div>
           </div>
-          <!-- SLIDE 3 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #5720:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I was stuck and I didn’t know what to do before I requested your
-              service. <span>I really appreciate</span> that you helped me get a
-              <span>very good grade!</span>
-            </p>
-          </div>
-          <!-- SLIDE 4 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am very grateful that my assignment was done so professionally.
-              I will surely request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 5 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am very grateful that my assignment was done so professionally.
-              I will surely request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 6 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am very grateful that my assignment was done so professionally.
-              I will surely request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 7 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #4783:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am <span>very grateful</span> that my
-              <span>assignment was done</span> so professionally. I will surely
-              request your service for all my assignments.
-            </p>
-          </div>
-          <!-- SLIDE 8 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #5413:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I am <span>very happy</span> with your service!
-              <span> received the best grade</span> for the assignment!
-            </p>
-          </div>
-          <!-- SLIDE 9 -->
-          <div class="testimonials__slider--slide">
-            <h4>Customer #5720:</h4>
-            <img src="../img/quotes.svg" alt="" />
-            <p>
-              I was stuck and I didn’t know what to do before I requested your
-              service. <span>I really appreciate</span> that you helped me get a
-              <span>very good grade!</span>
-            </p>
+          <div class="discount__girl">
+            <img src="../img/girl.png" alt="" />
           </div>
         </div>
       </section>
-
       <!-- FOOTER -->
       <footer class="footer">
         <div class="footer-wrapper">
@@ -477,15 +329,10 @@
                 <img src="../img/footer-logo.svg" alt="" />
               </div>
               <nav class="footer__left--navbar">
-                <a href="../services/">Services</a>
-                <a href="./">Prices</a>
+                <a href="./">Services</a>
+                <a href="../prices/">Prices</a>
                 <a href="../blog/">Blog</a>
                 <a href="../faq/">FAQ</a>
-                <div>
-                  <a href="../terms/">Terms of Use</a>
-                  <div class="no-br-1000"></div>
-                  <a href="../cookie-policy/">Cookie Policy</a>
-                </div>
               </nav>
               <div class="footer__left--icons">
                 <a href="#">
@@ -555,10 +402,6 @@
               </div>
             </div>
           </div>
-          <p class="footer__descriptor">
-            By accessing this website you agree to our Terms of Use, Privacy and
-            Cookie&nbsp;Policies.
-          </p>
           <div class="footer__copyright">
             &copy; 2019 - 2020 Theassignmentlab. All Rights Reserved.
           </div>
@@ -572,21 +415,26 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- slick cdn -->
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-
     <script src="../js/main.js"></script>
-    <script src="prices.js"></script>
-    <script src="../js/slick-settings.js"></script>
+    <script src="../js/dropdowns.js"></script>
     <script>
       // FONTS LOADER
       $(document).ready(function () {
         $(".loadfont").prepend(
           "@font-face{font-family:'ProductSansRegular'; src: url('../fonts/ProductSans-Regular.ttf') format('truetype'); font-weight: 400;} @font-face {font-family: 'ProductSans-Bold'; src: url('../fonts/ProductSans-Bold.ttf');}"
         );
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="http://cdn.craig.is/js/rainbow-custom.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.datetimepicker.setLocale("en");
+        $("#datetimepicker").datetimepicker({
+          format: "Y-m-d H:i",
+        });
       });
     </script>
   </body>

@@ -13,49 +13,49 @@ const writing = {
       school: "19.30",
       collage: "20.41",
       master: "21.52",
-      phd: "22.63",
+      // phd: "22.63",
     },
     {
       duration: "6-7 days",
       school: "20.41",
       collage: "21.52",
       master: "22.63",
-      phd: "24.30",
+      // phd: "24.30",
     },
     {
       duration: "4-5 days",
       school: "21.52",
       collage: "22.63",
       master: "24.30",
-      phd: "26.67",
+      // phd: "26.67",
     },
     {
       duration: "3 days",
       school: "22.63",
       collage: "24.30",
       master: "26.67",
-      phd: "29.31",
+      // phd: "29.31",
     },
     {
       duration: "2 days",
       school: "24.30",
       collage: "26.67",
       master: "29.31",
-      phd: "32.67",
+      // phd: "32.67",
     },
     {
       duration: "24 hours",
       school: "26.67",
       collage: "29.31",
       master: "32.67",
-      phd: "34.31",
+      // phd: "34.31",
     },
     {
       duration: "12 hours",
       school: "29.31",
       collage: "32.67",
       master: "34.31",
-      phd: "36.09",
+      // phd: "36.09",
     },
   ],
 };
@@ -68,28 +68,28 @@ const editing = {
       school: "19.30",
       collage: "20.41",
       master: "21.52",
-      phd: "22.63",
+      // phd: "22.63",
     },
     {
       duration: "6-7 days",
       school: "20.41",
       collage: "21.52",
       master: "22.63",
-      phd: "24.30",
+      // phd: "24.30",
     },
     {
       duration: "4-5 days",
       school: "21.52",
       collage: "22.63",
       master: "24.30",
-      phd: "26.67",
+      // phd: "26.67",
     },
     {
       duration: "3 days",
       school: "22.63",
       collage: "24.30",
       master: "26.67",
-      phd: "29.31",
+      // phd: "29.31",
     },
   ],
 };
@@ -132,7 +132,7 @@ window.onload = function () {
         // insert data after heading one-by-one
         table.insertAdjacentHTML(
           "beforeend",
-          `<div class='priscing__table--row' id=${i}><p>${editing.package[i].duration}</p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price school" id=${i}>${editing.package[i].school}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price collage" id=${i}>${editing.package[i].collage}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price master" id=${i}>${editing.package[i].master}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price phd" id=${i}>${editing.package[i].phd}</span></p>`
+          `<div class='priscing__table--row' id=${i}><p>${editing.package[i].duration}</p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price school" id=${i}>${editing.package[i].school}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price collage" id=${i}>${editing.package[i].collage}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price master" id=${i}>${editing.package[i].master}</span></p>`
         );
       }
     } else {
@@ -145,7 +145,7 @@ window.onload = function () {
         // insert data after heading one-by-one while window is loaded
         table.insertAdjacentHTML(
           "beforeend",
-          `<div class='priscing__table--row' id=${i}><p>${writing.package[i].duration}</p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price school" id=${i}>${writing.package[i].school}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price collage" id=${i}>${writing.package[i].collage}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price master" id=${i}>${writing.package[i].master}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price phd" id=${i}>${writing.package[i].phd}</span></p>`
+          `<div class='priscing__table--row' id=${i}><p>${writing.package[i].duration}</p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price school" id=${i}>${writing.package[i].school}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price collage" id=${i}>${writing.package[i].collage}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price master" id=${i}>${writing.package[i].master}</span></p>`
         );
       }
     }
@@ -189,7 +189,7 @@ window.onload = function () {
     // insert data after heading one-by-one while window is loaded
     table.insertAdjacentHTML(
       "beforeend",
-      `<div class='priscing__table--row' id=${i}><p>${writing.package[i].duration}</p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price school" id=${i}>${writing.package[i].school}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price collage" id=${i}>${writing.package[i].collage}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price master" id=${i}>${writing.package[i].master}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price phd" id=${i}>${writing.package[i].phd}</span></p>`
+      `<div class='priscing__table--row' id=${i}><p>${writing.package[i].duration}</p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price school" id=${i}>${writing.package[i].school}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price collage" id=${i}>${writing.package[i].collage}</span></p><p><span id="current-currency" style=${spanStyle}>${currency.usd[0]}</span><span class="current-price master" id=${i}>${writing.package[i].master}</span></p>`
     );
   }
 

@@ -1637,7 +1637,7 @@ input[type="date"].onfocus::before {
 }
 .priscing__table--row > p,
 .priscing__table--heading > p {
-  min-width: 160px;
+  min-width: 200px;
   text-align: center;
   font-weight: bold;
   font-size: 20px;
